@@ -13,7 +13,7 @@ interface DownloadTypes {
 function Download({ children, folderPath }: DownloadTypes) {
   return (
     <div className="relative">
-      <div className="absolute top-0 right-0">
+      <div className="z-50 absolute top-0 right-0">
         <button
           onClick={() => handleDownloadZip(folderPath)}
           className="p-2 transition duration-200 rounded-full"
