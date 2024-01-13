@@ -26,7 +26,10 @@ async function zipFolder(zip: JSZip, folderPath: string, relativePath: string) {
 
   for (const file of files) {
     const filePath = path.join(folderPath, file);
-    const relativeFilePath = path.join(relativePath, file);
+    let relativeFilePath: any;
+    if (!fs.statSync(filePath).isDirectory()) {
+      relativeFilePath = file;
+    }
 
     if (fs.statSync(filePath).isDirectory()) {
       await zipFolder((zip as any).folder(file), filePath, relativeFilePath);
