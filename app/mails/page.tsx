@@ -1,4 +1,4 @@
-import MailComponent from "@/components/mail/mailComponent";
+import MailComponent from "@/components/mails/mail-component";
 
 export default function MailPage() {
   return <MailComponent />;
