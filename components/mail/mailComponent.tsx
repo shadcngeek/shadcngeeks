@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import { Mail } from "./components/mail";
 import { accounts, mails } from "./data";
+import Download from "../download/download";
+import handleGetFolderPath from "@/actions/handleGetFolderPath";
 
 const MailComponent = () => {
   const layout = cookies().get("react-resizable-panels:layout");
@@ -12,7 +14,7 @@ const MailComponent = () => {
   const defaultCollapsed = collapsed ? JSON.parse(collapsed.value) : undefined;
 
   return (
-    <>
+    <Download folderPath={handleGetFolderPath("mail")}>
       <div className="md:hidden">
         <Image
           src="/examples/mail-dark.png"
@@ -38,7 +40,7 @@ const MailComponent = () => {
           navCollapsedSize={4}
         />
       </div>
-    </>
+    </Download>
   );
 };
 
