@@ -1,31 +1,32 @@
 "use client";
 
 import Link from "next/link";
+
+import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useFieldArray, useForm } from "react-hook-form";
-import * as z from "zod";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
   Form,
-  FormControl,
-  FormDescription,
-  FormField,
   FormItem,
   FormLabel,
+  FormField,
   FormMessage,
+  FormControl,
+  FormDescription,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
 import {
   Select,
-  SelectContent,
   SelectItem,
-  SelectTrigger,
   SelectValue,
+  SelectContent,
+  SelectTrigger,
 } from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
 import { toast } from "@/components/use-toast";
+import { Textarea } from "@/components/ui/textarea";
 
 const profileFormSchema = z.object({
   username: z

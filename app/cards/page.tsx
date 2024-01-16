@@ -30,6 +30,23 @@ import { DemoPaymentMethod } from "@/components/cards/payment-method/payment-met
 import { DemoReportAnIssue } from "@/components/cards/report-an-issue/report-an-issue";
 import { DemoShareDocument } from "@/components/cards/share-document/share-document";
 import { DemoTeamMembers } from "@/components/cards/team-members/team-members";
+import { Revenue } from "@/components/cards/revenue";
+import { TextBrief } from "@/components/cards/text-brief";
+import { UserIntro } from "@/components/cards/user-intro";
+import { Price } from "@/components/cards/price";
+import { PricePro } from "@/components/cards/price-pro";
+import { PriceMostPopular } from "@/components/cards/price-most-popular";
+import { Netflix } from "@/components/cards/netflix";
+import { UserProgress } from "@/components/cards/user-progress";
+import { AvatarMore } from "@/components/cards/avatar-more";
+import { TextPostLikes } from "@/components/cards/text-post-likes";
+import { FeedbackRate } from "@/components/cards/feedback-rate";
+import { Shoe } from "@/components/cards/shoe-card";
+import { AvatarsHorizontal } from "@/components/cards/avatars-horizontal";
+import { UserFollowers } from "@/components/cards/user-followers";
+import { Activities } from "@/components/cards/activities";
+import { News } from "@/components/cards/news";
+import { SocialMenu } from "@/components/cards/social-menu";
 
 export const metadata: Metadata = {
   title: "Cards",
@@ -52,8 +69,46 @@ function DemoContainer({
 }
 
 export default function CardsPage() {
+  // return (
+  //   <div className=" items-start justify-center gap-6 rounded-lg p-8 md:grid lg:grid-cols-2 xl:grid-cols-3">
+  //     <Activities />
+  //     <UserFollowers />
+  //     <AvatarsHorizontal />
+  //     <Shoe />
+  //     <FeedbackRate />
+  //     <TextPostLikes />
+  //     <AvatarMore />
+  //     <UserProgress />
+  //     <Netflix />
+  //     <PriceMostPopular />
+  //     <Price />
+  //     <PricePro />
+  //     <Revenue />
+  //     <TextBrief />
+  //     <UserIntro />
+  //   </div>
+  // );
   return (
     <>
+      <div className=" items-start justify-center gap-6 rounded-lg p-8 md:grid lg:grid-cols-2 xl:grid-cols-3">
+        <SocialMenu />
+        <News />
+        <Activities />
+        <UserFollowers />
+        <AvatarsHorizontal />
+        <Shoe />
+        <FeedbackRate />
+        <TextPostLikes />
+        <AvatarMore />
+        <UserProgress />
+        <Netflix />
+        <PriceMostPopular />
+        <Price />
+        <PricePro />
+        <Revenue />
+        <TextBrief />
+        <UserIntro />
+      </div>
       <div className="md:hidden">
         <Image
           src="/examples/cards-light.png"

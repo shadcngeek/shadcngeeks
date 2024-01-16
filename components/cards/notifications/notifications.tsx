@@ -2,10 +2,10 @@ import { BellIcon, EyeNoneIcon, PersonIcon } from "@radix-ui/react-icons";
 
 import {
   Card,
+  CardTitle,
+  CardHeader,
   CardContent,
   CardDescription,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 
 export function DemoNotifications() {

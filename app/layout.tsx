@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono as FontMono } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
+import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={GeistSans.className}>{children}</body>
+    <html lang="en" id="mode" className="light">
+      <body className={GeistSans.className}>
+        <Header>{children}</Header>
+      </body>
     </html>
   );
 }

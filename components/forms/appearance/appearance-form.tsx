@@ -1,23 +1,23 @@
 "use client";
 
+import * as z from "zod";
+import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
 
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Form,
-  FormControl,
-  FormDescription,
-  FormField,
   FormItem,
   FormLabel,
+  FormField,
   FormMessage,
+  FormControl,
+  FormDescription,
 } from "@/components/ui/form";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { toast } from "@/components/use-toast";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 const appearanceFormSchema = z.object({
   theme: z.enum(["light", "dark"], {

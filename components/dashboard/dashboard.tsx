@@ -11,15 +11,15 @@ import {
   CardContent,
   CardDescription,
 } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Search } from "./search/search";
+import Download from "../download/download";
 import { UserNav } from "./user-nav/user-nav";
 import { MainNav } from "./main-nav/main-nav";
 import { Overview } from "./overview/overview";
 import TeamSwitcher from "./team-switcher/team-switcher";
 import { RecentSales } from "./recent-sales/recent-sales";
-import Download from "../download/download";
 import handleGetFolderPath from "@/actions/handleGetFolderPath";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const metadata: Metadata = {
   title: "Dashboard",
