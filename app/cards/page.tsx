@@ -1,18 +1,3 @@
-// import Download from "@/components/download/download";
-// import { CookieSettings } from "@/components/cards/cookie-settings/cookie-settings";
-
-// import handleGetFolderPath from "@/actions/handleGetFolderPath";
-
-// export default function Cards() {
-//   return (
-//     <div className="p-10">
-//       <Download folderPath={handleGetFolderPath("cards/cookie-settings")}>
-//         <CookieSettings />
-//       </Download>
-//     </div>
-//   );
-// }
-
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -47,6 +32,23 @@ import { UserFollowers } from "@/components/cards/user-followers";
 import { Activities } from "@/components/cards/activities";
 import { News } from "@/components/cards/news";
 import { SocialMenu } from "@/components/cards/social-menu";
+import { Character } from "@/components/cards/character";
+import { CharacterSwipe } from "@/components/cards/character-swipe";
+import { CharacterSwipeDotted } from "@/components/cards/character-swipe-dotted";
+import TinyLineChart from "@/components/cards/tiny-line-chart";
+import { RangeFilter } from "@/components/cards/range-filter";
+import { Next } from "@/components/cards/next";
+import { Previous } from "@/components/cards/previous";
+import { UserFollowConnect } from "@/components/cards/user-connect-message";
+import { SocialCounts } from "@/components/cards/social-counts";
+import { AboutUser } from "@/components/cards/about-user";
+import { HorizontalSalesCard } from "@/components/cards/horizontal-sales-card";
+import { SubscribeToNewsletter } from "@/components/cards/subscribe-to-newsletter";
+import { SuccessMessage } from "@/components/cards/success-message";
+import { InformationMessage } from "@/components/cards/information-message";
+import { WarningMessage } from "@/components/cards/warning-message";
+import { ErrorMessage } from "@/components/cards/error-message";
+import { ShareFile } from "@/components/cards/share-file";
 
 export const metadata: Metadata = {
   title: "Cards",
@@ -69,28 +71,26 @@ function DemoContainer({
 }
 
 export default function CardsPage() {
-  // return (
-  //   <div className=" items-start justify-center gap-6 rounded-lg p-8 md:grid lg:grid-cols-2 xl:grid-cols-3">
-  //     <Activities />
-  //     <UserFollowers />
-  //     <AvatarsHorizontal />
-  //     <Shoe />
-  //     <FeedbackRate />
-  //     <TextPostLikes />
-  //     <AvatarMore />
-  //     <UserProgress />
-  //     <Netflix />
-  //     <PriceMostPopular />
-  //     <Price />
-  //     <PricePro />
-  //     <Revenue />
-  //     <TextBrief />
-  //     <UserIntro />
-  //   </div>
-  // );
   return (
     <>
       <div className=" items-start justify-center gap-6 rounded-lg p-8 md:grid lg:grid-cols-2 xl:grid-cols-3">
+        <ShareFile />
+        <ErrorMessage />
+        <WarningMessage />
+        <InformationMessage />
+        <SuccessMessage />
+        <SubscribeToNewsletter />
+        <HorizontalSalesCard />
+        <AboutUser />
+        <SocialCounts />
+        <UserFollowConnect />
+        <Previous />
+        <Next />
+        <RangeFilter />
+        <TinyLineChart />
+        <CharacterSwipeDotted />
+        <CharacterSwipe />
+        <Character />
         <SocialMenu />
         <News />
         <Activities />

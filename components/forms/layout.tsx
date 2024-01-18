@@ -43,17 +43,17 @@ export default function SettingsLayout({ children }: SettingsLayoutProps) {
     <Download folderPath={handleGetFolderPath("forms")}>
       <div className="md:hidden">
         <Image
-          src="/examples/forms-light.png"
+          alt="Forms"
           width={1280}
           height={791}
-          alt="Forms"
+          src="/examples/forms-light.png"
           className="block dark:hidden"
         />
         <Image
-          src="/examples/forms-dark.png"
+          alt="Forms"
           width={1280}
           height={791}
-          alt="Forms"
+          src="/examples/forms-dark.png"
           className="hidden dark:block"
         />
       </div>
