@@ -1,0 +1,183 @@
+[
+  {
+    "id": "abc123456",
+    "commitMessage": "Fix bug in authentication",
+    "status": "ready",
+    "label": "bugfix",
+    "date": "2024-01-21",
+    "environment": "production",
+    "branch": "main"
+  },
+  {
+    "id": "def789012",
+    "commitMessage": "Add new feature: user profile",
+    "status": "ready",
+    "label": "feature",
+    "date": "2024-01-20",
+    "environment": "development",
+    "branch": "feature/implement-auth0"
+  },
+  {
+    "id": "ghi345678",
+    "commitMessage": "Refactor code for performance",
+    "status": "error",
+    "label": "refactor",
+    "date": "2024-01-19",
+    "environment": "production",
+    "branch": "main"
+  },
+  {
+    "id": "jkl901234",
+    "commitMessage": "Update dependencies",
+    "status": "ready",
+    "label": "dependency-update",
+    "date": "2024-01-18",
+    "environment": "production",
+    "branch": "main"
+  },
+  {
+    "id": "mno567890",
+    "commitMessage": "Implement responsive design",
+    "status": "ready",
+    "label": "design",
+    "date": "2024-01-17",
+    "environment": "development",
+    "branch": "feature/implement-auth0"
+  },
+  {
+    "id": "pqr123456",
+    "commitMessage": "Fix security vulnerability",
+    "status": "ready",
+    "label": "security-fix",
+    "date": "2024-01-16",
+    "environment": "development",
+    "branch": "main"
+  },
+  {
+    "id": "stu789012",
+    "commitMessage": "Add unit tests for authentication",
+    "status": "ready",
+    "label": "testing",
+    "date": "2024-01-15",
+    "environment": "production",
+    "branch": "enhancement/switch-to-shadcn-ui"
+  },
+  {
+    "id": "vwx345678",
+    "commitMessage": "Update documentation",
+    "status": "error",
+    "label": "documentation",
+    "date": "2024-01-14",
+    "environment": "production",
+    "branch": "bug/fix-infinite-rerender"
+  },
+  {
+    "id": "yzab901234",
+    "commitMessage": "Fix styling issues",
+    "status": "ready",
+    "label": "style",
+    "date": "2024-01-13",
+    "environment": "development",
+    "branch": "main"
+  },
+  {
+    "id": "cdef567890",
+    "commitMessage": "Add error handling",
+    "status": "error",
+    "label": "error-handling",
+    "date": "2024-01-12",
+    "environment": "development",
+    "branch": "feature/implement-auth0"
+  },
+  {
+    "id": "ghij123456",
+    "commitMessage": "Optimize database queries",
+    "status": "ready",
+    "label": "optimization",
+    "date": "2024-01-11",
+    "environment": "production",
+    "branch": "main"
+  },
+  {
+    "id": "klmn789012",
+    "commitMessage": "Fix accessibility issues",
+    "status": "ready",
+    "label": "accessibility",
+    "date": "2024-01-10",
+    "environment": "production",
+    "branch": "main"
+  },
+  {
+    "id": "opqr345678",
+    "commitMessage": "Implement user authentication",
+    "status": "error",
+    "label": "authentication",
+    "date": "2024-01-09",
+    "environment": "production",
+    "branch": "enhancement/switch-to-shadcn-ui"
+  },
+  {
+    "id": "stuv901234",
+    "commitMessage": "Add support for multiple languages",
+    "status": "ready",
+    "label": "internationalization",
+    "date": "2024-01-08",
+    "environment": "development",
+    "branch": "bug/fix-infinite-rerender"
+  },
+  {
+    "id": "wxyz567890",
+    "commitMessage": "Fix memory leak issues",
+    "status": "ready",
+    "label": "memory-leak-fix",
+    "date": "2024-01-07",
+    "environment": "development",
+    "branch": "feature/implement-auth0"
+  },
+  {
+    "id": "abcd123456",
+    "commitMessage": "Update third-party libraries",
+    "status": "error",
+    "label": "library-update",
+    "date": "2024-01-06",
+    "environment": "development",
+    "branch": "bug/fix-infinite-rerender"
+  },
+  {
+    "id": "efgh789012",
+    "commitMessage": "Refactor frontend components",
+    "status": "ready",
+    "label": "frontend-refactor",
+    "date": "2024-01-05",
+    "environment": "development",
+    "branch": "main"
+  },
+  {
+    "id": "ijkl345678",
+    "commitMessage": "Fix broken links in documentation",
+    "status": "ready",
+    "label": "documentation-fix",
+    "date": "2024-01-04",
+    "environment": "development",
+    "branch": "enhancement/switch-to-shadcn-ui"
+  },
+  {
+    "id": "mnop901234",
+    "commitMessage": "Implement caching mechanism",
+    "status": "error",
+    "label": "caching",
+    "date": "2024-01-03",
+    "environment": "development",
+    "branch": "main"
+  },
+  {
+    "id": "qrst567890",
+    "commitMessage": "Add user feedback feature",
+    "status": "ready",
+    "label": "feedback",
+    "date": "2024-01-02",
+    "environment": "production",
+    "branch": "bug/fix-infinite-rerender"
+  }
+]
+
