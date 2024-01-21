@@ -12,7 +12,7 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Search } from "./search/search";
-import Download from "../download/download";
+import Download from "../../download/download";
 import { UserNav } from "./user-nav/user-nav";
 import { MainNav } from "./main-nav/main-nav";
 import { Overview } from "./overview/overview";
