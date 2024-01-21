@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AvatarMore } from "./avatar-more";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function Activities() {
   return (

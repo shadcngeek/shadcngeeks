@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-import SettingsLayout from "@/components/forms/layout";
+import SettingsLayout from "@/components/forms/settings/layout";
 
 export const metadata: Metadata = {
   title: "Forms",

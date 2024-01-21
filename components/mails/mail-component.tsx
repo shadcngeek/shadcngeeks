@@ -11,10 +11,10 @@ const MailComponent = () => {
   const collapsed = cookies().get("react-resizable-panels:collapsed");
 
   const defaultLayout = layout ? JSON.parse(layout.value) : undefined;
-  const defaultCollapsed =
-    collapsed?.value !== "undefined"
-      ? JSON.parse((collapsed as any).value)
+  const defaultCollapsed = undefined
+    collapsed?.value ? JSON.parse((collapsed as any)?.value)
       : undefined;
+
 
   return (
     <Download folderPath={handleGetFolderPath("mail")}>

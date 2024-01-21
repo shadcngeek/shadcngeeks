@@ -5,7 +5,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { UserAuthForm } from "./components/user-auth-form";
-import Download from "../download/download";
+import Download from "../../download/download";
 import handleGetFolderPath from "@/actions/handleGetFolderPath";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function AuthenticationComponent() {
   return (
-    <Download folderPath={handleGetFolderPath("authentication")}>
+    <Download folderPath={handleGetFolderPath("authentication/acme")}>
       <div className="md:hidden">
         <Image
           src="/examples/authentication-light.png"

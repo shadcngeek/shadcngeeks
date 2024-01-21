@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import Image from "next/image";
 
-import Download from "../download/download";
+import Download from "../../download/download";
 import { Separator } from "@/components/ui/separator";
 import handleGetFolderPath from "@/actions/handleGetFolderPath";
-import { SidebarNav } from "@/components/forms/components/sidebar-nav";
+import { SidebarNav } from "@/components/forms/settings/components/sidebar-nav";
 
 export const metadata: Metadata = {
   title: "Forms",
