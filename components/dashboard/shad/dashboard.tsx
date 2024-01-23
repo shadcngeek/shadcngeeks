@@ -1,5 +1,5 @@
-import { Metadata } from "next";
 import Image from "next/image";
+import { Metadata } from "next";
 
 import { CalendarDateRangePicker } from "./date-range-picker/date-range-picker";
 
@@ -12,10 +12,10 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Search } from "./search/search";
-import Download from "../../download/download";
 import { UserNav } from "./user-nav/user-nav";
 import { MainNav } from "./main-nav/main-nav";
 import { Overview } from "./overview/overview";
+import Download from "../../download/download";
 import TeamSwitcher from "./team-switcher/team-switcher";
 import { RecentSales } from "./recent-sales/recent-sales";
 import handleGetFolderPath from "@/actions/handleGetFolderPath";
@@ -31,17 +31,17 @@ export default function Dashboard() {
     <Download folderPath={handleGetFolderPath("dashboard")}>
       <div className="md:hidden">
         <Image
-          src="/examples/dashboard-light.png"
           width={1280}
           height={866}
           alt="Dashboard"
+          src="/examples/dashboard-light.png"
           className="block dark:hidden"
         />
         <Image
-          src="/examples/dashboard-dark.png"
           width={1280}
           height={866}
           alt="Dashboard"
+          src="/examples/dashboard-dark.png"
           className="hidden dark:block"
         />
       </div>
