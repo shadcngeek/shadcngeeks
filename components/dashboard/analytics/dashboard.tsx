@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Image from "next/image";
 
+import { MoveDownRight } from "lucide-react";
+
 import {
   Card,
   CardTitle,
@@ -14,7 +16,6 @@ import ProductSelling from "./table/product-selling";
 import { Statistic } from "./table/components/statistic";
 import { Tabs, TabsContent } from "@/components/ui/tabs";
 import { RecentSales } from "./recent-sales/recent-sales";
-import { MoveDownRight, MoveUpRight } from "lucide-react";
 import AnalyticCard from "./table/components/analytic-card";
 import { CarouselEmbla } from "./table/components/carousal-embla";
 import StatisticOverview from "./table/components/statistic-overview";
