@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono as FontMono } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
-import Header from "@/components/header";
+import Header from "@/components/headers/app-header";
 
 const inter = Inter({ subsets: ["latin"] });
 
