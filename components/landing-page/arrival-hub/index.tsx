@@ -4,11 +4,11 @@ import MegaNav from "./components/mega-nav";
 import { Button } from "@/components/ui/button";
 import { Feedbacks } from "./components/feedbacks";
 
-function ArrivalHub() {
+function Landing() {
   return (
-    <div>
+    <div className="bg-[url('/images/bg-pink.svg')] dark:bg-[url('/images/bg-pink-light.svg')] bg-no-repeat bg-cover dark:bg-slate-950">
       <MegaNav />
-      <div className="flex justify-center items-center h-dvh px-[200px] dark:bg-slate-950">
+      <div className="flex justify-center items-center h-dvh px-[200px]">
         <div>
           <div className="w-[700px] text-center space-y-2 mx-auto">
             <p className="text-6xl font-bold text-center dark:text-white">
@@ -39,4 +39,4 @@ function ArrivalHub() {
   );
 }
 
-export default ArrivalHub;
+export default Landing;
