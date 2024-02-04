@@ -49,12 +49,12 @@ function ComingSoon() {
           <div className="relative  w-full border-r border-slate-800 border-dashed ">
             <div className="absolute h-[900px] border-l border-dashed top-[50%] translate-y-[-50%] border-slate-800"></div>
             <p className="text-[50px] md:text-[100px] lg:text-[128px] font-bold text-center w-full">
-              {date[2]}
+              {date[2] || 0}
             </p>
           </div>
           <div className="border-r border-slate-800 border-dashed w-full">
             <p className=" text-[50px] md:text-[100px] lg:text-[128px] font-bold text-center">
-              {date[3]}
+              {date[3] || 60}
             </p>
           </div>
           <div className="border-r border-slate-800 border-dashed  text-center w-full">
