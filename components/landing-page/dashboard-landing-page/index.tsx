@@ -5,7 +5,7 @@ import Image from "next/image";
 import MegaNav from "./components/mega-nav";
 import { Button } from "@/components/ui/button";
 
-function ArrivalHub() {
+function DashboardLanding() {
   return (
     <div>
       <MegaNav />
@@ -38,7 +38,7 @@ function ArrivalHub() {
                 width={1500}
                 height={400}
                 src={"/images/dashboard-dark.png"}
-                />
+              />
             </div>
             <div className="block dark:hidden">
               <Image
@@ -55,4 +55,4 @@ function ArrivalHub() {
   );
 }
 
-export default ArrivalHub;
+export default DashboardLanding;

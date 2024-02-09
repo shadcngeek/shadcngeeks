@@ -3,15 +3,10 @@ import Link from "next/link";
 
 import { Github, Menu, MoonStarIcon, Twitter } from "lucide-react";
 
-import { Input } from "@/components/ui/input";
 import { SheetDrawer } from "./sheet";
-import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
-interface SocialLinksTypes {
-  onClick: () => void;
-}
-
-function SocialLinks({ onClick }: SocialLinksTypes) {
+function SocialLinks() {
   return (
     <div className="w-full flex justify-end">
       <ul className="flex gap-5">
@@ -28,12 +23,11 @@ function SocialLinks({ onClick }: SocialLinksTypes) {
             <Twitter className="text-[#71717a] dark:text-[#a1a1aa] transition dark:hover:text-white" />
           </Link>
         </li>
-        <Button
-          onClick={onClick}
-          className="dark:bg-transparent bg-transparent hidden sm:block border border-slate-200 dark:border-slate-800 p-2 rounded-md"
-        >
-          <MoonStarIcon className="text-[#71717a] dark:text-[#a1a1aa] transition dark:hover:text-white" />
-        </Button>
+        <li className="hidden sm:block border border-slate-200 dark:border-slate-800 p-2 rounded-md">
+          <Link href={"#"}>
+            <MoonStarIcon className="text-[#71717a] dark:text-[#a1a1aa] transition dark:hover:text-white" />
+          </Link>
+        </li>
         <SheetDrawer
           trigger={
             <li className="border border-slate-200 dark:border-slate-800 p-2 rounded-md block md:hidden">

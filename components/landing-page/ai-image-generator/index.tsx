@@ -2,7 +2,7 @@ import React from "react";
 
 import { Sparkles } from "lucide-react";
 
-import { Input } from "../ui/input";
+import { Input } from "../../ui/input";
 import MegaNav from "./components/mega-nav";
 import { Button } from "@/components/ui/button";
 import { Character } from "./components/character";

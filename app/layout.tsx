@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono as FontMono } from "next/font/google";
-import { GeistSans } from "geist/font/sans";
+
 import "./globals.css";
-import Header from "@/components/headers/app-header";
+
+import { GeistSans } from "geist/font/sans";
+import { Inter, JetBrains_Mono as FontMono } from "next/font/google";
+
+import MegaNav from "@/components/headers/mega-nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" id="mode" className="light">
       <body className={GeistSans.className}>
-        <Header>{children}</Header>
+        <MegaNav>{children}</MegaNav>
       </body>
     </html>
   );

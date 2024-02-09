@@ -1,9 +1,9 @@
-import Cards from "./cards/page";
+import Homepage from "@/components/www";
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Cards />
+    <main className="">
+      <Homepage />
     </main>
   );
 }

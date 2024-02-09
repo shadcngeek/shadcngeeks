@@ -1,5 +1,5 @@
-import Landing from "@/components/landing-page/arrival-hub";
+import LandingPage from "@/components/www/components/landing-page";
 
-export default function LandingPage() {
-  return <Landing />;
+export default function page() {
+  return <LandingPage />;
 }
