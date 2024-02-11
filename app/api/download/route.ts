@@ -12,7 +12,8 @@ export async function POST(request: NextRequest) {
   //   { encoding: "utf8" }
   // );
   // console.log(data);
-  return NextResponse.json({ data: __dirname });
+  const files = await fs.readdirSync(process.cwd());
+  return NextResponse.json({ data: __dirname, datas: process.cwd(), files });
   // const { folderToZip } = await request.json();
   // const zip = new JSZip();
 
