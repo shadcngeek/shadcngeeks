@@ -48,7 +48,7 @@ export function MailList({ items }: MailListProps) {
                       : "text-muted-foreground"
                   )}
                 >
-                  {formatDistanceToNow(new Date(item.date), {
+                  {(formatDistanceToNow as any)(new Date(item.date), {
                     addSuffix: true,
                   })}
                 </div>

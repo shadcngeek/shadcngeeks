@@ -6,7 +6,7 @@ import SocialLinks from "./components/social-links";
 import Link from "next/link";
 
 interface HeaderTypes {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 function MegaNav({ children }: HeaderTypes) {

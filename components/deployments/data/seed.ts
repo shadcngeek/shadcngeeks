@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { faker } from "@faker-js/faker";
 
-import { labels, priorities, statuses } from "./data";
+import { labels, statuses } from "./data";
 
 const tasks = Array.from({ length: 100 }, () => ({
   id: `TASK-${faker.number.int({ min: 1000, max: 9999 })}`,
@@ -11,7 +11,6 @@ const tasks = Array.from({ length: 100 }, () => ({
     .replace(/^./, (letter: any) => letter.toUpperCase()),
   status: faker.helpers.arrayElement(statuses).value,
   label: faker.helpers.arrayElement(labels).value,
-  priority: faker.helpers.arrayElement(priorities).value,
 }));
 
 fs.writeFileSync(
