@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export function Character() {
   return (
-    <Card className="w-[350px] relative">
+    <Card className="relative">
       <div className="absolute top-0 right-0">
         <Button className="bg-transparent hover:bg-transparent border m-2 text-[#71717a] dark:text-[#a1a1aa]">
           Skip

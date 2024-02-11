@@ -1,12 +1,15 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { pages } from "../../data/pages";
+import { pages } from "./data/pages";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-
+import handleDownloadZip from "@/actions/handleDownloadZip";
+import handleGetFolderPath from "@/actions/handleGetFolderPath";
+handleGetFolderPath;
 function LandingPage() {
   return (
     <div className="px-[200px] dark:bg-slate-950 pt-10">
@@ -22,7 +25,13 @@ function LandingPage() {
                 Preview
               </Link>
 
-              <Button>Download</Button>
+              <Button
+                onClick={() =>
+                  handleDownloadZip(handleGetFolderPath(`landing-page/${path}`))
+                }
+              >
+                Download
+              </Button>
             </div>
             <Card className="w-fit">
               <CardContent className="p-0">

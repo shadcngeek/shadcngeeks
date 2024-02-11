@@ -1,4 +1,4 @@
-import Landing from "@/components/landing-page/arrival-hub";
+import Landing from "@/components/landing-page/content-centric";
 
 export default function LandingPage() {
   return <Landing />;

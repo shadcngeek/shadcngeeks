@@ -31,7 +31,8 @@ function MegaNav({ children }: HeaderTypes) {
     const elem = document.getElementById("mode");
     const currentMode = elem?.className;
     if (currentMode == "dark") {
-      localStorage.removeItem("theme");
+      // localStorage.removeItem("theme");
+      localStorage.theme = "light";
       (elem as any).className = "light";
     } else {
       (elem as any).className = "dark";

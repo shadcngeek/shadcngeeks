@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { DownloadIcon } from "lucide-react";
+import { Button } from "../ui/button";
 
 import handleDownloadZip from "@/actions/handleDownloadZip";
 
@@ -12,14 +12,9 @@ interface DownloadTypes {
 
 function Download({ children, folderPath }: DownloadTypes) {
   return (
-    <div className="relative">
-      <div className="z-50 absolute top-0 right-0">
-        <button
-          onClick={() => handleDownloadZip(folderPath)}
-          className="p-2 transition duration-200 rounded-full"
-        >
-          <DownloadIcon className="text-gray-300 hover:text-gray-400" />
-        </button>
+    <div className="w-full relative">
+      <div className="pb-1 w-full flex justify-end">
+        <Button onClick={() => handleDownloadZip(folderPath)}>Download</Button>
       </div>
       {children}
     </div>

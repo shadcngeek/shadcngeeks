@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
-import { PathTypes, pages } from "./data/pages";
+import { PathTypes, pages } from "./components/landing-page/data/pages";
 import { Card, CardContent } from "@/components/ui/card";
 
 function Homepage() {
@@ -45,7 +45,12 @@ function Homepage() {
             <Link key={page} href={`/${page}`}>
               <Card className="w-fit hover:dark:border-rose-600 hover:border-rose-600 transition">
                 <CardContent className="p-6 text-slate-500 hover:text-rose-600 transition">
-                  <Image alt="" width={300} height={300} src={pages[page as PathTypes].imageSrc}/>
+                  <Image
+                    alt=""
+                    width={300}
+                    height={300}
+                    src={pages[page as PathTypes].imageSrc}
+                  />
                 </CardContent>
               </Card>
             </Link>

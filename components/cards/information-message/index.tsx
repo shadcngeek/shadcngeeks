@@ -10,7 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export function InformationMessage() {
   return (
-    <Card className="border-indigo-500 dark:border-indigo-400 relative w-[350px]">
+    <Card className="border-indigo-500 dark:border-indigo-400 relative">
       <CardContent className="p-6">
         <div className="absolute h-[80%] w-1 bg-indigo-500 left-1 top-[50%] translate-y-[-50%] rounded-full"></div>
         <Accordion type="single" collapsible className="w-full">
