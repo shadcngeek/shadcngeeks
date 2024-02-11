@@ -1,1 +1,1 @@
-export type CardsDataTypes = React.JSX.Element;
+export type CardsDataTypes = { component: React.JSX.Element; path: string };

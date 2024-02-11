@@ -23,7 +23,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-export function DemoTeamMembers() {
+export function TeamMembers() {
   return (
     <Card>
       <CardHeader>

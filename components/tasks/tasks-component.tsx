@@ -8,8 +8,6 @@ import { columns } from "./components/columns";
 import { DataTable } from "./components/data-table";
 import { UserNav } from "./components/user-nav";
 import { taskSchema } from "./data/schema";
-import Download from "../download/download";
-import handleGetFolderPath from "@/actions/handleGetFolderPath";
 
 export const metadata: Metadata = {
   title: "Tasks",
@@ -31,7 +29,7 @@ export default async function TaskComponent() {
   const tasks = await getTasks();
 
   return (
-    <Download folderPath={handleGetFolderPath("tasks")}>
+    <div className="dark:bg-slate-950 dark:text-white h-dvh">
       <div className="md:hidden">
         <Image
           src="/examples/tasks-light.png"
@@ -62,6 +60,6 @@ export default async function TaskComponent() {
         </div>
         <DataTable data={tasks} columns={columns} />
       </div>
-    </Download>
+    </div>
   );
 }

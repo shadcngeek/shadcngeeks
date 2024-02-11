@@ -15,10 +15,8 @@ import { Search } from "./search/search";
 import { UserNav } from "./user-nav/user-nav";
 import { MainNav } from "./main-nav/main-nav";
 import { Overview } from "./overview/overview";
-import Download from "../../download/download";
 import TeamSwitcher from "./team-switcher/team-switcher";
 import { RecentSales } from "./recent-sales/recent-sales";
-import handleGetFolderPath from "@/actions/handleGetFolderPath";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const metadata: Metadata = {
@@ -28,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function Dashboard() {
   return (
-    <Download folderPath={handleGetFolderPath("dashboard")}>
+    <>
       <div className="md:hidden">
         <Image
           width={1280}
@@ -206,6 +204,6 @@ export default function Dashboard() {
           </Tabs>
         </div>
       </div>
-    </Download>
+    </>
   );
 }

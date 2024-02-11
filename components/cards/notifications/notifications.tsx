@@ -8,7 +8,7 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 
-export function DemoNotifications() {
+export function Notifications() {
   return (
     <Card>
       <CardHeader className="pb-3">

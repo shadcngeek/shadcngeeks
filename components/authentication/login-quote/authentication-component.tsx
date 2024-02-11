@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function AuthenticationComponent() {
   return (
-    <Download folderPath={handleGetFolderPath("authentication/acme")}>
+    <div className="my-20">
       <div className="md:hidden ">
         <Image
           src="/examples/authentication-light.png"
@@ -104,6 +104,6 @@ export default function AuthenticationComponent() {
           </div>
         </div>
       </div>
-    </Download>
+    </div>
   );
 }

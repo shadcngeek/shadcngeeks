@@ -2,7 +2,7 @@ import DatePickerWithRange from "./date-picker-with-range";
 import { Card, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 
-export function DemoDatePicker() {
+export function DatePicker() {
   return (
     <Card>
       <CardContent className="pt-6">

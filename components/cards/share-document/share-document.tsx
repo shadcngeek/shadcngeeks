@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
 
-export function DemoShareDocument() {
+export function ShareDocument() {
   return (
     <Card>
       <CardHeader>

@@ -19,7 +19,7 @@ import {
   SelectTrigger,
 } from "@/components/ui/select";
 
-export function DemoPaymentMethod() {
+export function PaymentMethod() {
   return (
     <Card>
       <CardHeader>
