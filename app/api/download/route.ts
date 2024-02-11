@@ -6,13 +6,13 @@ import path from "path";
 import JSZip from "jszip";
 
 export async function POST(request: NextRequest) {
-  const data = await fs.readFileSync(
-    path.join(process.cwd(), "components/cards/about-user/index.tsx"),
-    // @ts-ignore
-    { encoding: "utf8" }
-  );
-  console.log(data);
-  return NextResponse.json({ data });
+  // const data = await fs.readFileSync(
+  //   path.join(process.cwd(), "components/cards/about-user/index.tsx"),
+  //   // @ts-ignore
+  //   { encoding: "utf8" }
+  // );
+  // console.log(data);
+  return NextResponse.json({ data: process.cwd() });
   // const { folderToZip } = await request.json();
   // const zip = new JSZip();
 
