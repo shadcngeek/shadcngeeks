@@ -2,8 +2,9 @@ import { siteUrl } from "@/lib/url";
 import handleGetFileName from "./handleGetFileName";
 
 const handleDownloadZip = async (folderPath: string) => {
+  console.log("folderPath", folderPath);
   try {
-    const response = await fetch(siteUrl, {
+    const response = await fetch(`${siteUrl}/api/download`, {
       headers: { "content-type": "application/zip" },
       method: "POST",
       body: JSON.stringify({ folderToZip: folderPath }),
