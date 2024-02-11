@@ -1,5 +1,5 @@
 const handleGetFolderPath = (folderName: string): string => {
-  const path = `components/${folderName}`;
+  const path = `./components/${folderName}`;
   return path;
 };
 
