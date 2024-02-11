@@ -1,21 +1,27 @@
-import { siteUrl } from "@/lib/url";
-import handleGetFileName from "./handleGetFileName";
+const siteUrl =
+  process.env.NODE_ENV === "production"
+    ? "https://mysite.vercel.app"
+    : "http://localhost:3000";
 
-const handleDownloadZip = async (folderPath: string) => {
-  console.log("folderPath", folderPath);
+const handleGetFileName = (pathName: string) => {
+  const fileName = pathName.split("/").pop();
+  return fileName;
+};
+
+const handleDownloadZip = async () => {
   try {
     const response = await fetch(`${siteUrl}/api/download`, {
       headers: { "content-type": "application/zip" },
       method: "POST",
-      body: JSON.stringify({ folderToZip: folderPath }),
+      body: JSON.stringify({ folderToZip: "components/cards/activities" }),
     });
-    console.log(await response.json(), "----");
+    console.log(await response.json());
     const blob = await response.blob();
     // Create a temporary URL and initiate the download
     const url = window.URL.createObjectURL(new Blob([blob]));
     const link = document.createElement("a");
     link.href = url;
-    const folderName = handleGetFileName(folderPath);
+    const folderName = handleGetFileName("components/cards/activities");
     link.setAttribute("download", `${folderName}.zip`);
     document.body.appendChild(link);
     link.click();

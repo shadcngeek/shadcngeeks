@@ -4,34 +4,20 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import JSZip from "jszip";
-import { fi } from "@faker-js/faker";
 
 export async function POST(request: NextRequest) {
-  const { folderToZip } = await request.json();
-  const zip = new JSZip();
-
-  const fs = require("fs");
-
-  const folderPath = `${__dirname}`;
-
-  // fs.readdirSync(folderPath);
-
-  // const filNames = [];
-  // await filNames.push(fs.readdirSync(folderPath));
-
-  const fileContents = fs
-    .readFileSync("components/cards/about-user/types.ts")
-    .toString();
+  const data = await fs.readFileSync(
+    path.join(process.cwd(), "components/cards/about-user/index.tsx"),
+    // @ts-ignore
+    { encoding: "utf8" }
+  );
+  console.log(data);
+  return NextResponse.json({ data });
+  // const { folderToZip } = await request.json();
+  // const zip = new JSZip();
 
   // await zipFolder(zip, folderToZip, "");
   // const zipContent = await zip.generateAsync({ type: "nodebuffer" });
-  // const joinPath = path.join(folderToZip, "filessss");
-
-  return NextResponse.json({
-    message: "Hello world",
-    currentDir: __dirname,
-    fileContents,
-  });
 
   // return new NextResponse(zipContent, {
   //   status: 200,
