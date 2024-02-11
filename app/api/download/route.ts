@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
   //   { encoding: "utf8" }
   // );
   // console.log(data);
-  return NextResponse.json({ data: process.cwd() });
+  return NextResponse.json({ data: __dirname });
   // const { folderToZip } = await request.json();
   // const zip = new JSZip();
 
