@@ -9,9 +9,11 @@ export async function POST(request: NextRequest) {
   const { folderToZip } = await request.json();
   const zip = new JSZip();
 
-  await zipFolder(zip, folderToZip, "");
-  const zipContent = await zip.generateAsync({ type: "nodebuffer" });
-  return NextResponse.json({ message: "Hello world", zipContent });
+  // await zipFolder(zip, folderToZip, "");
+  // const zipContent = await zip.generateAsync({ type: "nodebuffer" });
+  const joinPath = path.join(folderToZip, "filessss");
+
+  return NextResponse.json({ message: "Hello world", joinPath });
 
   // return new NextResponse(zipContent, {
   //   status: 200,
