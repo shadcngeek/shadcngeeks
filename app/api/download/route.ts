@@ -9,16 +9,17 @@ export async function POST(request: NextRequest) {
   const { folderToZip } = await request.json();
   const zip = new JSZip();
 
-  await zipFolder(zip, folderToZip, "");
-  const zipContent = await zip.generateAsync({ type: "nodebuffer" });
+  return NextResponse.json({ message: "Hello world" });
+  // await zipFolder(zip, folderToZip, "");
+  // const zipContent = await zip.generateAsync({ type: "nodebuffer" });
 
-  return new NextResponse(zipContent, {
-    status: 200,
-    headers: new Headers({
-      "content-type": "application/zip",
-      "content-disposition": "attachment filename=sample-code.zip",
-    }),
-  });
+  // return new NextResponse(zipContent, {
+  //   status: 200,
+  //   headers: new Headers({
+  //     "content-type": "application/zip",
+  //     "content-disposition": "attachment filename=sample-code.zip",
+  //   }),
+  // });
 }
 
 async function zipFolder(zip: JSZip, folderPath: string, relativePath: string) {

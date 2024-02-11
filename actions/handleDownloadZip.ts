@@ -9,6 +9,7 @@ const handleDownloadZip = async (folderPath: string) => {
       method: "POST",
       body: JSON.stringify({ folderToZip: folderPath }),
     });
+    console.log(await response.json(), "----");
     const blob = await response.blob();
     // Create a temporary URL and initiate the download
     const url = window.URL.createObjectURL(new Blob([blob]));
