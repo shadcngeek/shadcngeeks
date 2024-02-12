@@ -12,21 +12,29 @@ export async function POST(request: NextRequest) {
   //   { encoding: "utf8" }
   // );
   // console.log(data);
-  const files = await fs.readdirSync(process.cwd());
-  return NextResponse.json({ data: __dirname, datas: process.cwd(), files });
-  // const { folderToZip } = await request.json();
-  // const zip = new JSZip();
+  // const files = await fs.readdirSync(process.cwd());
+  // return NextResponse.json({ data: __dirname, datas: process.cwd(), files });
+  try {
+    
+    const { folderToZip } = await request.json();
+    
+  const zip = new JSZip();
+  const pathToFolderToZip = `${process.cwd()}/${folderToZip}`;
 
-  // await zipFolder(zip, folderToZip, "");
-  // const zipContent = await zip.generateAsync({ type: "nodebuffer" });
+  await zipFolder(zip, pathToFolderToZip, "");
+  
+  const zipContent = await zip.generateAsync({ type: "nodebuffer" });
 
-  // return new NextResponse(zipContent, {
-  //   status: 200,
-  //   headers: new Headers({
-  //     "content-type": "application/zip",
-  //     "content-disposition": "attachment filename=sample-code.zip",
-  //   }),
-  // });
+  return new NextResponse(zipContent, {
+    status: 200,
+    headers: new Headers({
+      "content-type": "application/zip",
+      "content-disposition": "attachment filename=sample-code.zip",
+    }),
+  });
+} catch (error) {
+ return NextResponse.json({message: JSON.stringify(error, null, 2)}) 
+}
 }
 
 async function zipFolder(zip: JSZip, folderPath: string, relativePath: string) {
