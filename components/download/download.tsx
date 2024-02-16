@@ -3,7 +3,7 @@ import React from "react";
 
 import { Button } from "../ui/button";
 
-import handleDownloadZip from "@/actions/handleDownloadZip";
+import { download, handleDownloadZip } from "@/lib/handle-download-zip";
 
 interface DownloadTypes {
   folderPath: string;
@@ -14,7 +14,15 @@ function Download({ children, folderPath }: DownloadTypes) {
   return (
     <div className="w-full relative">
       <div className="pb-1 w-full flex justify-end">
-        <Button onClick={() => handleDownloadZip(folderPath)}>Download</Button>
+        <Button
+        // onClick={() =>
+        //   handleDownloadZip("README.md", (progress) => `${progress}%`).then(
+        //     (result) => download(result)
+        //   )
+        // }
+        >
+          Download
+        </Button>
       </div>
       {children}
     </div>
