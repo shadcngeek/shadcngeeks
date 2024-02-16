@@ -31,7 +31,6 @@ const handleMainDownload = async (path: string) => {
     method: "POST",
     body: JSON.stringify({ path }),
   });
-  console.log(await result.json());
   return await result.json();
 };
 

@@ -21,5 +21,5 @@ export async function POST(request: NextRequest) {
     }
   );
 
-  return NextResponse.json({ result: process.env.GITHUB_AUTH_TOKEN as any });
+  return NextResponse.json(result);
 }
