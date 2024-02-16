@@ -1,6 +1,5 @@
-"use client";
 import JSZip from "jszip";
-import { Octokit } from "octokit";
+import { siteUrl } from "./url";
 
 const handleGetFolderName = (path: string) => path.split("/").pop();
 
@@ -14,7 +13,7 @@ const handleCreateFile = (
     uint8ArrayContent[i] = decodedContent.charCodeAt(i);
   }
 
-  (folderZip as JSZip).file(fileName, uint8ArrayContent); // Add file to zip
+  (folderZip as JSZip).file(fileName, uint8ArrayContent);
 };
 
 const handleCreateFilePath = (path: string) => {
@@ -27,23 +26,12 @@ const handleCreateFilePath = (path: string) => {
 };
 
 const handleMainDownload = async (path: string) => {
-  const octokit = new Octokit({
-    auth: process.env.GITHUB_AUTH_TOKEN as any,
+  const result = await fetch(`${siteUrl}/api/download`, {
+    headers: { "Content-Type": "application/json" },
+    method: "POST",
+    body: JSON.stringify({ path }),
   });
-
-  const result = await octokit.request(
-    "GET /repos/{owner}/{repo}/contents/{path}",
-    {
-      owner: "shadcngeek",
-      repo: "shadcngeeks",
-      path: path,
-      headers: {
-        "X-GitHub-Api-Version": "2022-11-28",
-      },
-    }
-  );
-
-  return result;
+  return await result.json();
 };
 
 const handleDownloadZip = async (
