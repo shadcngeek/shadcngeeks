@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 
+import { Loader } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -9,9 +11,11 @@ import { WrapperContentTypes } from "./types";
 
 import handleGetFolderPath from "@/actions/handleGetFolderPath";
 import { download, handleDownloadZip } from "@/lib/handle-download-zip";
+import ProgressBar from "../common/progress-bar";
 
 function WrapperContent({ imageSrc, path, parentFolder }: WrapperContentTypes) {
   const [percent, setPercent] = useState<number>(0);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   return (
     <div className="mb-10">
@@ -25,22 +29,25 @@ function WrapperContent({ imageSrc, path, parentFolder }: WrapperContentTypes) {
         </Link>
 
         <Button
-          onClick={() =>
+          disabled={isLoading}
+          onClick={() => {
+            setIsLoading(true);
             handleDownloadZip(
               handleGetFolderPath(`${parentFolder}/${path}`),
-              (progress) => setPercent(progress)
+              (progress) => {
+                setIsLoading(false);
+                setPercent(progress);
+              }
             ).then(({ folderName, zipData }) =>
               download(zipData, folderName as string)
-            )
-          }
+            );
+          }}
         >
+          {isLoading && <Loader className="animate-spin mr-2" size={15} />}
           Download
         </Button>
       </div>
-      <div
-        className={`h-2 rounded-full bg-rose-600 mb-1 `}
-        style={{ width: `${percent}%` }}
-      ></div>
+      <ProgressBar percent={percent} />
       <Card className="w-fit">
         <CardContent className="p-0">
           <Image

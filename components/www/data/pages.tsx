@@ -105,8 +105,8 @@ export const pages: PagesTypes = {
   table: {
     imageSrc: "/images/www/svg/tables.svg",
     subPath: [
-      { path: "todo", imageSrc: "/images/www/shad-todo.png" },
-      { path: "deployment", imageSrc: "/images/www/deployment.png" },
+      { path: "tasks", imageSrc: "/images/www/shad-todo.png" },
+      { path: "deployments", imageSrc: "/images/www/deployment.png" },
     ],
   },
   dashboard: {

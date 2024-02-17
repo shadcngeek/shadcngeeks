@@ -12,18 +12,18 @@ function Homepage() {
       <div className="space-y-4 md:space-y-10 dark:text-white px-4">
         <div className="lg:w-[700px] text-center mx-auto">
           <p className="text-3xl md:text-5xl lg:text-7xl font-bold">
-            The most complete{" "}
-            <span className="text-rose-600">Authenticator </span>
-            for your projects.
+            Free predesigned components for all{" "}
+            <span className="text-rose-600">ShadcnGeeks </span>
           </p>
           <p className="mt-3 md:mt-8 text-slate-400">
-            AuthPickle is an open-source project that provides you with the most
-            secure authentication system for your product.
+            ShadcnGeeks is an open-source project that provides you with free
+            predesigned components you can use in your react projects with no
+            limitation.
           </p>
         </div>
         <div className="w-fit mx-auto flex justify-center items-center gap-3 flex-wrap">
           <Button className="bg-rose-600 dark:bg-rose-600 hover:dark:bg-rose-500 hover:bg-rose-500 dark:text-white">
-            Get Started
+            GitHub
           </Button>
           <Button
             variant={"outline"}
@@ -33,9 +33,8 @@ function Homepage() {
           </Button>
         </div>
         <div className="text-sm text mx-auto w-fit">
-          <p className="text-slate-400 text-sm">
-            {" "}
-            Works seamlessly with 20+ frameworks
+          <p className="text-slate-400 text-sm text-center">
+            The predesigned components for your react framework.
           </p>
         </div>
       </div>
