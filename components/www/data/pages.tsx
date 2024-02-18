@@ -8,6 +8,7 @@ export type PathTypes =
   | "music"
   | "table"
   | "headers"
+  | "calender"
   | "messaging"
   | "dashboard"
   | "playground"
@@ -116,6 +117,14 @@ export const pages: PagesTypes = {
       { path: "analytics", imageSrc: "/images/www/analytics.png" },
       { path: "user-activity", imageSrc: "/images/www/user-activity.png" },
       { path: "shad-dashboard", imageSrc: "/images/www/shad-dashboard.png" },
+    ],
+  },
+  calender: {
+    imageSrc: "/images/www/svg/calendar.svg",
+    subPath: [
+      { path: "classic", imageSrc: "/images/www/classic.png" },
+      { path: "classic-task", imageSrc: "/images/www/classic-task.png" },
+      { path: "multi", imageSrc: "/images/www/multi.png" },
     ],
   },
 };

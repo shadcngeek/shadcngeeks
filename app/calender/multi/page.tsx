@@ -1,4 +1,4 @@
-import MultiCalender from "@/components/calender/multi-calender";
+import MultiCalender from "@/components/calender/multi";
 import React from "react";
 
 function page() {
