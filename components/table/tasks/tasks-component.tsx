@@ -1,13 +1,14 @@
-import { promises as fs } from "fs";
-import path from "path";
 import { Metadata } from "next";
 import Image from "next/image";
-import { z } from "zod";
 
-import { columns } from "./components/columns";
-import { DataTable } from "./components/data-table";
-import { UserNav } from "./components/user-nav";
+import path from "path";
+import { z } from "zod";
+import { promises as fs } from "fs";
+
 import { taskSchema } from "./data/schema";
+import { columns } from "./components/columns";
+import { UserNav } from "./components/user-nav";
+import { DataTable } from "./components/data-table";
 
 export const metadata: Metadata = {
   title: "Tasks",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 // Simulate a database read for tasks.
 async function getTasks() {
   const data = await fs.readFile(
-    path.join(process.cwd(), "components/tasks/data/tasks.json")
+    path.join(process.cwd(), "components/table/tasks/data/tasks.json")
   );
 
   const tasks = JSON.parse(data?.toString());
@@ -32,18 +33,18 @@ export default async function TaskComponent() {
     <div className="dark:bg-slate-950 dark:text-white h-dvh">
       <div className="md:hidden">
         <Image
-          src="/examples/tasks-light.png"
           width={1280}
           height={998}
           alt="Playground"
           className="block dark:hidden"
+          src="/examples/tasks-light.png"
         />
         <Image
-          src="/examples/tasks-dark.png"
           width={1280}
           height={998}
           alt="Playground"
           className="hidden dark:block"
+          src="/examples/tasks-dark.png"
         />
       </div>
       <div className="hidden h-full flex-1 flex-col space-y-8 p-8 md:flex">
