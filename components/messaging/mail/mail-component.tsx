@@ -10,7 +10,8 @@ const MailComponent = () => {
 
   const defaultLayout = layout ? JSON.parse(layout.value) : undefined;
   const defaultCollapsed = undefined;
-  collapsed?.value !== "undefined"
+
+  collapsed && collapsed?.value !== "undefined"
     ? JSON.parse((collapsed as any)?.value)
     : undefined;
 
