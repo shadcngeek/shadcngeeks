@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en" id="mode" className="light">
       <body className={GeistSans.className}>
         <MegaNav>{children}</MegaNav>
-        <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS as string} />
+        <GoogleAnalytics gaId={"G-T5Y0Z1HMWD"} />
       </body>
     </html>
   );
