@@ -91,7 +91,11 @@ export const pages: PagesTypes = {
   },
   messaging: {
     imageSrc: "/images/www/svg/mails.svg",
-    subPath: [{ path: "mail", imageSrc: "/images/www/mail.png" }],
+    subPath: [
+      { path: "mail", imageSrc: "/images/www/mail.png" },
+      { path: "chat-alpha", imageSrc: "/images/www/chat-alpha.png" },
+      { path: "chat-web", imageSrc: "/images/www/chat-web.png" },
+    ],
   },
   music: {
     imageSrc: "/images/www/svg/music.svg",

@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image";
 
 import { useAtom } from "jotai";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 import { Button } from "@/components/ui/button";
 
@@ -9,7 +9,13 @@ import { UserListTypes } from "../types";
 import { chats, messages } from "../data/db";
 import { currentUserAtom, currentChatsAtom } from "../jotaiAtoms/atoms";
 
-function UserList({ id, date, fullName, lastMessage }: UserListTypes) {
+function UserList({
+  id,
+  date,
+  fullName,
+  lastMessage,
+  profileImage,
+}: UserListTypes) {
   const [, setTextMessages] = useAtom(currentChatsAtom);
   const [, setUser] = useAtom(currentUserAtom);
 
@@ -24,13 +30,10 @@ function UserList({ id, date, fullName, lastMessage }: UserListTypes) {
     >
       <div className="w-full">
         <div className="flex gap-3 justify-start w-full items-center">
-          <Image
-            width={40}
-            height={40}
-            alt="avatar"
-            className="rounded-full"
-            src={"/avatars/01.png"}
-          />
+          <Avatar>
+            <AvatarImage alt="@user" src={profileImage} />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
           <div>
             <p className="text-left text-lg">{fullName}</p>
             <p className="text-left text-sm font-light">{lastMessage}</p>

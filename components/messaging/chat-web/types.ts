@@ -3,6 +3,7 @@ export interface UserListTypes {
   date: string;
   fullName: string;
   lastMessage: string;
+  profileImage?: string;
 }
 
 export interface NavTypes {
