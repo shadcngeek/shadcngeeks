@@ -1,9 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 
-import Download from "../../download/download";
 import { Separator } from "@/components/ui/separator";
-import handleGetFolderPath from "@/actions/handleGetFolderPath";
 import { SidebarNav } from "@/components/forms/settings/components/sidebar-nav";
 
 export const metadata: Metadata = {
@@ -40,7 +38,7 @@ interface SettingsLayoutProps {
 
 export default function SettingsLayout({ children }: SettingsLayoutProps) {
   return (
-    <Download folderPath={handleGetFolderPath("forms")}>
+    <>
       <div className="md:hidden">
         <Image
           alt="Forms"
@@ -72,6 +70,6 @@ export default function SettingsLayout({ children }: SettingsLayoutProps) {
           <div className="flex-1 lg:max-w-2xl">{children}</div>
         </div>
       </div>
-    </Download>
+    </>
   );
 }

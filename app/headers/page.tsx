@@ -1,11 +1,5 @@
-import HeaderX from "@/components/headers/header-x";
-import MegaNav from "@/components/headers/mega-nav";
+import HeadersPage from "@/components/www/components/headers";
 
-export default function HeadersPage() {
-  return (
-    <div className="space-y-5">
-      <HeaderX />
-      <MegaNav />
-    </div>
-  );
+export default function Headers() {
+  return <HeadersPage />;
 }

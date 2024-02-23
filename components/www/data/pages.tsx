@@ -50,23 +50,15 @@ export const pages: PagesTypes = {
   forms: {
     imageSrc: "/images/www/svg/authentication.svg",
     subPath: [
-      { path: "framework", imageSrc: "" },
-      { path: "code-right", imageSrc: "" },
-      { path: "body-builder", imageSrc: "" },
-      { path: "content-centric", imageSrc: "" },
-      { path: "ai-image-generator", imageSrc: "" },
-      { path: "dashboard-landing", imageSrc: "" },
+      { path: "repository", imageSrc: "/images/www/repository.png" },
+      { path: "settings", imageSrc: "/images/www/settings.png" },
     ],
   },
   headers: {
     imageSrc: "/images/www/svg/headers.svg",
     subPath: [
-      { path: "framework", imageSrc: "" },
-      { path: "code-right", imageSrc: "" },
-      { path: "body-builder", imageSrc: "" },
-      { path: "content-centric", imageSrc: "" },
-      { path: "ai-image-generator", imageSrc: "" },
-      { path: "dashboard-landing", imageSrc: "" },
+      { path: "advance", imageSrc: "" },
+      { path: "simple", imageSrc: "" },
     ],
   },
   "landing-page": {
