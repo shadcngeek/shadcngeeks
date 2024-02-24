@@ -5,8 +5,9 @@ import { Price } from "@/components/cards/price";
 import { Shoe } from "@/components/cards/shoe-card";
 import { Revenue } from "@/components/cards/revenue";
 import { Netflix } from "@/components/cards/netflix";
-import { PricePro } from "@/components/cards/price-pro";
 import { Previous } from "@/components/cards/previous";
+import { PricePro } from "@/components/cards/price-pro";
+import BarDisplay from "@/components/cards/bar-display";
 import { Character } from "@/components/cards/character";
 import { TextBrief } from "@/components/cards/text-brief";
 import { UserIntro } from "@/components/cards/user-intro";
@@ -15,6 +16,7 @@ import { ShareFile } from "@/components/cards/share-file";
 import { Activities } from "@/components/cards/activities";
 import { AvatarMore } from "@/components/cards/avatar-more";
 import { SocialMenu } from "@/components/cards/social-menu";
+import RevenueAmount from "@/components/cards/revenue-amount";
 import { RangeFilter } from "@/components/cards/range-filter";
 import TinyLineChart from "@/components/cards/tiny-line-chart";
 import { ErrorMessage } from "@/components/cards/error-message";
@@ -44,8 +46,25 @@ import { SubscribeToNewsletter } from "@/components/cards/subscribe-to-newslette
 import { CookieSettings } from "@/components/cards/cookie-settings/cookie-settings";
 
 import { CardsDataTypes } from "../types";
+import RecentSales from "@/components/cards/recent-sales";
+import StatisticGraph from "@/components/cards/statistic-graph";
+import { DetailedStatistic } from "@/components/cards/detailed-statistics";
+import CardSquareIcon from "@/components/cards/card-square-icon";
+import ReadMoreInspiration from "@/components/cards/read-more-inspiration";
+import MapDisplay from "@/components/cards/map-display";
+import Ranks from "@/components/cards/ranks";
+import { ActivitiesViewAll } from "@/components/cards/activities-view-all";
 
 export const cardsData: CardsDataTypes[] = [
+  { component: <ActivitiesViewAll />, path: "activities-view-all" },
+  { component: <Ranks />, path: "ranks" },
+  { component: <MapDisplay />, path: "map-display" },
+  { component: <ReadMoreInspiration />, path: "read-more-inspiration" },
+  { component: <CardSquareIcon />, path: "card-square-icon" },
+  { component: <DetailedStatistic />, path: "detailed-statistics" },
+  { component: <StatisticGraph />, path: "statistic-graph" },
+  { component: <RecentSales />, path: "recent-sales" },
+  { component: <BarDisplay />, path: "bar-display" },
   { component: <News />, path: "news" },
   { component: <Next />, path: "next" },
   { component: <Price />, path: "price" },
@@ -74,6 +93,7 @@ export const cardsData: CardsDataTypes[] = [
   { component: <CreateAccount />, path: "create-account" },
   { component: <ShareDocument />, path: "share-document" },
   { component: <PaymentMethod />, path: "payment-method" },
+  { component: <RevenueAmount />, path: "revenue-amount" },
   { component: <ReportAnIssue />, path: "report-an-issue" },
   { component: <UserFollowers />, path: "user-followers" },
   { component: <TextPostLikes />, path: "text-post-likes" },
