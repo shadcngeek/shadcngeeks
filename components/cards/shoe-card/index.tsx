@@ -9,7 +9,13 @@ export function Shoe() {
     <Card className="w-[350px]">
       <CardContent className="p-2">
         <div className="rounded-lg overflow-hidden">
-          <Image alt="" src={"/images/shoe.jpeg"} width={350} height={350} />
+          <Image
+            alt=""
+            src={"/images/shoe.jpeg"}
+            className="w-full"
+            width={550}
+            height={550}
+          />
         </div>
         <div className="mt-5 p-4 flex justify-between items-start">
           <div>
