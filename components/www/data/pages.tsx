@@ -27,9 +27,14 @@ export const pages: PagesTypes = {
   authentication: {
     imageSrc: "/images/www/svg/authentication.svg",
     subPath: [
-      { path: "acme", imageSrc: "/images/www/create-account.png" },
-      { path: "login", imageSrc: "/images/www/create-account.png" },
-      { path: "create-account", imageSrc: "/images/www/create-account.png" },
+      { path: "login", imageSrc: "/images/www/shadcn-2-account.png" },
+      { path: "login-side", imageSrc: "/images/www/login-side.png" },
+      { path: "login-center", imageSrc: "/images/www/login-center.png" },
+      { path: "create-account", imageSrc: "/images/www/shadcn-1-account.png" },
+      {
+        path: "login-center-mega",
+        imageSrc: "/images/www/login-center-mega.png",
+      },
     ],
   },
   cards: {
