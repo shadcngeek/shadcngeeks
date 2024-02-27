@@ -14,7 +14,7 @@ function PersonalDetails() {
     <div className="dark:bg-slate-950 dark:text-white flex justify-center items-center min-h-dvh p-4 md:px-[50px] lg:px-[100px] xl:px-[200px]">
       <div className="w-full rounded-lg p-4 border dark:border-slate-800">
         <div>
-          <p className="text-2xl">Personal Details</p>
+          <p className="text-2xl font-bold">Personal Details</p>
           <p className="text-sm text-slate-800 dark:text-slate-400">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
             deleniti animi illum. Optio et deleniti.

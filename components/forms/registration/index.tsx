@@ -12,7 +12,7 @@ function Registration() {
     <div className="dark:bg-slate-950 dark:text-white flex justify-center items-center min-h-dvh p-4 md:px-[50px] lg:px-[100px] xl:px-[200px]">
       <div className="h-full w-full rounded-lg p-10 border dark:border-slate-800 flex gap-10">
         <div className="">
-          <p className="text-2xl">Registration</p>
+          <p className="text-2xl font-bold">Registration</p>
           <p className="text-sm text-slate-800 dark:text-slate-400">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </p>

@@ -55,6 +55,12 @@ export const pages: PagesTypes = {
   forms: {
     imageSrc: "/images/www/svg/authentication.svg",
     subPath: [
+      { path: "classic", imageSrc: "/images/www/classic-form.png" },
+      {
+        path: "personal-details",
+        imageSrc: "/images/www/personal-details.png",
+      },
+      { path: "registration", imageSrc: "/images/www/registration.png" },
       { path: "repository", imageSrc: "/images/www/repository.png" },
       { path: "settings", imageSrc: "/images/www/settings.png" },
     ],
