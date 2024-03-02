@@ -9,6 +9,7 @@ export type PathTypes =
   | "table"
   | "headers"
   | "calender"
+  | "not-found"
   | "messaging"
   | "dashboard"
   | "playground"
@@ -52,8 +53,16 @@ export const pages: PagesTypes = {
     imageSrc: "/images/www/svg/comingSoon.svg",
     subPath: [{ path: "bordy", imageSrc: "/images/www/bordy.png" }],
   },
+  "not-found": {
+    imageSrc: "/images/www/svg/404.svg",
+    subPath: [
+      { path: "classic", imageSrc: "/images/www/classic-404.png" },
+      { path: "classic-large", imageSrc: "/images/www/classic-large.png" },
+      { path: "classic-desert", imageSrc: "/images/www/classic-desert.png" },
+    ],
+  },
   forms: {
-    imageSrc: "/images/www/svg/authentication.svg",
+    imageSrc: "/images/www/svg/form.svg",
     subPath: [
       { path: "classic", imageSrc: "/images/www/classic-form.png" },
       {
