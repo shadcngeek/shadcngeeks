@@ -1,6 +1,7 @@
-import * as React from "react";
+import React from "react";
 
-import { StarFilledIcon, StarIcon } from "@radix-ui/react-icons";
+import { StarIcon } from "lucide-react";
+import { StarFilledIcon } from "@radix-ui/react-icons";
 
 import {
   Card,
@@ -8,23 +9,20 @@ import {
   CardHeader,
   CardContent,
 } from "@/components/ui/card";
-import { AvatarMore } from "./avatar-more";
+import { AvatarMore } from "./feedback-rate/avatar-more";
 
-export function FeedbackRate() {
+import { QuoteTypes } from "./types";
+
+function Quote({ fullName, quote, imgSrc }: QuoteTypes) {
   return (
-    <Card className="w-[350px]">
+    <Card className="max-w-[350px] xl:max-w-[400px]">
       <CardHeader>
-        <AvatarMore title="Alexandra Makoz" />
+        <AvatarMore title={fullName} imgSrc={imgSrc} />
       </CardHeader>
       <CardContent>
         <div className="flex gap-3">
           <div className="text-[#71717a] dark:text-[#a1a1aa]">
-            <p className="text-[#71717a] dark:text-[#a1a1aa]">
-              Dreams are the compass guiding you to extraordinary destinations.
-              Chase them fearlessly, for within the pursuit lies the magic of
-              self-discovery and accomplishment. Every dream realized is a
-              testament to your courage and determination.
-            </p>
+            <blockquote className="text-slate-500">{quote}</blockquote>
           </div>
         </div>
       </CardContent>
@@ -39,3 +37,5 @@ export function FeedbackRate() {
     </Card>
   );
 }
+
+export default Quote;
