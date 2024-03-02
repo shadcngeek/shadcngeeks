@@ -12,6 +12,7 @@ export type PathTypes =
   | "not-found"
   | "messaging"
   | "dashboard"
+  | "testimonial"
   | "playground"
   | "coming-soon"
   | "landing-page"
@@ -107,6 +108,28 @@ export const pages: PagesTypes = {
       { path: "mail", imageSrc: "/images/www/mail.png" },
       { path: "chat-alpha", imageSrc: "/images/www/chat-alpha.png" },
       { path: "chat-web", imageSrc: "/images/www/chat-web.png" },
+    ],
+  },
+  testimonial: {
+    imageSrc: "/images/www/svg/mails.svg",
+    subPath: [
+      { path: "carousel", imageSrc: "/images/www/testi-carousel.png" },
+      {
+        path: "classic-separated",
+        imageSrc: "/images/www/testi-separated.png",
+      },
+      { path: "classic", imageSrc: "/images/www/testi-classic.png" },
+      {
+        path: "classic-simple",
+        imageSrc: "/images/www/testi-classic-simple.png",
+      },
+      { path: "classic-spaced", imageSrc: "/images/www/testi-space.png" },
+      { path: "classic-star", imageSrc: "/images/www/testi-star.png" },
+      { path: "classic-grid", imageSrc: "/images/www/testi-grid.png" },
+      {
+        path: "classic-grid-multi",
+        imageSrc: "/images/www/testi-grid-multi.png",
+      },
     ],
   },
   music: {

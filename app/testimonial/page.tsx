@@ -1,7 +1,9 @@
 import React from "react";
 
+import TestimonialPage from "@/components/www/components/testimonial";
+
 function Page() {
-  return <div>page</div>;
+  return <TestimonialPage />;
 }
 
 export default Page;
