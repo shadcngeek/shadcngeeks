@@ -111,7 +111,7 @@ export const pages: PagesTypes = {
     ],
   },
   testimonial: {
-    imageSrc: "/images/www/svg/mails.svg",
+    imageSrc: "/images/www/svg/testimonials.svg",
     subPath: [
       { path: "carousel", imageSrc: "/images/www/testi-carousel.png" },
       {
@@ -119,6 +119,7 @@ export const pages: PagesTypes = {
         imageSrc: "/images/www/testi-separated.png",
       },
       { path: "classic", imageSrc: "/images/www/testi-classic.png" },
+      { path: "rounded", imageSrc: "/images/www/testi-rounded.png" },
       {
         path: "classic-simple",
         imageSrc: "/images/www/testi-classic-simple.png",
