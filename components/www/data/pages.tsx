@@ -52,7 +52,10 @@ export const pages: PagesTypes = {
   },
   "coming-soon": {
     imageSrc: "/images/www/svg/comingSoon.svg",
-    subPath: [{ path: "bordy", imageSrc: "/images/www/bordy.png" }],
+    subPath: [
+      { path: "bordy", imageSrc: "/images/www/bordy.png" },
+      { path: "classic", imageSrc: "/images/www/coming-soon-classic.png" },
+    ],
   },
   "not-found": {
     imageSrc: "/images/www/svg/404.svg",
