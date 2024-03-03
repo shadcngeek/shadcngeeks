@@ -9,7 +9,7 @@ function UserImage({ className, imgSrc }: UserImageTypes) {
   return (
     <div
       className={cn(
-        "w-48 h-48 relative rounded-full overflow-hidden",
+        "w-48 h-48 sm:w-32 sm:h-32 md:w-48 md:h-48 relative rounded-full overflow-hidden",
         className
       )}
     >

@@ -10,8 +10,8 @@ import { UserTypes } from "./types";
 
 function User({ fullName, imgSrc, role }: UserTypes) {
   return (
-    <Card className="w-[350px]">
-      <CardContent className="p-20">
+    <Card className="max-w-[350px]">
+      <CardContent className="p-10 sm:p-4 md:p-14 lg:md:p-20">
         <div className="w-fit mx-auto">
           <UserImage imgSrc={imgSrc} />
         </div>
