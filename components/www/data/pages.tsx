@@ -13,9 +13,10 @@ export type PathTypes =
   | "messaging"
   | "statistics"
   | "dashboard"
-  | "testimonial"
   | "playground"
+  | "testimonial"
   | "coming-soon"
+  | "team-section"
   | "landing-page"
   | "authentication";
 
@@ -27,19 +28,11 @@ type PagesTypes = {
 };
 
 export const pages: PagesTypes = {
-  authentication: {
-    imageSrc: "/images/www/svg/authentication.svg",
-    subPath: [
-      { path: "login", imageSrc: "/images/www/shadcn-2-account.png" },
-      { path: "login-side", imageSrc: "/images/www/login-side.png" },
-      { path: "login-center", imageSrc: "/images/www/login-center.png" },
-      { path: "create-account", imageSrc: "/images/www/shadcn-1-account.png" },
-      {
-        path: "login-center-mega",
-        imageSrc: "/images/www/login-center-mega.png",
-      },
-    ],
+  "team-section": {
+    imageSrc: "/images/www/svg/our-team.svg",
+    subPath: [{ path: "", imageSrc: "" }],
   },
+
   cards: {
     imageSrc: "/images/www/svg/cards.svg",
     subPath: [
@@ -51,13 +44,31 @@ export const pages: PagesTypes = {
       { path: "dashboard-landing", imageSrc: "" },
     ],
   },
-  "coming-soon": {
-    imageSrc: "/images/www/svg/comingSoon.svg",
+
+  testimonial: {
+    imageSrc: "/images/www/svg/testimonials.svg",
     subPath: [
-      { path: "bordy", imageSrc: "/images/www/bordy.png" },
-      { path: "classic", imageSrc: "/images/www/coming-soon-classic.png" },
+      { path: "carousel", imageSrc: "/images/www/testi-carousel.png" },
+      {
+        path: "classic-separated",
+        imageSrc: "/images/www/testi-separated.png",
+      },
+      { path: "classic", imageSrc: "/images/www/testi-classic.png" },
+      { path: "rounded", imageSrc: "/images/www/testi-rounded.png" },
+      {
+        path: "classic-simple",
+        imageSrc: "/images/www/testi-classic-simple.png",
+      },
+      { path: "classic-spaced", imageSrc: "/images/www/testi-space.png" },
+      { path: "classic-star", imageSrc: "/images/www/testi-star.png" },
+      { path: "classic-grid", imageSrc: "/images/www/testi-grid.png" },
+      {
+        path: "classic-grid-multi",
+        imageSrc: "/images/www/testi-grid-multi.png",
+      },
     ],
   },
+
   "not-found": {
     imageSrc: "/images/www/svg/404.svg",
     subPath: [
@@ -118,29 +129,29 @@ export const pages: PagesTypes = {
       { path: "chat-web", imageSrc: "/images/www/chat-web.png" },
     ],
   },
-  testimonial: {
-    imageSrc: "/images/www/svg/testimonials.svg",
+
+  authentication: {
+    imageSrc: "/images/www/svg/authentication.svg",
     subPath: [
-      { path: "carousel", imageSrc: "/images/www/testi-carousel.png" },
+      { path: "login", imageSrc: "/images/www/shadcn-2-account.png" },
+      { path: "login-side", imageSrc: "/images/www/login-side.png" },
+      { path: "login-center", imageSrc: "/images/www/login-center.png" },
+      { path: "create-account", imageSrc: "/images/www/shadcn-1-account.png" },
       {
-        path: "classic-separated",
-        imageSrc: "/images/www/testi-separated.png",
-      },
-      { path: "classic", imageSrc: "/images/www/testi-classic.png" },
-      { path: "rounded", imageSrc: "/images/www/testi-rounded.png" },
-      {
-        path: "classic-simple",
-        imageSrc: "/images/www/testi-classic-simple.png",
-      },
-      { path: "classic-spaced", imageSrc: "/images/www/testi-space.png" },
-      { path: "classic-star", imageSrc: "/images/www/testi-star.png" },
-      { path: "classic-grid", imageSrc: "/images/www/testi-grid.png" },
-      {
-        path: "classic-grid-multi",
-        imageSrc: "/images/www/testi-grid-multi.png",
+        path: "login-center-mega",
+        imageSrc: "/images/www/login-center-mega.png",
       },
     ],
   },
+
+  "coming-soon": {
+    imageSrc: "/images/www/svg/comingSoon.svg",
+    subPath: [
+      { path: "bordy", imageSrc: "/images/www/bordy.png" },
+      { path: "classic", imageSrc: "/images/www/coming-soon-classic.png" },
+    ],
+  },
+
   music: {
     imageSrc: "/images/www/svg/music.svg",
     subPath: [{ path: "shad-music", imageSrc: "/images/www/shad-music.png" }],

@@ -59,8 +59,16 @@ import { SubscribeToNewsletter } from "@/components/cards/subscribe-to-newslette
 import { CookieSettings } from "@/components/cards/cookie-settings/cookie-settings";
 
 import { CardsDataTypes } from "../types";
+import UserSimple from "@/components/cards/user-simple/user";
+import UserHigh from "@/components/cards/user-high/user-high";
+import UserPad from "@/components/cards/user-pad/user-pad";
+import UserSquare from "@/components/cards/user-square/user";
 
 export const cardsData: CardsDataTypes[] = [
+  { component: <UserSquare />, path: "user-square" },
+  { component: <UserPad />, path: "user-pad" },
+  { component: <UserHigh />, path: "user-high" },
+  { component: <UserSimple />, path: "user-simple" },
   { component: <StatNumber />, path: "stat-number" },
   { component: <StatIcon />, path: "stat-icon" },
   { component: <PageHint />, path: "page-hint" },
