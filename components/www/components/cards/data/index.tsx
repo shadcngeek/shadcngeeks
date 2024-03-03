@@ -1,14 +1,22 @@
 /* eslint-disable react/jsx-key */
+import Quote from "@/components/cards/quote";
+import Ranks from "@/components/cards/ranks";
 import { News } from "@/components/cards/news";
 import { Next } from "@/components/cards/next";
 import { Price } from "@/components/cards/price";
 import { Shoe } from "@/components/cards/shoe-card";
+import PageHint from "@/components/cards/page-hint";
+import StatIcon from "@/components/cards/stat-icon";
 import { Revenue } from "@/components/cards/revenue";
 import { Netflix } from "@/components/cards/netflix";
+import QuoteStar from "@/components/cards/quote-star";
 import { Previous } from "@/components/cards/previous";
 import { PricePro } from "@/components/cards/price-pro";
+import StatNumber from "@/components/cards/stat-number";
+import MapDisplay from "@/components/cards/map-display";
 import BarDisplay from "@/components/cards/bar-display";
 import { Character } from "@/components/cards/character";
+import RecentSales from "@/components/cards/recent-sales";
 import { TextBrief } from "@/components/cards/text-brief";
 import { UserIntro } from "@/components/cards/user-intro";
 import { AboutUser } from "@/components/cards/about-user";
@@ -23,6 +31,8 @@ import { ErrorMessage } from "@/components/cards/error-message";
 import { UserProgress } from "@/components/cards/user-progress";
 import { FeedbackRate } from "@/components/cards/feedback-rate";
 import { SocialCounts } from "@/components/cards/social-counts";
+import StatisticGraph from "@/components/cards/statistic-graph";
+import CardSquareIcon from "@/components/cards/card-square-icon";
 import { UserFollowers } from "@/components/cards/user-followers";
 import { TextPostLikes } from "@/components/cards/text-post-likes";
 import { WarningMessage } from "@/components/cards/warning-message";
@@ -32,6 +42,9 @@ import { Github } from "@/components/cards/github-card/github-card";
 import { DatePicker } from "@/components/cards/date-picker/date-picker";
 import { PriceMostPopular } from "@/components/cards/price-most-popular";
 import { AvatarsHorizontal } from "@/components/cards/avatars-horizontal";
+import { DetailedStatistic } from "@/components/cards/detailed-statistics";
+import ReadMoreInspiration from "@/components/cards/read-more-inspiration";
+import { ActivitiesViewAll } from "@/components/cards/activities-view-all";
 import { TeamMembers } from "@/components/cards/team-members/team-members";
 import { UserFollowMessage } from "@/components/cards/user-connect-message";
 import { InformationMessage } from "@/components/cards/information-message";
@@ -46,16 +59,13 @@ import { SubscribeToNewsletter } from "@/components/cards/subscribe-to-newslette
 import { CookieSettings } from "@/components/cards/cookie-settings/cookie-settings";
 
 import { CardsDataTypes } from "../types";
-import RecentSales from "@/components/cards/recent-sales";
-import StatisticGraph from "@/components/cards/statistic-graph";
-import { DetailedStatistic } from "@/components/cards/detailed-statistics";
-import CardSquareIcon from "@/components/cards/card-square-icon";
-import ReadMoreInspiration from "@/components/cards/read-more-inspiration";
-import MapDisplay from "@/components/cards/map-display";
-import Ranks from "@/components/cards/ranks";
-import { ActivitiesViewAll } from "@/components/cards/activities-view-all";
 
 export const cardsData: CardsDataTypes[] = [
+  { component: <StatNumber />, path: "stat-number" },
+  { component: <StatIcon />, path: "stat-icon" },
+  { component: <PageHint />, path: "page-hint" },
+  { component: <QuoteStar />, path: "quote-star" },
+  { component: <Quote />, path: "quote" },
   { component: <ActivitiesViewAll />, path: "activities-view-all" },
   { component: <Ranks />, path: "ranks" },
   { component: <MapDisplay />, path: "map-display" },

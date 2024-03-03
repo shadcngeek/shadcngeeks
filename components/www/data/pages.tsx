@@ -11,6 +11,7 @@ export type PathTypes =
   | "calender"
   | "not-found"
   | "messaging"
+  | "statistics"
   | "dashboard"
   | "testimonial"
   | "playground"
@@ -84,6 +85,10 @@ export const pages: PagesTypes = {
       { path: "advance", imageSrc: "" },
       { path: "simple", imageSrc: "" },
     ],
+  },
+  statistics: {
+    imageSrc: "/images/www/svg/statistics.svg",
+    subPath: [{ path: "", imageSrc: "" }],
   },
   "landing-page": {
     imageSrc: "/images/www/svg/landingPage.svg",
