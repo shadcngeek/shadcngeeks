@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-import Statistics from "@/components/statistics";
+import StatisticsPage from "@/components/www/components/statistics";
 
 export const metadata: Metadata = {
   title: "Statistics",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Statistics />;
+  return <StatisticsPage />;
 }

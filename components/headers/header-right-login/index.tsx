@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
-function HeaderLeftLogin() {
+function HeaderRightLogin() {
   return (
     <div className="border-b border-slate-200 dark:border-slate-800 p-4 flex justify-between items-center dark:bg-slate-950">
       <div className="flex items-center gap-20">
@@ -12,7 +12,7 @@ function HeaderLeftLogin() {
         </Link>
       </div>
       <div className="w-full">
-        <ul className="flex gap-8 items-center text-sm font-semibold justify-start w-full dark:text-white px-10">
+        <ul className="flex gap-8 items-center text-sm font-semibold justify-end w-full dark:text-white px-10">
           <li>
             <Link href="#" className="hover:text-rose-600 transition">
               Getting Started
@@ -58,4 +58,4 @@ function HeaderLeftLogin() {
   );
 }
 
-export default HeaderLeftLogin;
+export default HeaderRightLogin;
