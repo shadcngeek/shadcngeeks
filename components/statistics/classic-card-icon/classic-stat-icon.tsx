@@ -7,16 +7,18 @@ import { Card, CardContent } from "@/components/ui/card";
 function ClassicCardIcon() {
   return (
     <Card>
-      <CardContent className="flex flex-col gap-10 justify-between items-center p-40 rounded-lg">
+      <CardContent className="flex flex-col gap-10 justify-between items-center p-4 md:p-20 lg:p-32 rounded-lg">
         <div className="space-y-2">
-          <p className="text-5xl font-bold">Trusted by designers worldwide</p>
+          <p className="text-center text-3xl lg:text-5xl font-bold">
+            Trusted by designers worldwide
+          </p>
           <p className="text-center text-slate-500 dark:text-slate-700">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Perspiciatis, dignissimos?
           </p>
         </div>
-        <div className="flex justify-between items-center gap-5">
-          <Card className="w-[200px]">
+        <div className="flex flex-wrap justify-center  items-center gap-5">
+          <Card className="w-[150px] md:w-[200px]">
             <CardContent className="p-6 text-2xl text-center">
               <div className="mx-auto w-fit bg-rose-600 rounded-full p-2 mb-2">
                 <BarChart3 className="text-white" />
@@ -28,7 +30,7 @@ function ClassicCardIcon() {
             </CardContent>
           </Card>
 
-          <Card className="w-[200px]">
+          <Card className="w-[150px] md:w-[200px]">
             <CardContent className="p-6 text-2xl text-center">
               <div className="mx-auto w-fit bg-rose-600 rounded-full p-2 mb-2">
                 <CalendarDays className="text-white" />
@@ -38,7 +40,7 @@ function ClassicCardIcon() {
             </CardContent>
           </Card>
 
-          <Card className="w-[200px]">
+          <Card className="w-[150px] md:w-[200px]">
             <CardContent className="p-6 text-2xl text-center">
               <div className="mx-auto w-fit bg-rose-600 rounded-full p-2 mb-2">
                 <Users className="text-white" />
@@ -48,7 +50,7 @@ function ClassicCardIcon() {
             </CardContent>
           </Card>
 
-          <Card className="w-[200px]">
+          <Card className="w-[150px] md:w-[200px]">
             <CardContent className="p-6 text-2xl text-center">
               <div className="mx-auto w-fit bg-rose-600 rounded-full p-2 mb-2">
                 <ArrowUpDown className="text-white" />

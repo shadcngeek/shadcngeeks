@@ -7,7 +7,7 @@ import handleGetFolderPath from "@/actions/handleGetFolderPath";
 
 function StatisticsPage() {
   return (
-    <div className="py-10 px-[200px] space-y-10 dark:bg-slate-950">
+    <div className="space-y-10 px-4 md:px-[50px] lg:px-[100px] xl:px-[200px] dark:bg-slate-950 pt-10 min-h-dvh">
       {nonDynamicData.map(({ component, path }) => (
         <div key={path}>
           <Download folderPath={handleGetFolderPath(`cards/${path}`)}>
