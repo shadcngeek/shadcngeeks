@@ -1,7 +1,8 @@
 import React from "react";
+
 import UserImage from "./image";
 
-import { Quote } from "./quote";
+import Quote from "./quote";
 
 function RoundedTestimonial() {
   return (
@@ -145,81 +146,6 @@ function RoundedTestimonial() {
               </>
             </div>
           </div>
-
-          {/* <div className="absolute rounded-full w-[670px] h-[670px] top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
-          <div className="relative w-full h-full rounded-full flex justify-center items-center">
-            <UserImage imgSrc="" />
-            <>
-              <div className="absolute top-0 -translate-y-[100%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute top-[1%] right-[1%] -translate-y-[84%] -translate-x-[84%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute top-0 right-0 -translate-y-[10%] translate-x-[10%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute top-[1%] right-[1%] translate-y-[84%] translate-x-[84%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute right-0 translate-x-[100%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute bottom-[1%] right-[1%] -translate-y-[84%] translate-x-[84%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute bottom-0 right-0 translate-y-[10%] translate-x-[10%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute bottom-0 right-0 translate-y-[10%] translate-x-[10%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute bottom-[1%] right-[1%] translate-y-[84%] -translate-x-[84%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute bottom-0 translate-y-[100%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute bottom-[1%] left-[1%] translate-y-[84%] translate-x-[84%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute bottom-0 left-0 translate-y-[10%] -translate-x-[10%]">
-                <UserImage imgSrc="" className="w-32 h-32" />
-              </div>
-
-              <div className="absolute bottom-[1%] left-[1%] -translate-y-[84%] -translate-x-[84%]">
-                <UserImage className="w-32 h-32" />
-              </div>
-
-              <div className="absolute left-0 -translate-x-[100%]">
-                <UserImage className="w-32 h-32" />
-              </div>
-
-              <div className="absolute top-[1%] left-[1%] translate-y-[84%] -translate-x-[84%]">
-                <UserImage className="w-32 h-32" />
-              </div>
-
-              <div className="absolute top-0 left-0 -translate-y-[10%] -translate-x-[10%]">
-                <UserImage className="w-32 h-32" />
-              </div>
-
-              <div className="absolute top-[1%] left-[1%] -translate-y-[84%] translate-x-[84%]">
-                <UserImage className="w-32 h-32" />
-              </div>
-            </>
-          </div>
-        </div> */}
         </div>
       </div>
     </div>
