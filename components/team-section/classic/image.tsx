@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 
-import { UserImageTypes } from "@/components/team-section/classic/types";
+import { UserImageTypes } from "./types";
 
 function UserImage({ className, imgSrc }: UserImageTypes) {
   return (

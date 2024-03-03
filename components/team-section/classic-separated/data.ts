@@ -1,6 +1,6 @@
-import { QuoteTypes } from "./types";
+import { UserTypes } from "./types";
 
-export const quotes: QuoteTypes[] = [
+export const quotes: UserTypes[] = [
   {
     fullName: "John Doe",
     jobTitle: "Frontend Developer",

@@ -3,13 +3,13 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 
-import { UserImageTypes } from "@/components/team-section/classic/types";
+import { UserImageTypes } from "./types";
 
 function UserImage({ className, imgSrc }: UserImageTypes) {
   return (
     <div
       className={cn(
-        "w-48 h-48 relative rounded-full overflow-hidden",
+        "w-full h-72 relative rounded-lg overflow-hidden",
         className
       )}
     >
