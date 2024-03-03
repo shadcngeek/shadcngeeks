@@ -9,5 +9,5 @@ export interface UserTypes extends UserAvatarTypes {
 
 export interface UserImageTypes {
   imgSrc: string;
-  className: string;
+  className?: string;
 }
