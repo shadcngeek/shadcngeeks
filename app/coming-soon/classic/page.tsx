@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-import ComingSoon from "@/components/coming-soon/bordy";
+import ComingSoonClassic from "@/components/coming-soon/classic";
 
 export const metadata: Metadata = {
   title: "Coming soon",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <ComingSoon />;
+  return <ComingSoonClassic />;
 }
