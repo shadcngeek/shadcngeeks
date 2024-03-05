@@ -9,7 +9,7 @@ export function UserFollowMessage() {
     <Card className="w-[300px] p-6">
       <CardContent className="p-2">
         <div className="rounded-full w-fit overflow-hidden mx-auto">
-          <Image alt="" src={"/images/shoe.jpeg"} width={100} height={100} />
+          <Image alt="image" src={"/images/shoe.jpeg"} width={100} height={100} />
         </div>
         <div className="w-full flex flex-col text-center items-center my-5">
           <p className="text-2xl font-bold mb-1">Michael Robert</p>

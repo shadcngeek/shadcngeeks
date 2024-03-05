@@ -10,7 +10,7 @@ export function HorizontalSalesCard() {
       <CardContent className="p-2">
         <div className="flex gap-5 items-start">
           <div className=" w-fit shrink-0 rounded-lg overflow-hidden mx-auto">
-            <Image alt="" src={"/images/shoe.jpeg"} width={150} height={150} />
+            <Image alt="image" src={"/images/shoe.jpeg"} width={150} height={150} />
           </div>
           <div>
             <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">

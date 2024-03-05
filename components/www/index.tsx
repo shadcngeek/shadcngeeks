@@ -11,15 +11,15 @@ function Homepage() {
     <div className="pt-20 dark:bg-slate-950">
       <div className="space-y-4 md:space-y-10 dark:text-white px-4">
         <div className="lg:w-[700px] text-center mx-auto">
-          <p className="text-3xl md:text-5xl lg:text-7xl font-bold">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">
             Free predesigned components for all{" "}
             <span className="text-rose-600">ShadcnGeeks </span>
-          </p>
-          <p className="mt-3 md:mt-8 text-slate-400">
+          </h1>
+          <h2 className="font-normal mt-3 md:mt-8 text-slate-400">
             ShadcnGeeks is an open-source project that provides you with free
             predesigned components you can use in your react projects with no
             limitation.
-          </p>
+          </h2>
         </div>
         <div className="w-fit mx-auto flex justify-center items-center gap-3 flex-wrap">
           <Button className="bg-rose-600 dark:bg-rose-600 hover:dark:bg-rose-500 hover:bg-rose-500 dark:text-white">
@@ -45,7 +45,7 @@ function Homepage() {
               <Card className="w-fit hover:dark:border-rose-600 hover:border-rose-600 transition">
                 <CardContent className="p-6 text-slate-500 hover:text-rose-600 transition">
                   <Image
-                    alt=""
+                    alt="image"
                     width={300}
                     height={300}
                     src={pages[page as PathTypes].imageSrc}

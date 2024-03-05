@@ -10,7 +10,7 @@ export function Shoe() {
       <CardContent className="p-2">
         <div className="rounded-lg overflow-hidden">
           <Image
-            alt=""
+            alt="image"
             src={"/images/shoe.jpeg"}
             className="w-full"
             width={550}

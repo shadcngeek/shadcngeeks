@@ -34,7 +34,7 @@ function DashboardLanding() {
           <div className="mt-5 border rounded-lg border-slate-200 dark:border-slate-800 overflow-hidden ">
             <div className="hidden dark:block">
               <Image
-                alt=""
+                alt="image"
                 width={1500}
                 height={400}
                 src={"/images/dashboard-dark.png"}
@@ -42,7 +42,7 @@ function DashboardLanding() {
             </div>
             <div className="block dark:hidden">
               <Image
-                alt=""
+                alt="image"
                 width={1500}
                 height={400}
                 src={"/images/dashboard-light.png"}

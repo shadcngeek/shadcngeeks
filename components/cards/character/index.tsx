@@ -13,7 +13,7 @@ export function Character() {
         </Button>
       </div>
       <CardContent className="p-6">
-        <Image alt="" src={"/images/boy1.png"} width={350} height={350} />
+        <Image alt="image" src={"/images/boy1.png"} width={350} height={350} />
 
         <div className="text-center">
           <p className="font-bold text-2xl">Code space</p>

@@ -21,7 +21,7 @@ export function AboutUser() {
       <CardContent className="p-6">
         <div className="flex gap-5 items-center">
           <div className="rounded-full w-fit shrink-0 overflow-hidden mx-auto">
-            <Image alt="" src={"/images/shoe.jpeg"} width={75} height={75} />
+            <Image alt="image" src={"/images/shoe.jpeg"} width={75} height={75} />
           </div>
           <div className="w-full flex justify-between">
             {data.map(({ subTitle, title }) => (
