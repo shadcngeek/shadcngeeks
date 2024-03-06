@@ -41,8 +41,9 @@ function Size({ size, sizeName, onClick }: SizeTypes) {
   return (
     <Button
       onClick={onClick}
+      variant={"outline"}
       className={cn(
-        "w-10 h-10 flex justify-center items-center border bg-transparent text-[#71717a] dark:text-[#a1a1aa]",
+        "w-10 h-10 flex justify-center items-center border text-slate-500 dark:text-800",
         sizes[size] && "bg-slate-900 border-none"
       )}
     >
@@ -61,11 +62,11 @@ export function RangeFilter() {
   return (
     <Card className="w-[350px]">
       <CardHeader>
-        <CardTitle>Filters</CardTitle>
+        <CardTitle>Filter</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="mb-5 flex gap-3 items-center">
-          <p>Price</p>
+          <p className="text-slate-500 dark:text-slate-700">Price</p>
           <PriceInput
             value={startPrice * 100}
             onChange={(e: any) => {
@@ -85,13 +86,13 @@ export function RangeFilter() {
           onValueChange={(value) => setPrice(value)}
           className="mb-10 w-full"
         />
-        <p className="mb-3">Gender</p>
+        <p className="mb-3 text-slate-500 dark:text-slate-700">Gender</p>
         <div className="flex gap-4 text-[#71717a] dark:text-[#a1a1aa]">
           <Button>Male</Button>
           <Button>Female</Button>
         </div>
         <div className="mt-10">
-          <p className="text-[#71717a] dark:text-[#a1a1aa]">Size</p>
+          <p className="text-slate-500 dark:text-slate-700">Size</p>
           <div className="flex gap-3 mt-3">
             {Object.keys(sizes).map((i: any, index: any) => (
               <Size

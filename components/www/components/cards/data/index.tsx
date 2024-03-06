@@ -63,8 +63,12 @@ import UserSimple from "@/components/cards/user-simple/user";
 import UserHigh from "@/components/cards/user-high/user-high";
 import UserPad from "@/components/cards/user-pad/user-pad";
 import UserSquare from "@/components/cards/user-square/user";
+import { RangeFilterPreset } from "@/components/cards/range-filter-preset";
+import TextBriefIcon from "@/components/cards/text-brief-icon";
 
 export const cardsData: CardsDataTypes[] = [
+  { component: <TextBriefIcon />, path: "text-brief-icon" },
+  { component: <RangeFilterPreset />, path: "range-filter-preset" },
   { component: <UserSquare />, path: "user-square" },
   { component: <UserPad />, path: "user-pad" },
   { component: <UserHigh />, path: "user-high" },
