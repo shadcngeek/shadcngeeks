@@ -65,8 +65,12 @@ import UserPad from "@/components/cards/user-pad/user-pad";
 import UserSquare from "@/components/cards/user-square/user";
 import { RangeFilterPreset } from "@/components/cards/range-filter-preset";
 import TextBriefIcon from "@/components/cards/text-brief-icon";
+import PricePackTop from "@/components/cards/price-pack-top";
+import PriceSmall from "@/components/cards/price-small";
 
 export const cardsData: CardsDataTypes[] = [
+  { component: <PriceSmall />, path: "price-small" },
+  { component: <PricePackTop />, path: "price-pack-top" },
   { component: <TextBriefIcon />, path: "text-brief-icon" },
   { component: <RangeFilterPreset />, path: "range-filter-preset" },
   { component: <UserSquare />, path: "user-square" },

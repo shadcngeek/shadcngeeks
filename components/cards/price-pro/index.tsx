@@ -15,11 +15,15 @@ export function PricePro() {
         </p>
       </CardHeader>
       <CardContent>
-        <p className="text-[#71717a] dark:text-[#a1a1aa] mb-1">For Hobbyist</p>
-        <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero
-          aliquid.
-        </p>
+        <div className="space-y-2">
+          <p className="text-[#71717a] dark:text-[#a1a1aa] mb-1">
+            For Hobbyist
+          </p>
+          <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero
+            aliquid.
+          </p>
+        </div>
         <Button className="w-full my-7">Get Started</Button>
         <p className="border-b mb-7"></p>
         <ul className="flex flex-col gap-4 text-[#71717a] dark:text-[#a1a1aa]">

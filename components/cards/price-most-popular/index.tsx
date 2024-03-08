@@ -13,13 +13,15 @@ export function PriceMostPopular() {
       </div>
       <CardHeader>
         <CardTitle className="text-base font-normal">Pro</CardTitle>
-        <p>
-          <span className="text-2xl font-bold">$0</span> per user / month
-        </p>
-        <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero
-          aliquid.
-        </p>
+        <div className="space-y-2">
+          <p>
+            <span className="text-2xl font-bold">$0</span> per user / month
+          </p>
+          <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero
+            aliquid.
+          </p>
+        </div>
       </CardHeader>
       <CardContent>
         <ul className="flex flex-col gap-4 text-[#71717a] dark:text-[#a1a1aa]">
