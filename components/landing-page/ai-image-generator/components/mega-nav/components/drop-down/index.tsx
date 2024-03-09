@@ -39,7 +39,7 @@ export function UserAccount() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button className="bg-transparent dark:bg-transparent h-fit p-0 hover:bg-transparent dark:hover:bg-transparent text-black dark:text-white">
-          <CircleUserRound className=" dark:hover:text-pink-500 hover:text-pink-500 transition mt-1" />
+          <CircleUserRound className="text-slate-700 dark:text-white dark:hover:text-pink-500 hover:text-pink-500 transition mt-1" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">

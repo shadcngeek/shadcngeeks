@@ -7,7 +7,7 @@ import { FeedbackListTypes } from "../../types";
 
 export function TextBrief({ feedback, fullName, jobTitle }: FeedbackListTypes) {
   return (
-    <Card className="w-[350px] bg-transparent dark:bg-transparent overflow-hidden  relative before:w-full before:h-full before:bg-slate-800 dark:before:bg-slate-200 before:absolute before:opacity-5">
+    <Card className="max-w-[350px] bg-transparent dark:bg-transparent overflow-hidden  relative before:w-full before:h-full before:bg-slate-800 dark:before:bg-slate-200 before:absolute before:opacity-5">
       <CardContent className="p-6 ">
         <AvatarMore fullName={fullName} jobTitle={jobTitle} />
 

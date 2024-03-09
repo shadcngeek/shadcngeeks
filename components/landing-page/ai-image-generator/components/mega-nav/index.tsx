@@ -4,8 +4,8 @@ import SocialLinks from "./components/social-links";
 
 function MegaNav() {
   return (
-    <div className="bg-transparent border-b border-slate-200 dark:border-slate-800 p-4 flex justify-between items-center gap-5 md:px-[50px] lg:px-[100px]">
-      <div className="md:border-r pr-10 border-slate-200 dark:border-slate-800">
+    <div className="bg-transparent border-b dark:border-slate-800 p-4 flex justify-between items-center gap-5 md:px-[50px] lg:px-[100px]">
+      <div className="md:border-r pr-10 dark:border-slate-800">
         <Logo />
       </div>
       <div className="flex gap-20">

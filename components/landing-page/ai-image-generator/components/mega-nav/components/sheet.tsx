@@ -2,13 +2,13 @@ import Link from "next/link";
 
 import { Github, MoonStarIcon, Twitter } from "lucide-react";
 
+import { AccountSettings } from "./Account";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 import { SheetTypes } from "../types";
 import { NavMenu } from "./header-lists";
-import { AccountSettings } from "./Account";
 
-export function SheetDrawer({ content, trigger }: SheetTypes) {
+export function SheetDrawer({ trigger }: SheetTypes) {
   return (
     <Sheet>
       <SheetTrigger asChild>{trigger}</SheetTrigger>
@@ -18,20 +18,20 @@ export function SheetDrawer({ content, trigger }: SheetTypes) {
         </div>
 
         <AccountSettings />
-        <ul className="flex gap-3">
-          <li className="border border-slate-200 dark:border-slate-800 p-2 rounded-md">
+        <ul className="flex gap-5">
+          <li>
             <Link href={"#"}>
-              <Github className="text-[#71717a] dark:text-[#a1a1aa] transition dark:hover:text-white" />
+              <Github className="text-slate-700 dark:text-slate-400 hover:text-pink-500  transition dark:hover:text-pink-500" />
             </Link>
           </li>
-          <li className="border border-slate-200 dark:border-slate-800 p-2 rounded-md">
+          <li>
             <Link href={"#"}>
-              <Twitter className="text-[#71717a] dark:text-[#a1a1aa] transition dark:hover:text-white" />
+              <Twitter className="text-slate-700 dark:text-slate-400 hover:text-pink-500  transition dark:hover:text-pink-500" />
             </Link>
           </li>
-          <li className="border border-slate-200 dark:border-slate-800 p-2 rounded-md">
+          <li>
             <Link href={"#"}>
-              <MoonStarIcon className="text-[#71717a] dark:text-[#a1a1aa] transition dark:hover:text-white" />
+              <MoonStarIcon className="text-slate-700 dark:text-slate-400 hover:text-pink-500  transition dark:hover:text-pink-500" />
             </Link>
           </li>
         </ul>

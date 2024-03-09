@@ -7,9 +7,9 @@ import { Card, CardContent } from "@/components/ui/card";
 function CodeRight() {
   return (
     <div className="bg-[url('/images/codeBgSM.png')] md:bg-[url('/images/codeBg.png')] overflow-x-hidden dark:bg-slate-950 dark:text-white h-dvh bg-cover bg-no-repeat">
-      <div className="h-full flex items-center">
-        <div className="flex flex-col md:flex-row justify-between gap-10 items-center">
-          <div className="flex-[50%] md:pl-10 lg:pl-20 p-4 md:p-0">
+      <div className="h-full flex pt-10 md:pt-0 md:items-center">
+        <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-10 items-center">
+          <div className="md:flex-[50%] md:pl-10 lg:pl-20 p-4 md:p-0">
             <div className="text-center md:text-left lg:w-[500px] xl:w-[600px] space-y-2 mt-5">
               <p className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl font-bold">
                 Your <span className="text-rose-600"> ultimate </span>
@@ -34,7 +34,7 @@ function CodeRight() {
               </Button>
             </div>
           </div>
-          <div className="flex-[50%] pl-4 md:pl-0">
+          <div className="md:flex-[50%] pl-4 md:pl-0">
             <Card className="-mr-28 bg-rose-600 dark:bg-rose-600 border-none dark:border-none">
               <CardContent className="p-5 md:p-10 lg:p-16">
                 <Image

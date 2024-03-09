@@ -1,5 +1,5 @@
 import Framework from "@/components/landing-page/framework";
 
-export default function FrameworkPage() {
+export default function Page() {
   return <Framework />;
 }

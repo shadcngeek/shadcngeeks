@@ -22,19 +22,19 @@ const feedbackList: FeedbackListTypes[] = [
     fullName: "Alex Johnson",
     jobTitle: "Digital Marketer",
     feedback:
-      "This framework has played a crucial role in boosting our online presence. Its powerful capabilities have significantly contributed to our marketing strategies. The framework's adaptability and performance have made it an invaluable asset for digital marketing initiatives, helping us reach a broader audience and achieve remarkable results.",
+      "Content centric has played a crucial role in boosting our online presence. Its powerful capabilities have significantly added to our marketing strategies. The framework's performance have made it an invaluable asset for digital marketing initiatives, helping us reach a broader audience and achieve good results.",
   },
   {
     fullName: "Sarah Williams",
     jobTitle: "Content Creator",
     feedback:
-      "As a content creator, I've found that this framework effortlessly manages content, providing a seamless and intuitive platform for creativity. It has enhanced my productivity by simplifying the content creation process, allowing me to focus more on crafting engaging and meaningful content. The framework has become an indispensable tool in my creative toolkit.",
+      "As a content creator, I've found that this framework effortlessly manages content, providing a seamless and intuitive platform for creativity. It has enhanced my productivity by simplifying the content creation process, allowing me to focus more on crafting engaging and meaningful content.",
   },
 ];
 
 export function Feedbacks() {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 flex-wrap w-fit items-center justify-center">
       {feedbackList.map(({ feedback, fullName, jobTitle }) => (
         <TextBrief
           key={feedback}
