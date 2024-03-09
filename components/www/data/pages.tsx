@@ -169,6 +169,8 @@ export const pages: PagesTypes = {
   playground: {
     imageSrc: "/images/www/svg/playground.svg",
     subPath: [
+      { path: "image-edit", imageSrc: "/images/www/image-edit.png" },
+      { path: "image-edit-mega", imageSrc: "/images/www/image-edit-mega.png" },
       { path: "shad-playground", imageSrc: "/images/www/shad-playground.png" },
     ],
   },
