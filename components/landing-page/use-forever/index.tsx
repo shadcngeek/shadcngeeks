@@ -39,7 +39,7 @@ function UseForever() {
               </span>
               of all times.
             </p>
-            <p className="text-[#71717a] dark:text-[#a1a1aa]">
+            <p className="text-slate-700 dark:text-slate-400">
               Transforming the Digital Landscape: Harnessing the Potential of
               Our Content-Centric Website Framework for Immersive and Dynamic
               Online Journeys.

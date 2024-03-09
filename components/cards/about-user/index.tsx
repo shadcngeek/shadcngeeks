@@ -10,7 +10,7 @@ function Content({ subTitle, title }: ContentTypes) {
   return (
     <div className="flex flex-col items-center">
       <p className="text-2xl font-bold">{title}</p>
-      <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">{subTitle}</p>
+      <p className="text-slate-700 dark:text-slate-400 text-sm">{subTitle}</p>
     </div>
   );
 }
@@ -21,7 +21,12 @@ export function AboutUser() {
       <CardContent className="p-6">
         <div className="flex gap-5 items-center">
           <div className="rounded-full w-fit shrink-0 overflow-hidden mx-auto">
-            <Image alt="image" src={"/images/shoe.jpeg"} width={75} height={75} />
+            <Image
+              alt="image"
+              src={"/images/shoe.jpeg"}
+              width={75}
+              height={75}
+            />
           </div>
           <div className="w-full flex justify-between">
             {data.map(({ subTitle, title }) => (
@@ -31,11 +36,11 @@ export function AboutUser() {
         </div>
         <div className="mt-5">
           <p className="text-2xl font-bold">Michael Robert</p>
-          <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+          <p className="text-slate-700 dark:text-slate-400 text-sm">
             Frontend Developer
           </p>
         </div>
-        <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm mt-2">
+        <p className="text-slate-700 dark:text-slate-400 text-sm mt-2">
           Perfection is an illusion, but progress is real and tangible.
           Celebrate every step forward, no matter how small. Each effort
           contributes to your personal evolution. Remember, it&apos;s the

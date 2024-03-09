@@ -21,7 +21,7 @@ export function SuccessMessage() {
                 <p>Success</p>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="pt-4 pb-0 text-[#71717a] dark:text-[#a1a1aa] ml-10">
+            <AccordionContent className="pt-4 pb-0 text-slate-700 dark:text-slate-400 ml-10">
               Yes. It adheres to the WAI-ARIA design pattern.
             </AccordionContent>
           </AccordionItem>

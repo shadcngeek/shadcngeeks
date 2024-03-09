@@ -20,7 +20,7 @@ export function CharacterSwipeCard({
   return (
     <Card className="w-full relative">
       <div className="absolute top-0 right-0">
-        <Button className="bg-transparent hover:bg-transparent border m-2 text-[#71717a] dark:text-[#a1a1aa]">
+        <Button className="bg-transparent hover:bg-transparent border m-2 text-slate-700 dark:text-slate-400">
           Skip
         </Button>
       </div>
@@ -29,7 +29,7 @@ export function CharacterSwipeCard({
 
         <div className="text-center">
           <p className="font-bold text-2xl">{title}</p>
-          <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm mt-2">
+          <p className="text-slate-700 dark:text-slate-400 text-sm mt-2">
             {description}
           </p>
         </div>

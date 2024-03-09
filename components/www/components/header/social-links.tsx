@@ -15,13 +15,13 @@ function SocialLinks({ onClick }: SocialLinksTypes) {
       <ul className="flex gap-4">
         <li className="p-2 rounded-md">
           <Link href={"#"}>
-            <Github className="hover:text-rose-600 text-[#71717a] dark:text-[#a1a1aa] transition dark:hover:text-white" />
+            <Github className="hover:text-rose-600 text-slate-700 dark:text-slate-400 transition dark:hover:text-white" />
           </Link>
         </li>
 
         <Button
           onClick={onClick}
-          className="dark:bg-transparent bg-transparent p-2 rounded-md hover:bg-transparent hover:text-rose-600 text-[#71717a] dark:text-[#a1a1aa]"
+          className="dark:bg-transparent bg-transparent p-2 rounded-md hover:bg-transparent hover:text-rose-600 text-slate-700 dark:text-slate-400"
         >
           <MoonStarIcon />
         </Button>

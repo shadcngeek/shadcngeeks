@@ -84,7 +84,7 @@ export default function GraphyDashboard() {
                     </CardHeader>
                     <CardContent>
                       <div className="text-2xl font-bold">$45,231.89</div>
-                      <p className="text-xs text-[#71717a] dark:text-[#a1a1aa]">
+                      <p className="text-xs text-slate-700 dark:text-slate-400">
                         +20.1% from last month
                       </p>
                     </CardContent>
@@ -111,7 +111,7 @@ export default function GraphyDashboard() {
                     </CardHeader>
                     <CardContent>
                       <div className="text-2xl font-bold">+2350</div>
-                      <p className="text-xs text-[#71717a] dark:text-[#a1a1aa]">
+                      <p className="text-xs text-slate-700 dark:text-slate-400">
                         +180.1% from last month
                       </p>
                     </CardContent>
@@ -137,7 +137,7 @@ export default function GraphyDashboard() {
                     </CardHeader>
                     <CardContent>
                       <div className="text-2xl font-bold">+12,234</div>
-                      <p className="text-xs text-[#71717a] dark:text-[#a1a1aa]">
+                      <p className="text-xs text-slate-700 dark:text-slate-400">
                         +19% from last month
                       </p>
                     </CardContent>
@@ -162,7 +162,7 @@ export default function GraphyDashboard() {
                     </CardHeader>
                     <CardContent>
                       <div className="text-2xl font-bold">+573</div>
-                      <p className="text-xs text-[#71717a] dark:text-[#a1a1aa]">
+                      <p className="text-xs text-slate-700 dark:text-slate-400">
                         +201 since last hour
                       </p>
                     </CardContent>

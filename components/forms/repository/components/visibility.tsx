@@ -11,7 +11,7 @@ function Visibility() {
           <BookOpenCheck />
           <div>
             <Label htmlFor="r1">Public</Label>
-            <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+            <p className="text-slate-700 dark:text-slate-400 text-sm">
               Anyone on the internet can see this repository. You choose who can
               commit.
             </p>
@@ -24,7 +24,7 @@ function Visibility() {
           <Lock />
           <div>
             <Label htmlFor="r2">Private</Label>
-            <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+            <p className="text-slate-700 dark:text-slate-400 text-sm">
               You choose who can see and commit to this repository.
             </p>
           </div>

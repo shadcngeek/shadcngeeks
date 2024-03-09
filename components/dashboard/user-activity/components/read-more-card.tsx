@@ -29,7 +29,9 @@ function ReadMoreCard({
                   </div>
                 </>
               )}
-              <p className="w-full">{description}</p>
+              <p className="w-full text-slate-700 dark:text-slate-400">
+                {description}
+              </p>
             </div>
           </div>
           <Button variant={"outline"}>Read More</Button>

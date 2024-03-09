@@ -30,7 +30,7 @@ function AnalyticCard({
         {showContent && (
           <>
             <div className="text-2xl font-bold">{subTitle}</div>
-            <p className="text-xs text-[#71717a] dark:text-[#a1a1aa]">
+            <p className="text-xs text-slate-700 dark:text-slate-400">
               {description}
             </p>
           </>

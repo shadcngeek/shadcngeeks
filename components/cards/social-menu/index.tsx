@@ -8,7 +8,7 @@ import menu from "./data";
 export function SocialMenu() {
   return (
     <Card className="w-[350px]">
-      <CardContent className="p-6  flex flex-col text-[#71717a] dark:text-[#a1a1aa]">
+      <CardContent className="p-6  flex flex-col text-slate-700 dark:text-slate-400">
         {menu.map((data) => (
           <Link
             href={"#"}

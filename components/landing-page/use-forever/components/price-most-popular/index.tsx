@@ -16,13 +16,13 @@ export function PriceMostPopular() {
         <p>
           <span className="text-2xl font-bold">$0</span> per user / month
         </p>
-        <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">
+        <p className="text-sm text-slate-700 dark:text-slate-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero
           aliquid.
         </p>
       </CardHeader>
       <CardContent>
-        <ul className="flex flex-col gap-4 text-[#71717a] dark:text-[#a1a1aa]">
+        <ul className="flex flex-col gap-4 text-slate-700 dark:text-slate-400">
           <li className="flex items-center gap-3">
             <CheckCircle size={15} /> <p> 100 SMS</p>
           </li>

@@ -9,7 +9,7 @@ function AddReadMe() {
         className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
       >
         Add a README file
-        <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+        <p className="text-slate-700 dark:text-slate-400 text-sm">
           You choose who can see and commit to this repository.
         </p>
       </label>

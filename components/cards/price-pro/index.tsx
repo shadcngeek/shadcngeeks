@@ -16,17 +16,17 @@ export function PricePro() {
       </CardHeader>
       <CardContent>
         <div className="space-y-2">
-          <p className="text-[#71717a] dark:text-[#a1a1aa] mb-1">
+          <p className="text-slate-700 dark:text-slate-400 mb-1">
             For Hobbyist
           </p>
-          <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">
+          <p className="text-sm text-slate-700 dark:text-slate-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vero
             aliquid.
           </p>
         </div>
         <Button className="w-full my-7">Get Started</Button>
         <p className="border-b mb-7"></p>
-        <ul className="flex flex-col gap-4 text-[#71717a] dark:text-[#a1a1aa]">
+        <ul className="flex flex-col gap-4 text-slate-700 dark:text-slate-400">
           <li className="flex items-center gap-3">
             <CheckCircle size={15} /> <p> 100 SMS</p>
           </li>

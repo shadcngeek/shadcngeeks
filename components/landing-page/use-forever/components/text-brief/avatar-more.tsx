@@ -14,7 +14,7 @@ export function AvatarMore({ fullName, jobTitle }: AvatarTypes) {
         </Avatar>
         <div>
           <p>{fullName}</p>
-          <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+          <p className="text-slate-700 dark:text-slate-400 text-sm">
             {jobTitle}
           </p>
         </div>

@@ -21,7 +21,7 @@ function Quote({ fullName, quote, imgSrc }: QuoteTypes) {
       </CardHeader>
       <CardContent>
         <div className="flex gap-3">
-          <div className="text-[#71717a] dark:text-[#a1a1aa]">
+          <div className="text-slate-700 dark:text-slate-400">
             <blockquote className="text-slate-500">{quote}</blockquote>
           </div>
         </div>

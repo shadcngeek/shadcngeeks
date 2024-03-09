@@ -25,7 +25,7 @@ function MapStatistic() {
     <Card className="w-full">
       <CardHeader>
         <CardTitle>Ranks</CardTitle>
-        <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+        <p className="text-slate-700 dark:text-slate-400 text-sm">
           Top users of the product
         </p>
       </CardHeader>

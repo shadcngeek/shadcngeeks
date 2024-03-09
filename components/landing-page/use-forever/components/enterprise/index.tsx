@@ -17,7 +17,7 @@ export function Enterprise({ enterpriseData, price, title }: EnterpriseTypes) {
           </p>
         </CardHeader>
         <CardContent>
-          <ul className="flex flex-col gap-4 text-[#71717a] dark:text-[#a1a1aa]">
+          <ul className="flex flex-col gap-4 text-slate-700 dark:text-slate-400">
             {enterpriseData.map((data) => (
               <li key={data} className="flex items-center gap-3">
                 <CheckCircle size={15} /> <p> {data}</p>

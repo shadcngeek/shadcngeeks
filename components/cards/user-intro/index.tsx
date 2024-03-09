@@ -37,10 +37,10 @@ export function UserIntro() {
           </div>
           <div className="p-6 mt-7">
             <p className="text-2xl">Richard Doe</p>
-            <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">
+            <p className="text-sm text-slate-700 dark:text-slate-400">
               Python Developer
             </p>
-            <p className="mt-4 text-[#71717a] dark:text-[#a1a1aa]">
+            <p className="mt-4 text-slate-700 dark:text-slate-400">
               Passion is the fuel for a fulfilling life. Explore various
               interests, follow your curiosity, and dive into activities that
               ignite your enthusiasm. Your true passion might be hidden in
@@ -50,19 +50,19 @@ export function UserIntro() {
             <div className="flex gap-3 mt-5">
               <FacebookIcon
                 size={15}
-                className="text-[#71717a] dark:text-[#a1a1aa]"
+                className="text-slate-700 dark:text-slate-400"
               />
               <TwitterIcon
                 size={15}
-                className="text-[#71717a] dark:text-[#a1a1aa]"
+                className="text-slate-700 dark:text-slate-400"
               />
               <InstagramIcon
                 size={15}
-                className="text-[#71717a] dark:text-[#a1a1aa]"
+                className="text-slate-700 dark:text-slate-400"
               />
               <GithubIcon
                 size={15}
-                className="text-[#71717a] dark:text-[#a1a1aa]"
+                className="text-slate-700 dark:text-slate-400"
               />
             </div>
           </div>

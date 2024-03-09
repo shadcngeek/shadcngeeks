@@ -53,7 +53,7 @@ export function RangeFilterPreset() {
             className="mb-10 w-full"
           />
           <p className="mb-3 text-slate-500 dark:text-slate-700">Gender</p>
-          <div className="flex gap-4 text-[#71717a] dark:text-[#a1a1aa]">
+          <div className="flex gap-4 text-slate-700 dark:text-slate-400">
             <Button>Male</Button>
             <Button>Female</Button>
           </div>

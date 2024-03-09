@@ -15,7 +15,7 @@ export function AvatarMore({ description }: AvatarMoreTypes) {
           <AvatarFallback className="text-pink-500">OM</AvatarFallback>
         </Avatar>
         <div>
-          <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">
+          <p className="text-sm text-slate-700 dark:text-slate-400">
             {description}
           </p>
         </div>

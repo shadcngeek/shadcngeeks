@@ -39,7 +39,7 @@ export function Statistic({
         {icon ? (
           icon
         ) : (
-          <DollarSign className="text-[#71717a] dark:text-[#a1a1aa] h-4 w-4" />
+          <DollarSign className="text-slate-700 dark:text-slate-400 h-4 w-4" />
         )}
       </CardHeader>
       <CardContent>

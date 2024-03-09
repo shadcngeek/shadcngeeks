@@ -20,7 +20,7 @@ export function SubscribeToNewsletter() {
       <CardContent>
         <div className="flex gap-5 items-start">
           <div>
-            <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+            <p className="text-slate-700 dark:text-slate-400 text-sm">
               In the garden of life, habits are the seeds that bloom into your
               daily reality. Cultivate positive...
             </p>
@@ -31,7 +31,7 @@ export function SubscribeToNewsletter() {
               </div>
             </form>
 
-            <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm mt-2">
+            <p className="text-slate-700 dark:text-slate-400 text-sm mt-2">
               By subscribing, you consent to receive recurring automated
               marketing text messages.
             </p>

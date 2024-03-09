@@ -415,7 +415,7 @@ export const detailedStatisticData: StatisticListTypes[] = [
         strokeLinecap="round"
         strokeLinejoin="round"
         xmlns="http://www.w3.org/2000/svg"
-        className="text-[#71717a] dark:text-[#a1a1aa]-2"
+        className="text-slate-700 dark:text-slate-400"
       >
         <path d="M14 19.9V16h3a2 2 0 0 0 2-2v-2H5v2c0 1.1.9 2 2 2h3v3.9a2 2 0 1 0 4 0Z" />
         <path d="M6 12V2h12v10" />
@@ -438,7 +438,7 @@ export const detailedStatisticData: StatisticListTypes[] = [
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-[#71717a] dark:text-[#a1a1aa]"
+        className="text-slate-700 dark:text-slate-400"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z" />
@@ -462,7 +462,7 @@ export const detailedStatisticData: StatisticListTypes[] = [
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-[#71717a] dark:text-[#a1a1aa]"
+        className="text-slate-700 dark:text-slate-400"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
@@ -487,7 +487,7 @@ export const detailedStatisticData: StatisticListTypes[] = [
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-[#71717a] dark:text-[#a1a1aa]"
+        className="text-slate-700 dark:text-slate-400"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />

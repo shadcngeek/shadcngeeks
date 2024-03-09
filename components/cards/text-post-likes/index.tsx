@@ -11,7 +11,7 @@ export function TextPostLikes() {
         <div className="pb-5">
           <AvatarMore title="John Doe" description="6:40 PM Friday, March 20" />
         </div>
-        <div className="text-[#71717a] dark:text-[#a1a1aa]">
+        <div className="text-slate-700 dark:text-slate-400">
           <p>
             Life is a fascinating journey filled with twists and turns. Embrace
             each moment, learn from challenges, and savor the victories. Every

@@ -19,7 +19,7 @@ export function Shoe() {
         </div>
         <div className="mt-5 p-4 flex justify-between items-start">
           <div>
-            <p className="text-[#71717a] dark:text-[#a1a1aa]">Lightning Shoe</p>
+            <p className="text-slate-700 dark:text-slate-400">Lightning Shoe</p>
             <p className="font-bold text-2xl mt-2 text-slate ">$450</p>
           </div>
           <Button>Add to Cart</Button>

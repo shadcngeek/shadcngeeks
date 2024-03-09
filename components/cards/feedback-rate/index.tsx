@@ -18,8 +18,8 @@ export function FeedbackRate() {
       </CardHeader>
       <CardContent>
         <div className="flex gap-3">
-          <div className="text-[#71717a] dark:text-[#a1a1aa]">
-            <p className="text-[#71717a] dark:text-[#a1a1aa]">
+          <div className="text-slate-700 dark:text-slate-400">
+            <p className="text-slate-700 dark:text-slate-400">
               Dreams are the compass guiding you to extraordinary destinations.
               Chase them fearlessly, for within the pursuit lies the magic of
               self-discovery and accomplishment. Every dream realized is a

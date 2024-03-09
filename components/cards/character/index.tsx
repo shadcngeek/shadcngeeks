@@ -8,7 +8,7 @@ export function Character() {
   return (
     <Card className="relative">
       <div className="absolute top-0 right-0">
-        <Button className="bg-transparent hover:bg-transparent border m-2 text-[#71717a] dark:text-[#a1a1aa]">
+        <Button className="bg-transparent hover:bg-transparent border m-2 text-slate-700 dark:text-slate-400">
           Skip
         </Button>
       </div>
@@ -17,7 +17,7 @@ export function Character() {
 
         <div className="text-center">
           <p className="font-bold text-2xl">Code space</p>
-          <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm mt-2">
+          <p className="text-slate-700 dark:text-slate-400 text-sm mt-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
           </p>
         </div>

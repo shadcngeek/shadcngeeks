@@ -15,7 +15,7 @@ export function Previous() {
             <div className="flex items-center space-x-4 text-left ">
               <div>
                 <p className="text-2xl font-bold">Installation</p>
-                <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">
+                <p className="text-sm text-slate-700 dark:text-slate-400">
                   Lorem, ipsum dolor sit amet consect.
                 </p>
               </div>

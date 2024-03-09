@@ -49,7 +49,7 @@ function Repository() {
     <div className="px-56 bg-white dark:bg-slate-950 text-slate-950 dark:text-slate-50 p-10 pb-16">
       <div className="space-y-2">
         <p className="text-2xl font-bold"> Create a new repository</p>
-        <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+        <p className="text-slate-700 dark:text-slate-400 text-sm">
           A repository contains all project files, including the revision
           history. Already have a project repository elsewhere?{" "}
           <Link href={"#"} className="text-blue-500 underline">
@@ -76,7 +76,7 @@ function Repository() {
                 <Input name="branchName" placeholder="Add branch name" />
               </div>
             </div>
-            <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+            <p className="text-slate-700 dark:text-slate-400 text-sm">
               Great repository names are short and memorable. Need inspiration?
               How about{" "}
               <span className="text-green-500 dark:text-green-400">
@@ -92,7 +92,7 @@ function Repository() {
             <div className="space-y-2">
               <Label>Initialize this repository with</Label>
               <AddReadMe />
-              <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+              <p className="text-slate-700 dark:text-slate-400 text-sm">
                 This is where you can write a long description for your project.
                 <Link href={"#"} className="text-blue-500 underline">
                   Learn more about READMEs. Add .gitignore
@@ -105,7 +105,7 @@ function Repository() {
                 items={frameworks}
                 placeHolder=".gitignore template:"
               />
-              <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+              <p className="text-slate-700 dark:text-slate-400 text-sm">
                 Choose which files not to track from a list of templates.{" "}
                 <Link href={"#"} className="text-blue-500 underline">
                   Learn more about ignoring files.{" "}
@@ -116,7 +116,7 @@ function Repository() {
             <div className="space-y-2">
               <Label>Choose a license</Label> <br />
               <GitIgnore placeHolder="License:" items={gitignore} />
-              <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">
+              <p className="text-slate-700 dark:text-slate-400 text-sm">
                 A license tells others what they can and can&apos;t do with your
                 code.{" "}
                 <Link href={"#"} className="text-blue-500 underline">

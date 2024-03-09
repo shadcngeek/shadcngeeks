@@ -54,7 +54,7 @@ export default function GraphyLayout({ children }: SettingsLayoutProps) {
         <ResizablePanel className="p-8" defaultSize={12}>
           <div className="space-y-0.5">
             <h2 className="text-2xl font-bold tracking-tight">ShadcnGeeks</h2>
-            <p className="text-sm text-muted-foreground text-[#71717a] dark:text-[#a1a1aa]">
+            <p className="text-sm text-muted-foreground text-slate-700 dark:text-slate-400">
               Manage your account settings and set e-mail preferences.
             </p>
           </div>

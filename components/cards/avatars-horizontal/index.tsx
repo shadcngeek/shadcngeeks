@@ -9,7 +9,7 @@ interface AvatarSingleTypes {
 
 function AvatarSingle({ fullName }: AvatarSingleTypes) {
   return (
-    <div className="flex flex-col  items-center gap-2 text-[#71717a] dark:text-[#a1a1aa]">
+    <div className="flex flex-col  items-center gap-2 text-slate-700 dark:text-slate-400">
       <Avatar className="w-14 h-14 border">
         <AvatarImage src="/avatars/02.png" />
         <AvatarFallback className="text-pink-500">OM</AvatarFallback>

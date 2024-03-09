@@ -16,18 +16,18 @@ export function DetailedStatistic() {
     <Card className={cn("w-full")}>
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle className="text-sm font-medium">Total Earnings</CardTitle>
-        <DollarSign className="text-[#71717a] dark:text-[#a1a1aa] h-4 w-4" />
+        <DollarSign className="text-slate-700 dark:text-slate-400 h-4 w-4" />
       </CardHeader>
       <CardContent>
         <div className="space-y-2">
           <div className="flex gap-3">
             <p className="text-2xl font-bold">$892,324</p>
-            <div className="flex flex-col items-center text-[#71717a] dark:text-[#a1a1aa]">
+            <div className="flex flex-col items-center text-slate-700 dark:text-slate-400">
               <MoveDownRight size={15} />
               <p className="text-xs">20%</p>
             </div>
           </div>
-          <p className="text-xs text-[#71717a] dark:text-[#a1a1aa]">
+          <p className="text-xs text-slate-700 dark:text-slate-400">
             Last year earning $85,536.
           </p>
         </div>

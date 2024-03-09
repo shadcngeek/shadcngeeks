@@ -33,7 +33,7 @@ export function GitIgnore({ items, placeHolder }: GitIgnoreTypes) {
           className="max-w-[300px] justify-between"
         >
           {value ? (
-            <p className="text-xs text-[#71717a] dark:text-[#a1a1aa]">
+            <p className="text-xs text-slate-700 dark:text-slate-400">
               {placeHolder}
               <span className="text-sm text-black dark:text-white">
                 {" "}
@@ -41,7 +41,7 @@ export function GitIgnore({ items, placeHolder }: GitIgnoreTypes) {
               </span>
             </p>
           ) : (
-            <p className="text-xs text-[#71717a] dark:text-[#a1a1aa]">
+            <p className="text-xs text-slate-700 dark:text-slate-400">
               {placeHolder}
               <span className="text-sm text-black dark:text-white"> None</span>
             </p>

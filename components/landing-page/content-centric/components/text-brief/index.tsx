@@ -12,8 +12,8 @@ export function TextBrief({ feedback, fullName, jobTitle }: FeedbackListTypes) {
         <AvatarMore fullName={fullName} jobTitle={jobTitle} />
 
         <div className="flex gap-3">
-          <div className="mt-5 text-[#71717a] dark:text-[#a1a1aa]">
-            <p className="text-[#71717a] dark:text-[#a1a1aa]">{feedback}</p>
+          <div className="mt-5 text-slate-700 dark:text-slate-400">
+            <p className="text-slate-700 dark:text-slate-400">{feedback}</p>
           </div>
         </div>
       </CardContent>

@@ -20,14 +20,14 @@ export function AvatarMore({ description, title }: AvatarMoreTypes) {
         </Avatar>
         <div>
           <p>{title}</p>
-          <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">
+          <p className="text-sm text-slate-700 dark:text-slate-400">
             {description}
           </p>
         </div>
       </div>
       <Button
         variant="ghost"
-        className="hover:bg-transparent p-0 w-fit h-fit text-[#71717a] dark:text-[#a1a1aa]"
+        className="hover:bg-transparent p-0 w-fit h-fit text-slate-700 dark:text-slate-400"
       >
         <MoreHorizontal size={15} />
       </Button>

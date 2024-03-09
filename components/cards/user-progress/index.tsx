@@ -18,14 +18,14 @@ export function UserProgress() {
             </Avatar>
             <div>
               <p>John Doe</p>
-              <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">
+              <p className="text-sm text-slate-700 dark:text-slate-400">
                 Frontend Engineer
               </p>
             </div>
           </div>
           <Button
             variant="ghost"
-            className="hover:bg-transparent p-0 w-fit h-fit text-[#71717a] dark:text-[#a1a1aa]"
+            className="hover:bg-transparent p-0 w-fit h-fit text-slate-700 dark:text-slate-400"
           >
             <MoreHorizontal size={15} />
           </Button>
@@ -34,7 +34,7 @@ export function UserProgress() {
           <div className="my-5 h-1 w-full bg-[#71717a] dark:bg-[#a1a1aa] relative rounded-full">
             <div className="mt-5 h-1 w-52 bg-pink-500 rounded-full"></div>
           </div>
-          <div className="flex justify-between text-sm text-[#71717a] dark:text-[#a1a1aa]">
+          <div className="flex justify-between text-sm text-slate-700 dark:text-slate-400">
             <p>Professional</p>
             <p>792 Points</p>
           </div>

@@ -22,7 +22,7 @@ function RevenueAmount() {
       </CardHeader>
       <CardContent>
         <div className="text-2xl font-bold">$45,231.89</div>
-        <p className="text-xs text-[#71717a] dark:text-[#a1a1aa]">
+        <p className="text-xs text-slate-700 dark:text-slate-400">
           +20.1% from last month
         </p>
       </CardContent>

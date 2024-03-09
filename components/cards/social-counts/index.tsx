@@ -9,7 +9,7 @@ function Content({ subTitle, title }: ContentTypes) {
   return (
     <div className="flex flex-col items-center">
       <p className="text-2xl font-bold">{title}</p>
-      <p className="text-[#71717a] dark:text-[#a1a1aa] text-sm">{subTitle}</p>
+      <p className="text-slate-700 dark:text-slate-400 text-sm">{subTitle}</p>
     </div>
   );
 }
