@@ -8,6 +8,7 @@ export type PathTypes =
   | "music"
   | "table"
   | "headers"
+  | "pricing"
   | "calender"
   | "not-found"
   | "messaging"
@@ -30,6 +31,11 @@ type PagesTypes = {
 export const pages: PagesTypes = {
   "team-section": {
     imageSrc: "/images/www/svg/our-team.svg",
+    subPath: [{ path: "", imageSrc: "" }],
+  },
+
+  pricing: {
+    imageSrc: "/images/www/svg/pricing.svg",
     subPath: [{ path: "", imageSrc: "" }],
   },
 
@@ -154,7 +160,11 @@ export const pages: PagesTypes = {
 
   music: {
     imageSrc: "/images/www/svg/music.svg",
-    subPath: [{ path: "shad-music", imageSrc: "/images/www/shad-music.png" }],
+    subPath: [
+      { path: "classic-mega", imageSrc: "/images/www/music-classic-mega.png" },
+      { path: "classic", imageSrc: "/images/www/music-classic.png" },
+      { path: "shad-music", imageSrc: "/images/www/shad-music.png" },
+    ],
   },
   playground: {
     imageSrc: "/images/www/svg/playground.svg",
