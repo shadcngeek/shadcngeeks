@@ -3,6 +3,7 @@ interface SubPagesTypes {
   imageSrc: string;
 }
 export type PathTypes =
+  | "code"
   | "cards"
   | "forms"
   | "music"
@@ -95,6 +96,10 @@ export const pages: PagesTypes = {
       { path: "repository", imageSrc: "/images/www/repository.png" },
       { path: "settings", imageSrc: "/images/www/settings.png" },
     ],
+  },
+  code: {
+    imageSrc: "/images/www/svg/code-preview.svg",
+    subPath: [{ path: "", imageSrc: "" }],
   },
   headers: {
     imageSrc: "/images/www/svg/headers.svg",

@@ -5,10 +5,11 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { PathTypes, pages } from "./data/pages";
 import { Card, CardContent } from "@/components/ui/card";
+import { Github } from "lucide-react";
 
 function Homepage() {
   return (
-    <div className="pt-20 dark:bg-slate-950">
+    <div className="py-10 lg:py-20 dark:bg-slate-950">
       <div className="space-y-4 md:space-y-10 dark:text-white px-4">
         <div className="lg:w-[700px] text-center mx-auto">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">
@@ -23,18 +24,18 @@ function Homepage() {
         </div>
         <div className="w-fit mx-auto flex justify-center items-center gap-3 flex-wrap">
           <Button className="bg-rose-600 dark:bg-rose-600 hover:dark:bg-rose-500 hover:bg-rose-500 dark:text-white">
-            GitHub
+            <Github className="w-4 h-4 mr-2" /> GitHub
           </Button>
-          <Button
+          {/* <Button
             variant={"outline"}
             className="border-rose-600 dark:border-rose-600 dark:text-white hover:dark:text-rose-600 hover:text-rose-600 hover:bg-transparent dark:hover:bg-transparent"
           >
             Documentation
-          </Button>
+          </Button> */}
         </div>
         <div className="text-sm text mx-auto w-fit">
           <p className="text-slate-400 text-sm text-center">
-            The predesigned components for your react framework.
+            Predesigned components for your react framework.
           </p>
         </div>
       </div>
