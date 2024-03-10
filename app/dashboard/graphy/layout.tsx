@@ -3,8 +3,8 @@ import { Metadata } from "next";
 import GraphyLayout from "@/components/dashboard/graphy/layout";
 
 export const metadata: Metadata = {
-  title: "Forms",
-  description: "Advanced form example using react-hook-form and Zod.",
+  title: "Dashboard",
+  description: "A beautifully designed dashboard",
 };
 
 interface SettingsLayoutProps {

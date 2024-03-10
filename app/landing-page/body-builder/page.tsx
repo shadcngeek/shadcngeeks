@@ -1,7 +1,12 @@
-import React from "react";
+import { Metadata } from "next";
 
 import BodyBuilder from "@/components/landing-page/body-builder";
 
-export default function BodyBuilderPage() {
+export const metadata: Metadata = {
+  title: "Landing Page",
+  description: "A beautifully crafted body builder page.",
+};
+
+export default function Page() {
   return <BodyBuilder />;
 }

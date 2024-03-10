@@ -1,4 +1,11 @@
+import { Metadata } from "next";
+
 import AuthenticationComponent from "@/components/authentication/login-quote/authentication-component";
+
+export const metadata: Metadata = {
+  title: "Authentication",
+  description: "A predesigned authentication form.",
+};
 
 export default function AuthenticationPage() {
   return (

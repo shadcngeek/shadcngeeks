@@ -1,8 +1,14 @@
-import ChatAlpha from "@/components/messaging/chat-alpha";
-import React from "react";
+import { Metadata } from "next";
 
-function page() {
+import ChatAlpha from "@/components/messaging/chat-alpha";
+
+export const metadata: Metadata = {
+  title: "Messaging",
+  description: "A beautifully designed messaging UI using shadcn.",
+};
+
+function Page() {
   return <ChatAlpha />;
 }
 
-export default page;
+export default Page;

@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
+import { Github } from "lucide-react";
+
 import { PathTypes, pages } from "./data/pages";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github } from "lucide-react";
 
 function Homepage() {
   return (
@@ -23,9 +23,13 @@ function Homepage() {
           </h2>
         </div>
         <div className="w-fit mx-auto flex justify-center items-center gap-3 flex-wrap">
-          <Button className="bg-rose-600 dark:bg-rose-600 hover:dark:bg-rose-500 hover:bg-rose-500 dark:text-white">
-            <Github className="w-4 h-4 mr-2" /> GitHub
-          </Button>
+          <Link
+            href={"https://github.com/shadcngeek/shadcngeeks"}
+            target="_blank"
+            className="h-10 px-4 py-2 flex gap-2 items-center rounded-md bg-rose-600 dark:bg-rose-600 hover:dark:bg-rose-500 hover:bg-rose-500 dark:text-white"
+          >
+            <Github className="w-4 h-4" /> GitHub
+          </Link>
         </div>
         <div className="text-sm text mx-auto w-fit">
           <p className="text-slate-400 text-sm text-center">

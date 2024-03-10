@@ -14,7 +14,10 @@ function SocialLinks({ onClick }: SocialLinksTypes) {
     <div className="w-full flex justify-end">
       <ul className="flex gap-4">
         <li className="p-2 rounded-md">
-          <Link href={"#"}>
+          <Link
+            href={"https://github.com/shadcngeek/shadcngeeks"}
+            target="_blank"
+          >
             <Github className="hover:text-rose-600 text-slate-700 dark:text-slate-400 transition dark:hover:text-white" />
           </Link>
         </li>
