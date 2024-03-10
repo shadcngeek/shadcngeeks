@@ -26,16 +26,18 @@ function Homepage() {
           <Button className="bg-rose-600 dark:bg-rose-600 hover:dark:bg-rose-500 hover:bg-rose-500 dark:text-white">
             <Github className="w-4 h-4 mr-2" /> GitHub
           </Button>
-          {/* <Button
-            variant={"outline"}
-            className="border-rose-600 dark:border-rose-600 dark:text-white hover:dark:text-rose-600 hover:text-rose-600 hover:bg-transparent dark:hover:bg-transparent"
-          >
-            Documentation
-          </Button> */}
         </div>
         <div className="text-sm text mx-auto w-fit">
           <p className="text-slate-400 text-sm text-center">
-            Predesigned components for your react framework.
+            This project is inspired by{" "}
+            <Link
+              target="_blank"
+              className="text-blue-500"
+              href={"https://ui.shadcn.com/"}
+            >
+              shadcn
+            </Link>
+            . You will also find some predesigned components from shadcn here.
           </p>
         </div>
       </div>
