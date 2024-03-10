@@ -24,9 +24,10 @@ function Homepage() {
         </div>
         <div className="w-fit mx-auto flex justify-center items-center gap-3 flex-wrap">
           <Link
-            href={"https://github.com/shadcngeek/shadcngeeks"}
+            rel="noopener"
             target="_blank"
-            className="h-10 px-4 py-2 flex gap-2 items-center rounded-md bg-rose-600 dark:bg-rose-600 hover:dark:bg-rose-500 hover:bg-rose-500 dark:text-white"
+            href={"https://github.com/shadcngeek/shadcngeeks"}
+            className="text-white h-10 px-4 py-2 flex gap-2 items-center rounded-md bg-rose-600 dark:bg-rose-600 hover:dark:bg-rose-500 hover:bg-rose-500 dark:text-white"
           >
             <Github className="w-4 h-4" /> GitHub
           </Link>
