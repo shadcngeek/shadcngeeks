@@ -9,6 +9,7 @@ export type PathTypes =
   | "music"
   | "table"
   | "headers"
+  | "sidebar"
   | "pricing"
   | "calender"
   | "not-found"
@@ -130,6 +131,16 @@ export const pages: PagesTypes = {
         path: "dashboard-landing",
         imageSrc: "/images/www/ui-dashboard-light.png",
       },
+    ],
+  },
+  sidebar: {
+    imageSrc: "/images/www/svg/404.svg",
+    subPath: [
+      { path: "classic", imageSrc: "/images/www/sidebar-classic.png" },
+      { path: "classic-icons", imageSrc: "/images/www/sidebar-icons.png" },
+      { path: "classic-thin", imageSrc: "/images/www/sidebar-thin.png" },
+      { path: "collapse", imageSrc: "/images/www/sidebar-collapse.png" },
+      { path: "expand", imageSrc: "/images/www/sidebar-expand.png" },
     ],
   },
   messaging: {
