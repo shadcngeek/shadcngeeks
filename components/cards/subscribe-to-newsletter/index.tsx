@@ -13,7 +13,7 @@ export function SubscribeToNewsletter() {
   };
 
   return (
-    <Card className="w-[430px]">
+    <Card className="md:w-[430px]">
       <CardHeader>
         <CardTitle>Subscribe to our newsletter</CardTitle>
       </CardHeader>

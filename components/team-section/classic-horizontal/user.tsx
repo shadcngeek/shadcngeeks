@@ -11,11 +11,11 @@ import { UserTypes } from "./types";
 function User({ fullName, imgSrc, role }: UserTypes) {
   return (
     <Card className="">
-      <CardContent className="p-0 flex">
-        <div className="mx-auto">
+      <CardContent className="p-0 flex flex-col md:flex-row">
+        <div className="mx-auto w-full md:w-80 h-96 shrink">
           <UserImage imgSrc={imgSrc} />
         </div>
-        <div className="p-6 relative mt-3">
+        <div className="p-6 relative mt-3 md:w-[400px] ">
           <div className="space-y-4">
             <div className="space-y-2 text-left">
               <p className="dark:text-white">{fullName}</p>
@@ -30,8 +30,8 @@ function User({ fullName, imgSrc, role }: UserTypes) {
               Necessitatibus eligendi voluptas excepturi sunt!
             </p>
           </div>
-          <div className="mb-auto absolute bottom-0 w-full left-0 p-6 flex items-center justify-end">
-            <div className="flex gap-3 justify-end">
+          <div className="mb-auto md:absolute bottom-0 w-full left-0 p-6 flex items-center justify-end">
+            <div className="flex gap-3 md:justify-end">
               <Link href={"#"}>
                 <Twitter className="hover:text-rose-600 transition dark:text-slate-700 text-slate-400 w-4 h-4" />
               </Link>

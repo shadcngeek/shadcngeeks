@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function PriceMostPopular() {
   return (
-    <Card className="w-[350px] relative">
+    <Card className="md:w-[350px] relative">
       <div className="absolute px-[24px] top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] text-sm py-[12px] bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full">
         Most Popular
       </div>
