@@ -5,13 +5,13 @@ import { quotes } from "./data";
 
 function TestimonialClassicStar() {
   return (
-    <div className="p-10 flex justify-center items-center h-dvh dark:bg-slate-950">
+    <div className="p-10 flex justify-center items-center min-h-dvh dark:bg-slate-950">
       <div className="space-y-10">
         <div className="space-y-2">
-          <p className="text-7xl dark:text-white text-center font-semibold">
+          <p className="text-2xl sm:text-4xl md:text-5xl xl:text-7xl dark:text-white text-center font-semibold">
             What Clients Say About Us
           </p>
-          <div className="w-[600px] mx-auto text-slate-400 dark:text-slate-700">
+          <div className="md:w-[600px] mx-auto text-slate-400 dark:text-slate-700">
             <p className="text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               voluptas, nulla delectus explicabo eos autem officia dolore
@@ -20,7 +20,7 @@ function TestimonialClassicStar() {
             </p>
           </div>
         </div>
-        <div className="flex gap-5">
+        <div className="flex gap-5 flex-wrap justify-center items-center">
           {quotes.map(({ fullName, jobTitle, quote, imgSrc, stars }, index) => (
             <Quote
               key={index}

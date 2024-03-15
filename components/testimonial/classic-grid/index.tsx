@@ -65,7 +65,7 @@ function TestimonialClassicGrid() {
               stars={4}
               fullName={"Michael Johns"}
               jobTitle={"Frontend Developer"}
-              className={"md:w-[400px] lg:w-[600px] xl:w-[800px]"}
+              className={"max-w-[400px] md:max-w-max md:w-[400px] lg:w-[600px] xl:w-[800px]"}
               textClassName={"lg:text-2xl"}
               imgSrc={
                 "https://images.unsplash.com/photo-1615109398623-88346a601842?w=500&h=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D"
