@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 
 import { cn } from "@/lib/utils";
 import { currentChatsAtom } from "../../jotaiAtoms/atoms";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export function CardsChat() {
   const [messages, setMessages] = useAtom(currentChatsAtom);
@@ -16,7 +17,8 @@ export function CardsChat() {
 
   return (
     <>
-      <div className="p-5 h-[79vh] overflow-y-scroll">
+      {/* <div className="p-5 h-[75vh] md:h-[77vh] overflow-y-scroll"> */}
+      <ScrollArea className="p-5 h-[80vh] md:h-[82vh] rounded-md relative pb-14">
         {!messages && (
           <div className="h-full flex justify-center items-center">
             <p className="text-center text-lg">
@@ -39,7 +41,7 @@ export function CardsChat() {
             </div>
           ))}
         </div>
-        <div className="absolute px-10 py-2 left-0 bottom-0 w-full flex  items-center gap-3">
+        <div className="absolute p-4 md:px-10 py-2 left-0 bottom-0 w-full flex  items-center gap-3">
           <div className="flex gap-3">
             <Button variant={"outline"} className="w-10 h-10 p-0">
               <Smile className="text-slate-400" />
@@ -78,7 +80,9 @@ export function CardsChat() {
             </Button>
           </form>
         </div>
-      </div>
+      </ScrollArea>
+
+      {/* </div> */}
     </>
   );
 }

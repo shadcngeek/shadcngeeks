@@ -27,51 +27,58 @@ export function Chat({
   const [isCollapsed, setIsCollapsed] = React.useState(defaultCollapsed);
 
   return (
-    <TooltipProvider delayDuration={0}>
-      <ResizablePanelGroup
-        direction="horizontal"
-        onLayout={(sizes: number[]) => {
-          document.cookie = `react-resizable-panels:layout=${JSON.stringify(
-            sizes
-          )}`;
-        }}
-        className="h-full max-h-[90vh] items-stretch border dark:border-slate-800 rounded-lg"
-      >
-        <ResizablePanel
-          defaultSize={defaultLayout[0]}
-          collapsedSize={navCollapsedSize}
-          collapsible={true}
-          minSize={15}
-          maxSize={20}
-          // @ts-ignore
-          onCollapse={(collapsed: any) => {
-            setIsCollapsed(collapsed);
-            document.cookie = `react-resizable-panels:collapsed=${JSON.stringify(
-              collapsed
-            )}`;
-          }}
-          className={cn(
-            isCollapsed &&
-              "min-w-[50px] transition-all duration-300 ease-in-out"
-          )}
-        >
-          <div
-            className={cn(
-              "flex h-[52px] items-center justify-center",
-              isCollapsed ? "h-[52px]" : "px-2"
-            )}
+    <div>
+      <div className="hidden md:block">
+        <TooltipProvider delayDuration={0}>
+          <ResizablePanelGroup
+            direction="horizontal"
+            onLayout={(sizes: number[]) => {
+              document.cookie = `react-resizable-panels:layout=${JSON.stringify(
+                sizes
+              )}`;
+            }}
+            className="h-dvh md:h-full md:max-h-[90vh] items-stretch border dark:border-slate-800 rounded-lg"
           >
-            <SearchUsers />
-          </div>
-          <Separator />
-          <Nav isCollapsed={isCollapsed} />
-        </ResizablePanel>
-        <ResizableHandle withHandle />
+            <ResizablePanel
+              defaultSize={defaultLayout[0]}
+              collapsedSize={navCollapsedSize}
+              collapsible={true}
+              minSize={25}
+              maxSize={50}
+              // @ts-ignore
+              onCollapse={(collapsed: any) => {
+                setIsCollapsed(collapsed);
+                document.cookie = `react-resizable-panels:collapsed=${JSON.stringify(
+                  collapsed
+                )}`;
+              }}
+              className={cn(
+                isCollapsed &&
+                  "min-w-[50px] transition-all duration-300 ease-in-out"
+              )}
+            >
+              <div
+                className={cn(
+                  "flex h-[52px] items-center justify-center",
+                  isCollapsed ? "h-[52px]" : "px-2"
+                )}
+              >
+                <SearchUsers />
+              </div>
+              <Separator />
+              <Nav isCollapsed={isCollapsed} />
+            </ResizablePanel>
+            <ResizableHandle withHandle />
 
-        <ResizablePanel defaultSize={defaultLayout[2]}>
-          <MessageDisplay />
-        </ResizablePanel>
-      </ResizablePanelGroup>
-    </TooltipProvider>
+            <ResizablePanel defaultSize={defaultLayout[2]}>
+              <MessageDisplay />
+            </ResizablePanel>
+          </ResizablePanelGroup>
+        </TooltipProvider>
+      </div>
+      <div className="block md:hidden">
+        <Nav isSmallDevice />
+      </div>
+    </div>
   );
 }

@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
-import { Bell, HelpCircle, Search, Settings } from "lucide-react";
+import { Bell, Search, Settings } from "lucide-react";
+
+import { MobileView } from "./mobile/mobile-view";
 import AccountSettings from "./account-settings/account-settings";
 
 function HeaderSocial() {
@@ -13,8 +14,12 @@ function HeaderSocial() {
           <p className="font-bold text-rose-600 text-2xl">ShadcnGeeks</p>
         </Link>
       </div>
-      <div className="w-full">
-        <ul className="flex gap-8 items-center text-sm font-semibold justify-center w-full dark:text-white">
+      <nav
+        role="navigation"
+        aria-label="Main"
+        className="text-slate-700 hidden lg:block w-full"
+      >
+        <ul className="flex gap-8 items-center text-sm font-semibold justify-center w-full dark:text-slate-400">
           <li>
             <Link href="#">Getting Started</Link>
           </li>
@@ -28,10 +33,10 @@ function HeaderSocial() {
             <Link href="#">GitHub</Link>
           </li>
         </ul>
-      </div>
+      </nav>
 
-      <div className="">
-        <ul className="flex gap-8 items-center text-sm font-semibold justify-end dark:text-white">
+      <nav role="navigation" className="hidden lg:block">
+        <ul className="flex gap-8 items-center text-sm font-semibold justify-end dark:text-slate-400">
           <li>
             <Link href="#">
               <Search className="hover:text-rose-600 transition" />
@@ -54,6 +59,10 @@ function HeaderSocial() {
             <AccountSettings />
           </li>
         </ul>
+      </nav>
+
+      <div className="block lg:hidden">
+        <MobileView />
       </div>
     </div>
   );

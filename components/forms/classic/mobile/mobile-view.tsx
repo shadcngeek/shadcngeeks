@@ -13,7 +13,7 @@ export function MobileView() {
           <Menu />
         </Button>
       </SheetTrigger>
-      <SheetContent side={"left"} className="p-4 md:p-6">
+      <SheetContent side={"left"} className="p-4 md:p-6 dark:border-slate-800">
         <LeftMenuItems />
       </SheetContent>
     </Sheet>

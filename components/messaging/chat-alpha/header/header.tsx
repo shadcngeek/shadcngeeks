@@ -7,17 +7,26 @@ import { Button } from "@/components/ui/button";
 import AccountSettings from "../account-settings/account-settings";
 
 import { MakeCallTypes } from "../types";
+import { SmallDeviceView } from "../small-device/small-device";
 
 function Header({ setIsCalling, setIsVideo }: MakeCallTypes) {
   return (
     <div className="flex items-center w-full border-b dark:border-b-slate-800 justify-between dark:bg-slate-950 ">
-      <div className="w-[300px] p-4 grow-0 shrink-0 border-r text-2xl font-bold text-blue-500 dark:border-slate-800">
+      <div className="w-[300px] p-4 grow-0 shrink  text-2xl font-bold text-blue-500 dark:border-slate-800">
         ChitChat
       </div>
-      <div className="w-[400px] border-r grow-0 shrink-0 px-4">
-        <Input placeholder="Search people" />
+
+      <div className="w-[400px] grow-0 shrink p-0 sm:px-4">
+        <form
+          role="form"
+          id="search-people"
+          aria-label="Search people"
+          onSubmit={(e) => e.preventDefault()}
+        >
+          <Input placeholder="Search people" />
+        </form>
       </div>
-      <div className="flex gap-5 justify-end w-[705px] shrink-0   border-r dark:border-r-slate-800 pr-10">
+      <div className="hidden md:flex gap-5 justify-end w-[705px] shrink dark:-slate-800 pr-10">
         <Button
           size={"icon"}
           onClick={
@@ -51,8 +60,11 @@ function Header({ setIsCalling, setIsVideo }: MakeCallTypes) {
           <MoreVertical />
         </Button>
       </div>
-      <div className="flex gap-5 items-center w-full h-full py-2 px-4 justify-end dark:border-slate-800">
+      <div className="hidden md:flex gap-5 items-center shrink w-fit sm:w-[400px] h-full py-2 px-4 justify-end dark:border-slate-800">
         <AccountSettings />
+      </div>
+      <div className="dark:text-slate-400 md:hidden">
+        <SmallDeviceView {...{ setIsCalling, setIsVideo }} />
       </div>
     </div>
   );

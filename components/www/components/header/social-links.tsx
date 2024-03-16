@@ -23,8 +23,10 @@ function SocialLinks({ onClick }: SocialLinksTypes) {
         </li>
 
         <Button
+          size={"icon"}
+          variant={"ghost"}
           onClick={onClick}
-          className="dark:bg-transparent bg-transparent p-2 rounded-md hover:bg-transparent hover:text-rose-600 text-slate-700 dark:text-slate-400"
+          className="hover:text-rose-600 text-slate-700 dark:text-slate-400"
         >
           <MoonStarIcon />
         </Button>

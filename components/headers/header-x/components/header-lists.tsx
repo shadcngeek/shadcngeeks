@@ -25,7 +25,7 @@ export function NavMenu() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="dark:text-white">
+          <NavigationMenuTrigger className="dark:text-slate-400">
             Getting started
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -61,7 +61,7 @@ export function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="dark:text-white">
+          <NavigationMenuTrigger className="dark:text-slate-400">
             Components
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -82,7 +82,10 @@ export function NavMenu() {
           <NavigationMenuItem key={data} className="bg-transparent">
             <Link href="#" legacyBehavior passHref>
               <NavigationMenuLink
-                className={cn(navigationMenuTriggerStyle(), "dark:text-white")}
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "dark:text-slate-400"
+                )}
               >
                 {data}
               </NavigationMenuLink>

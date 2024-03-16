@@ -14,7 +14,7 @@ const ChatWeb = () => {
     : undefined;
 
   return (
-    <div className="dark:bg-slate-950 dark:text-white h-dvh px-[200px] p-5">
+    <div className="dark:bg-slate-950 dark:text-white xl:px-[200px] p-3 min-h-dvh">
       <Chat
         navCollapsedSize={4}
         defaultLayout={defaultLayout}

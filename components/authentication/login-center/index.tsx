@@ -17,7 +17,7 @@ function LoginCenterMain() {
   return (
     <div className="flex h-dvh items-center justify-center dark:bg-slate-950">
       <form onSubmit={(e) => e.preventDefault()}>
-        <Card className="w-[400px]">
+        <Card className="w-[350px] sm:w-[400px]">
           <CardHeader>
             <CardTitle className="text-center">
               Sign in to your account

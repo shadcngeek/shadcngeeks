@@ -5,11 +5,11 @@ import Image from "next/image";
 
 function LoginSide() {
   return (
-    <div className="flex h-dvh items-center dark:bg-slate-950">
+    <div className="flex h-dvh justify-center md:justify-start items-center dark:bg-slate-950">
       <div className="flex-[0.5] flex justify-center items-center">
         <LoginForm />
       </div>
-      <div className="flex-[0.5] h-full">
+      <div className="flex-[0.5] h-full hidden md:block">
         <Image
           alt="image"
           width={1000}

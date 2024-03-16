@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { MobileView } from "./mobile/mobile-view";
 
 function HeaderCenter() {
   return (
@@ -9,8 +10,8 @@ function HeaderCenter() {
           <p className="font-bold text-rose-600 text-2xl">ShadcnGeeks</p>
         </Link>
       </div>
-      <div className="w-full">
-        <ul className="flex gap-8 items-center text-sm font-semibold justify-center w-full dark:text-white">
+      <div className="text-slate-700 hidden lg:block w-full">
+        <ul className="flex gap-8 items-center text-sm font-semibold justify-center w-full dark:text-slate-400">
           <li>
             <Link href="#" className="hover:text-rose-600 transition">
               Getting Started
@@ -32,6 +33,9 @@ function HeaderCenter() {
             </Link>
           </li>
         </ul>
+      </div>
+      <div className="block lg:hidden">
+        <MobileView />
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface UserListTypes {
   id?: number;
   date: string;
@@ -7,7 +9,8 @@ export interface UserListTypes {
 }
 
 export interface NavTypes {
-  isCollapsed: any;
+  isCollapsed?: any;
+  isSmallDevice?: boolean;
 }
 
 export interface ChatsTypes {
@@ -22,4 +25,12 @@ export interface UsersTypes {
       content: string;
     }[];
   };
+}
+
+export interface SmallDeviceTypes {
+  children: React.ReactNode;
+}
+
+export interface ChatWebSlugTypes {
+  slug: number;
 }

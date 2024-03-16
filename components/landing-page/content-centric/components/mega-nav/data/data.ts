@@ -1,4 +1,4 @@
-export const componentsComponents: {
+export const componentsData: {
   href: string;
   title: string;
   description: string;

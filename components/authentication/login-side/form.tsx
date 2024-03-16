@@ -1,18 +1,18 @@
 import React from "react";
 import Link from "next/link";
 
-import GitHubIcon from "./github";
 import GoogleIcon from "./google";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardTitle, CardHeader, CardContent } from "@/components/ui/card";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 function LoginForm() {
   return (
-    <form onSubmit={(e) => e.preventDefault()}>
-      <Card className="w-[400px] border-0">
+    <form onSubmit={(e) => e.preventDefault()} className="w-full">
+      <Card className="w-[350px] sm:w-[400px] border-0">
         <CardHeader>
           <CardTitle className="">Sign in to your account</CardTitle>
         </CardHeader>
@@ -56,8 +56,8 @@ function LoginForm() {
               <span className="ml-2">Google</span>
             </Button>
             <Button className="w-full" variant={"outline"}>
-              <GitHubIcon />
-              <span className="ml-2">GitHub</span>
+              <GitHubLogoIcon className="w-5 h-5" />
+              <span className="ml-2 ">GitHub</span>
             </Button>
           </div>
         </CardContent>

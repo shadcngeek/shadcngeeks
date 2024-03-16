@@ -11,6 +11,7 @@ import MakeVideoCall from "./make-video-call/make-video-call";
 
 import { messages } from "./db";
 import { accountItems, helpItems, listItems } from "./data";
+import Link from "next/link";
 
 function ChatAlpha() {
   const [isCalling, setIsCalling] = useState<boolean>(false);
@@ -21,7 +22,7 @@ function ChatAlpha() {
       <div className="border dark:border-slate-800 w-full rounded-lg">
         <Header setIsCalling={setIsCalling} setIsVideo={setVideoCalling} />
         <div className="flex h-[85vh] overflow-scroll w-full">
-          <div className="dark:bg-slate-950 w-[300px] shrink-0 mt-1">
+          <div className="hidden xl:block dark:bg-slate-950 w-[300px] shrink mt-1">
             <p className="text-slate-500 pl-4 my-4">MENU</p>
             {listItems.map(({ icon, title, isActive }) => (
               <ListItem
@@ -51,7 +52,7 @@ function ChatAlpha() {
             <MakeCall setIsCalling={setIsCalling} />
           ) : (
             <>
-              <div className="h-full overflow-scroll shrink-0 w-[400px]">
+              <div className="hidden md:block h-full overflow-scroll shrink w-full md:w-[400px]">
                 {messages.map(
                   (
                     { date, fullName, lastMessage, newMessages, profileImage },
@@ -68,12 +69,34 @@ function ChatAlpha() {
                   )
                 )}
               </div>
-              <div className="relative w-full max-w-[705px]">
+
+              <div className="block md:hidden h-full overflow-scroll shrink w-full md:w-[400px]">
+                {messages.map(
+                  (
+                    { date, fullName, lastMessage, newMessages, profileImage },
+                    index
+                  ) => (
+                    <Link
+                      key={index}
+                      href={`/messaging/chat-alpha/${fullName}`}
+                    >
+                      <MessageList
+                        date={date}
+                        fullName={fullName}
+                        newMessages={newMessages}
+                        lastMessage={lastMessage}
+                        profileImage={profileImage}
+                      />
+                    </Link>
+                  )
+                )}
+              </div>
+              <div className="hidden md:block  relative w-[705px] shrink">
                 <Chats />
               </div>
             </>
           )}
-          <div className="w-[400px] shrink-0">
+          <div className="hidden lg:block w-[400px] shrink">
             <UserDetails />
           </div>
         </div>
