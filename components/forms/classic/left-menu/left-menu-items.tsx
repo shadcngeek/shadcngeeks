@@ -2,14 +2,13 @@
 import React from "react";
 
 import ListItem from "../list-item/list-item";
+import { Input } from "@/components/ui/input";
 
 import { accountItems, helpItems, listItems } from "../data";
 
-import { Input } from "@/components/ui/input";
-
 function LeftMenuItems() {
   return (
-    <div className="dark:bg-slate-950 w-[300px] shrink-0 mt-1">
+    <div className="dark:bg-slate-950 md:w-[300px] shrink-0 mt-1">
       <div className="p-3">
         <form action="" onSubmit={(e) => e.preventDefault()}>
           <Input placeholder="Search..." />

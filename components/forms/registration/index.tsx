@@ -10,8 +10,8 @@ import PhoneNumberInput from "./phone-number/phone-number-input";
 function Registration() {
   return (
     <div className="dark:bg-slate-950 dark:text-white flex justify-center items-center min-h-dvh p-4 md:px-[50px] lg:px-[100px] xl:px-[200px]">
-      <div className="h-full w-full rounded-lg p-10 border dark:border-slate-800 flex gap-10">
-        <div className="">
+      <div className="md:p-5 lg:p-10 h-full w-full rounded-lg border dark:border-slate-800 flex flex-col lg:flex-row lg:gap-10">
+        <div className="p-4 lg:p-0">
           <p className="text-2xl font-bold">Registration</p>
           <p className="text-sm text-slate-800 dark:text-slate-400">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -19,7 +19,7 @@ function Registration() {
         </div>
         <div className="w-full">
           <form className="w-full">
-            <div className="space-y-4 w-[70%] p-4 border-l dark:border-slate-800 pl-10 ">
+            <div className="space-y-4 lg:w-[70%] p-4 lg:border-l dark:border-slate-800 lg:pl-10 ">
               <p className="font-bold">Personal Information</p>
               <div className="flex gap-3">
                 <div className="w-full space-y-2">
@@ -32,7 +32,7 @@ function Registration() {
                 </div>
               </div>
 
-              <div className="flex gap-3">
+              <div className="flex flex-col md:flex-row gap-3">
                 <div className="w-full space-y-2">
                   <Label>Date of birth</Label>
                   <DateOfBirth />
@@ -79,7 +79,7 @@ function Registration() {
                 <Input id="zipCode" />
               </div>
             </div>
-            <div className="flex justify-end pt-4 w-full">
+            <div className="flex justify-end p-4 w-full">
               <Button>Submit</Button>
             </div>
           </form>
