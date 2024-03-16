@@ -19,8 +19,8 @@ import { MobileView } from "./mobile/mobile-view";
 
 function Classic() {
   return (
-    <div className="px-4 md:px-[50px] ld:px-[100px] xl:px-[200px] dark:bg-slate-950 dark:text-white h-dvh flex justify-center items-center">
-      <div className="md:flex w-full border dark:border-slate-800 rounded-lg h-[90vh]">
+    <div className="p-4 md:px-[50px] ld:px-[100px] xl:px-[200px] dark:bg-slate-950 dark:text-white min-h-dvh flex justify-center items-center">
+      <div className="md:flex w-full border dark:border-slate-800 rounded-lg min-h-[90vh]">
         <div className="hidden lg:block h-ful border-r dark:border-slate-800">
           <LeftMenuItems />
         </div>
