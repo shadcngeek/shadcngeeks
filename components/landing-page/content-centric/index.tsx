@@ -8,9 +8,9 @@ function Landing() {
   return (
     <div className="bg-[url('/images/bg-pink.svg')] dark:bg-[url('/images/bg-pink-light.svg')] bg-no-repeat bg-cover dark:bg-slate-950">
       <MegaNav />
-      <div className="flex justify-center items-center min-h-dvh p-4 md:px-[100px] lg:px-[200px]">
+      <div className="flex justify-center min-h-dvh p-4 md:px-[100px] lg:px-[200px]">
         <div>
-          <div className="md:w-[600px] lg:w-[700px] text-center space-y-2 mx-auto">
+          <div className="md:w-[600px] lg:w-[700px] text-center space-y-2 mx-auto mt-5 md:mt-10">
             <p className="text-2xl md:text-5xl lg:text-6xl font-bold text-center dark:text-white">
               The content-centric website{" "}
               <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">

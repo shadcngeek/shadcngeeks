@@ -29,33 +29,19 @@ export const metadata: Metadata = {
 export default function AnalyticsDashboard() {
   return (
     <>
-      <div className="md:hidden">
-        <Image
-          width={1280}
-          height={866}
-          alt="Dashboard"
-          className="block dark:hidden"
-          src="/examples/dashboard-light.png"
-        />
-        <Image
-          width={1280}
-          height={866}
-          alt="Dashboard"
-          className="hidden dark:block"
-          src="/examples/dashboard-dark.png"
-        />
-      </div>
-      <div className="hidden flex-col md:flex">
-        <div className="flex-1 space-y-4 p-8 pt-6">
+      <div className="flex-col flex">
+        <div className="flex-1 space-y-4 lg:p-8 lg:pt-6">
           <div className="flex items-center justify-between space-y-2">
             <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
             <TabsContent value="overview" className="space-y-4">
               <div className="space-y-2">
-                <CarouselEmbla />
+                <div className="relative px-12 w-full">
+                  <CarouselEmbla />
+                </div>
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-                  <Card className="col-span-4">
+                  <Card className="sm:col-span-3 md:col-span-4">
                     <CardHeader>
                       <CardTitle>Overview</CardTitle>
                     </CardHeader>
@@ -63,7 +49,7 @@ export default function AnalyticsDashboard() {
                       <Overview />
                     </CardContent>
                   </Card>
-                  <Card className="col-span-3">
+                  <Card className="sm:col-span-3">
                     <CardHeader>
                       <CardTitle>Recent Sales</CardTitle>
                       <CardDescription>
@@ -79,9 +65,9 @@ export default function AnalyticsDashboard() {
             </TabsContent>
           </Tabs>
         </div>
-        <div className="flex gap-4 px-8">
-          <DetailedStatistic className="w-[50%]" />
-          <div className="grid grid-cols-2 gap-4 w-[50%]">
+        <div className="flex lg:flex-row flex-col gap-4 lg:px-8 mt-4 md:mt-0">
+          <DetailedStatistic className="lg:w-[50%]" />
+          <div className="grid sm:grid-cols-2 gap-4 lg:w-[50%]">
             <Statistic title="Revenue">
               <div className="flex gap-3">
                 <p className="text-2xl font-bold">$892,324</p>

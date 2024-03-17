@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 function ClassicHorizontal() {
   return (
     <Card>
-      <CardContent className="p-20">
+      <CardContent className="p-4 md:p-10 lg:p-14 xl:p-20">
         <p className="text-center  mb-10 text-2xl sm:text-4xl md:text-5xl dark:text-white font-semibold">
           Meet Our Team
         </p>

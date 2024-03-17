@@ -13,9 +13,11 @@ function ClassicSeparated() {
           <p className="text-center  mb-10 text-2xl sm:text-4xl md:text-5xl dark:text-white font-semibold">
             Our Team
           </p>
-          <div className="flex items-center flex-wrap justify-center md:[&>*:nth-child(2)]:border-l w-fit xl:divide-x divide-solid dark:divide-slate-800">
+          <div className="flex gap-10 items-center flex-wrap justify-center">
             {quotes.map(({ fullName, jobTitle, quote, imgSrc }, index) => (
-              <User key={index} {...{ fullName, jobTitle, quote, imgSrc }} />
+              <div key={index} className="max-w-[400px]">
+                <User {...{ fullName, jobTitle, quote, imgSrc }} />
+              </div>
             ))}
           </div>
         </div>

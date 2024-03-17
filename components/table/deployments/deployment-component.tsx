@@ -33,24 +33,8 @@ export default async function DeploymentComponent() {
   console.log(tasks);
 
   return (
-    <div className="bg-white dark:bg-slate-950 text-slate-950 dark:text-slate-50 p-10 pb-16 h-dvh">
-      <div className="md:hidden">
-        <Image
-          src="/examples/tasks-light.png"
-          width={1280}
-          height={998}
-          alt="Playground"
-          className="block dark:hidden"
-        />
-        <Image
-          src="/examples/tasks-dark.png"
-          width={1280}
-          height={998}
-          alt="Playground"
-          className="hidden dark:block"
-        />
-      </div>
-      <div className="hidden h-full flex-1 flex-col space-y-8 p-8 md:flex">
+    <div className="bg-white dark:bg-slate-950 text-slate-950 dark:text-slate-50 p-4 md:p-10 pb-16 h-dvh">
+      <div className="h-full flex-1 flex-col space-y-8 md:p-8 flex">
         <div className="flex items-center justify-between space-y-2">
           <div>
             <h2 className="text-2xl font-bold tracking-tight">Deployments</h2>

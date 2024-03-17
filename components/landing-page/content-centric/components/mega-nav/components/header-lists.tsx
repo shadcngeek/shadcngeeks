@@ -18,19 +18,19 @@ import {
 
 import { Icons } from "./icons";
 
-import { componentsComponents, listLinkData } from "../data/data";
+import { componentsData, listLinkData } from "../data/data";
 import { NavMenuTypes } from "../types";
 
 export function NavMenu({ className }: NavMenuTypes) {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="!max-w-full justify-start [&>div]:w-full">
       <NavigationMenuList className={className}>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className="dark:text-white">
+        <NavigationMenuItem className="w-full flex-1">
+          <NavigationMenuTrigger className="dark:text-slate-400 w-[150px] justify-start">
             Getting started
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid gap-3 p-6 sm:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
@@ -61,13 +61,13 @@ export function NavMenu({ className }: NavMenuTypes) {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className="dark:text-white">
+        <NavigationMenuItem className="w-full flex-1">
+          <NavigationMenuTrigger className="dark:text-slate-400 w-full justify-start">
             Components
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {componentsComponents.map((component) => (
+            <ul className="grid sm:w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              {componentsData.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}
@@ -80,10 +80,16 @@ export function NavMenu({ className }: NavMenuTypes) {
           </NavigationMenuContent>
         </NavigationMenuItem>
         {listLinkData.map((data) => (
-          <NavigationMenuItem key={data} className="bg-transparent">
+          <NavigationMenuItem
+            key={data}
+            className="bg-transparent w-full flex-1"
+          >
             <Link href="#" legacyBehavior passHref>
               <NavigationMenuLink
-                className={cn(navigationMenuTriggerStyle(), "dark:text-white")}
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "dark:text-slate-400 w-full justify-start"
+                )}
               >
                 {data}
               </NavigationMenuLink>

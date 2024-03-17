@@ -11,22 +11,22 @@ export function MessageDisplay() {
   const [user] = useAtom(currentUserAtom);
 
   return (
-    <div className="flex h-full flex-col relative">
+    <div className="flex h-[90vh] flex-col relative">
       <div className="flex flex-1 flex-col">
         <div className="flex items-center p-4">
           <div className="flex items-center gap-4 text-sm">
             <Avatar>
               <AvatarImage alt={"mail.name"} />
               <AvatarFallback>
-                {user.fullName
+                {user?.fullName
                   .split(" ")
                   .map((chunk) => chunk[0])
                   .join("")}
               </AvatarFallback>
             </Avatar>
-            <div className="font-semibold">{user.fullName}</div>
+            <div className="font-semibold">{user?.fullName}</div>
           </div>
-          {user.date && (
+          {user?.date && (
             <div className="ml-auto text-xs text-muted-foreground">
               {(format as any)(new Date(), "PPpp")}
             </div>

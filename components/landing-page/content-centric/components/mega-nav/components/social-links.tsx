@@ -10,7 +10,7 @@ function SocialLinks() {
   return (
     <div className="w-full flex justify-end">
       <ul className="flex gap-5">
-        <li>
+        <li className="hidden lg:block">
           <Input placeholder="Search documentation..." />
         </li>
         <li className="hidden sm:block border border-slate-200 dark:border-slate-800 p-2 rounded-md">
@@ -30,7 +30,7 @@ function SocialLinks() {
         </li>
         <SheetDrawer
           trigger={
-            <li className="border border-slate-200 dark:border-slate-800 p-2 rounded-md block md:hidden">
+            <li className="border border-slate-200 dark:border-slate-800 p-2 rounded-md block lg:hidden">
               <Menu className="text-slate-700 dark:text-slate-400 transition dark:hover:text-white" />
             </li>
           }

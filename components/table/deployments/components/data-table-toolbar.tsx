@@ -20,7 +20,7 @@ export function DataTableToolbar<TData>({
 
   return (
     <div className="flex items-center justify-between">
-      <div className="flex flex-1 items-center space-x-2">
+      <div className="flex flex-1 flex-col sm:flex-row sm:items-center gap-2 sm:gap-0 sm:space-x-2">
         <Input
           placeholder="Filter..."
           value={
@@ -29,16 +29,18 @@ export function DataTableToolbar<TData>({
           onChange={(event) =>
             table.getColumn("commitMessage")?.setFilterValue(event.target.value)
           }
-          className="h-8 w-[150px] lg:w-[250px]"
+          className="h-8 w-[250px] lg:w-[250px]"
         />
-        <Branches table={table} />
-        {table.getColumn("status") && (
-          <DataTableFacetedFilter
-            column={table.getColumn("status")}
-            title="Status"
-            options={statuses}
-          />
-        )}
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+          <Branches table={table} />
+          {table.getColumn("status") && (
+            <DataTableFacetedFilter
+              column={table.getColumn("status")}
+              title="Status"
+              options={statuses}
+            />
+          )}
+        </div>
 
         {isFiltered && (
           <Button

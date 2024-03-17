@@ -24,7 +24,7 @@ function Quote({
   textClassName,
 }: QuoteTypes) {
   return (
-    <Card className={cn("w-[400px]", className)}>
+    <Card className={cn("w-[300px] md:w-[400px]", className)}>
       <CardHeader className="mx-auto w-fit flex flex-col items-center">
         <UserAvatar imgSrc={imgSrc} />
         <p className="font-bold">{fullName}</p>

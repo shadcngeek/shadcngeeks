@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function HorizontalSalesCard() {
   return (
-    <Card className="">
+    <Card>
       <CardContent className="p-2">
         <div className="flex gap-5 items-start">
           <div className=" w-fit shrink-0 rounded-lg overflow-hidden mx-auto">

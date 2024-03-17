@@ -8,7 +8,7 @@ import { UserImageTypes } from "./types";
 function UserImage({ className, imgSrc }: UserImageTypes) {
   return (
     <div
-      className={cn("w-80 h-96 relative rounded-lg overflow-hidden", className)}
+      className={cn("w-full h-full relative rounded-lg overflow-hidden", className)}
     >
       <Image
         width={200}

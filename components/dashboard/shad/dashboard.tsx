@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function Dashboard() {
   return (
-    <>
+    <div className="min-h-dvh dark:bg-slate-950 dark:text-white">
       <div className="md:hidden">
         <Image
           width={1280}
@@ -204,6 +204,6 @@ export default function Dashboard() {
           </Tabs>
         </div>
       </div>
-    </>
+    </div>
   );
 }

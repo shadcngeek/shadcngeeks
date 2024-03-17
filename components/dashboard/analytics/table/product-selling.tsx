@@ -29,11 +29,11 @@ async function getProducts() {
 }
 
 export default async function ProductSelling() {
-  const products = await getProducts();
+  const tasks = await getProducts();
 
   return (
     <>
-      <div className="hidden h-full flex-1 flex-col space-y-8 p-8 md:flex">
+      <div className="h-full flex-1 flex-col space-y-4 lg:space-y-8 lg:p-8 flex pt-3">
         <div className="flex items-center justify-between space-y-2">
           <div>
             <h2 className="text-2xl font-bold tracking-tight">
@@ -41,7 +41,7 @@ export default async function ProductSelling() {
             </h2>
           </div>
         </div>
-        <DataTable data={products} columns={columns} />
+        <DataTable data={tasks} columns={columns} />
       </div>
     </>
   );

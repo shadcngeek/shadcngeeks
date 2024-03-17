@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 import { Github, MoonStarIcon, Twitter } from "lucide-react";
@@ -6,14 +7,25 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 import { SheetTypes } from "../types";
 import { NavMenu } from "./header-lists";
+import { Input } from "@/components/ui/input";
 
 export function SheetDrawer({ trigger }: SheetTypes) {
   return (
     <Sheet>
       <SheetTrigger asChild>{trigger}</SheetTrigger>
-      <SheetContent className="space-y-5" side={"left"}>
+      <SheetContent
+        side={"left"}
+        className="space-y-5 p-4 md:p-6 dark:border-slate-800"
+      >
         <div className="">
-          <NavMenu className="flex flex-col gap-3 justify-start items-start" />
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+            }}
+          >
+            <Input placeholder="Search documentation..." />
+          </form>
+          <NavMenu className="flex flex-col gap-3 justify-start items-start mt-3" />
         </div>
 
         <ul className="flex gap-3">

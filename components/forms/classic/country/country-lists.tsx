@@ -15,7 +15,7 @@ import { CountrySelectTypes } from "../types";
 export function CountrySelect({ data, title, showIcon }: CountrySelectTypes) {
   return (
     <Select>
-      <SelectTrigger className="w-[280px]">
+      <SelectTrigger className="max-w-[280px]">
         <SelectValue placeholder={title} />
       </SelectTrigger>
       <SelectContent>

@@ -25,11 +25,11 @@ export function AvatarsHorizontal() {
   return (
     <Card>
       <CardContent className="p-6">
-        <div className="flex justify-between gap-7 items-start">
+        <div className="flex gap-7 items-start flex-wrap justify-center">
           <AvatarSingle fullName="John Doe" />
-          <AvatarSingle fullName="Muhammed Taal" />
-          <AvatarSingle fullName="Richard Jakson" />
-          <AvatarSingle fullName="Anna Doe" />
+          <AvatarSingle fullName="John Doe" />
+          <AvatarSingle fullName="John Doe" />
+          <AvatarSingle fullName="John Doe" />
         </div>
       </CardContent>
     </Card>

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
+import { MobileView } from "./mobile/mobile-view";
 
 function HeaderRightLogin() {
   return (
@@ -11,8 +12,12 @@ function HeaderRightLogin() {
           <p className="font-bold text-rose-600 text-2xl">ShadcnGeeks</p>
         </Link>
       </div>
-      <div className="w-full">
-        <ul className="flex gap-8 items-center text-sm font-semibold justify-end w-full dark:text-white px-10">
+      <nav
+        role="navigation"
+        aria-label="Main"
+        className="text-slate-700 hidden lg:block w-full"
+      >
+        <ul className="flex gap-8 items-center text-sm font-semibold justify-end w-full dark:text-slate-400 px-10">
           <li>
             <Link href="#" className="hover:text-rose-600 transition">
               Getting Started
@@ -34,10 +39,10 @@ function HeaderRightLogin() {
             </Link>
           </li>
         </ul>
-      </div>
+      </nav>
 
-      <div className="">
-        <ul className="flex gap-8 items-center text-sm font-semibold justify-end dark:text-white">
+      <div className="hidden lg:block">
+        <ul className="flex gap-8 items-center text-sm font-semibold justify-end dark:text-slate-400">
           <li>
             <Link href="#">
               <Button className="font-semibold" variant={"link"}>
@@ -47,12 +52,16 @@ function HeaderRightLogin() {
           </li>
           <li>
             <Link href="#">
-              <Button className="bg-rose-600 dark:bg-rose-600 hover:bg-rose-700 dark:hover:bg-rose-700">
+              <Button className="bg-rose-600 dark:bg-rose-600 hover:bg-rose-700 dark:hover:bg-rose-700 dark:text-white">
                 Signup
               </Button>
             </Link>
           </li>
         </ul>
+      </div>
+
+      <div className="block lg:hidden">
+        <MobileView />
       </div>
     </div>
   );

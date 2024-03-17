@@ -7,7 +7,7 @@ import { nonDynamicPricingData } from "../../data/non-dynamic-pricing-data";
 
 function PricingPage() {
   return (
-    <div className="px-4 md:px-[50px] ld:px-[100px] xl:px-[200px] pt-10 dark:bg-slate-950 min-h-dvh">
+    <div className="px-4 md:px-[50px] ld:px-[100px] xl:px-[200px] py-4 dark:bg-slate-950 min-h-dvh">
       <div className="border rounded-lg space-y-8 pt-3 dark:border-slate-800">
         {nonDynamicPricingData.map(({ component, path }) => (
           <div key={path}>

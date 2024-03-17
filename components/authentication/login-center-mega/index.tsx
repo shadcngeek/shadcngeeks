@@ -3,18 +3,18 @@ import React from "react";
 import Link from "next/link";
 
 import { Card, CardTitle, CardHeader, CardContent } from "@/components/ui/card";
-import GitHubIcon from "./github";
 import GoogleIcon from "./google";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 function LoginCenterMegaMain() {
   return (
     <div className="flex h-dvh items-center justify-center dark:bg-slate-950">
       <form onSubmit={(e) => e.preventDefault()}>
-        <Card className="w-[400px]">
+        <Card className="w-[350px] md:w-[400px]">
           <CardHeader>
             <CardTitle className="text-center">
               Sign in to your account
@@ -60,7 +60,7 @@ function LoginCenterMegaMain() {
                 <span className="ml-2">Google</span>
               </Button>
               <Button className="w-full" variant={"outline"}>
-                <GitHubIcon />
+                <GitHubLogoIcon className="w-5 h-5" />
                 <span className="ml-2">GitHub</span>
               </Button>
             </div>

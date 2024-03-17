@@ -15,7 +15,7 @@ import { QuoteTypes } from "./types";
 
 function Quote({ fullName, jobTitle, quote, imgSrc, stars }: QuoteTypes) {
   return (
-    <Card className="w-[400px]">
+    <Card className="max-w-[400px]">
       <CardHeader className="mx-auto w-fit flex flex-col items-center">
         <UserAvatar imgSrc={imgSrc} />
         <p className="font-bold">{fullName}</p>

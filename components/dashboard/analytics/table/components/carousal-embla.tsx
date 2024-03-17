@@ -22,13 +22,16 @@ export function CarouselEmbla() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full"
+      className=" md:w-full"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
         {analyticsData.map(({ description, icon, subTitle, title }) => (
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3" key={title}>
+          <CarouselItem
+            className="w-[50px] md:basis-1/2 lg:basis-1/3"
+            key={title}
+          >
             <AnalyticCard
               icon={icon}
               height={40}
