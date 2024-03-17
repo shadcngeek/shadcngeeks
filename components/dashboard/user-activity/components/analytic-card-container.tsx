@@ -7,7 +7,7 @@ import { analyticsData } from "../data/data";
 
 export function AnalyticCardContainer() {
   return (
-    <div className="flex gap-4">
+    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
       {analyticsData.map(({ description, icon, subTitle, title }) => (
         <AnalyticCard
           key={title}

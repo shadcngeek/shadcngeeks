@@ -10,6 +10,8 @@ import Header from "./header/header";
 import { buttonVariants } from "@/components/ui/button";
 
 import { CalendarProps } from "./types";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import Image from "next/image";
 
 const formatWeekdayName: DateFormatter = (day) => {
   return format(day, "EEE");
@@ -73,7 +75,35 @@ function Calendar({
 }
 
 function ClassicCalender() {
-  return <Calendar />;
+  return (
+    <div className="dark:bg-slate-950 p-4 md:p-10 min-h-dvh">
+      <div className="sm:hidden dark:text-white">
+        <Image
+          width={1280}
+          height={866}
+          alt="Playground"
+          className="block dark:hidden"
+          src="/images/www/classic.png"
+        />
+        <Image
+          width={1280}
+          height={866}
+          alt="Playground"
+          className="hidden dark:block"
+          src="/images/www/classic-dark.png"
+        />
+
+        <p className="text-slate-700 text-sm">
+          This UI is not available for small screen devices yet. Switch to a
+          large screen device.
+        </p>
+      </div>
+      <ScrollArea className="hidden sm:block">
+        <Calendar />
+        <ScrollBar orientation="horizontal" />
+      </ScrollArea>
+    </div>
+  );
 }
 
 export default ClassicCalender;

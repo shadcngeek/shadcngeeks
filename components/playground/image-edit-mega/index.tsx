@@ -1,15 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-import { RotateCcw, RotateCw, ThumbsDown, ThumbsUp } from "lucide-react";
-
-import { Export } from "./export";
 import Header from "./header/header";
+import { images } from "./data/images";
+import PromptForm from "./prompt-form";
 import { PromptGuide } from "./prompt-guide";
-import { Button } from "@/components/ui/button";
 import { TopPSelector } from "./top-p-selector";
 import { Switch } from "@/components/ui/switch";
 import { ModelSelector } from "./model-selector";
+import DisplayImages from "./display-images/images";
 import { QualityDetails } from "./quality-details";
 import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
@@ -18,20 +17,34 @@ import { MaxLengthSelector } from "./maxlength-selector";
 import { TemperatureSelector } from "./temperature-selector";
 
 import { models, types } from "./data/models";
-import DisplayImages from "./display-images/images";
-import PromptForm from "./prompt-form";
-import { images } from "./data/images";
 
 function ImageEditMega() {
   return (
-    <div className="min-h-dvh p-10 px-[100px] dark:bg-slate-950">
-      <div className="border dark:border-slate-800 rounded-lg p-5 pb-0">
+    <div className="min-h-dvh p-4 xl:px-[100px] dark:bg-slate-950">
+      <div className="md:hidden">
+        <Image
+          width={1280}
+          height={866}
+          alt="Playground"
+          className="block dark:hidden"
+          src="/images/www/image-edit-mega.png"
+        />
+        <Image
+          width={1280}
+          height={866}
+          alt="Playground"
+          className="hidden dark:block"
+          src="/images/www/image-edit-mega-dark.png"
+        />
+      </div>
+
+      <div className="border dark:border-slate-800 rounded-lg p-5 pb-0 hidden md:block">
         <Header />
 
         <Separator />
 
         <div className="flex">
-          <div className="shrink-0 pt-5 space-y-5 w-[400px] border-r dark:border-slate-800 pr-5 pb-20">
+          <div className="xl:shrink-0 pt-5 space-y-5 max-w-[400px] border-r dark:border-slate-800 pr-5 pb-20">
             <div className="space-y-2">
               <p className="text-1xl font-bold dark:text-white">Prompt</p>
               <p className="text-sm text-slate-700 dark:text-slate-400">
@@ -63,7 +76,7 @@ function ImageEditMega() {
           <div className="border-r dark:border-slate-800 mr-5 p-5 px-10 w-full space-y-5">
             <ImageUpload />
 
-            <div className="grid grid-cols-3 gap-3 ">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 ">
               {images.map(({ path, prompt }) => (
                 <DisplayImages key={path} path={path} prompt={prompt} />
               ))}
@@ -72,7 +85,7 @@ function ImageEditMega() {
             <PromptForm />
           </div>
 
-          <div className="shrink-0  mt-5 space-y-10 w-[400px] pb-20">
+          <div className="xl:shrink-0  mt-5 space-y-10 max-w-[400px] pb-20">
             <div>
               <p className="text-1xl font-bold dark:text-white">Model</p>
               <p className="text-sm text-slate-700 dark:text-slate-400">

@@ -1,11 +1,16 @@
 import React from "react";
 import Image from "next/image";
 
+import { RotateCcw, RotateCw, ThumbsDown, ThumbsUp } from "lucide-react";
+
+import { Export } from "./export";
 import Header from "./header/header";
 import { PromptGuide } from "./prompt-guide";
+import { Button } from "@/components/ui/button";
 import { TopPSelector } from "./top-p-selector";
 import { Switch } from "@/components/ui/switch";
 import { ModelSelector } from "./model-selector";
+import { QualityDetails } from "./quality-details";
 import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 import ImageUpload from "./image-upload/image-upload";
@@ -13,15 +18,27 @@ import { MaxLengthSelector } from "./maxlength-selector";
 import { TemperatureSelector } from "./temperature-selector";
 
 import { models, types } from "./data/models";
-import { Button } from "@/components/ui/button";
-import { RotateCcw, RotateCw, ThumbsDown, ThumbsUp } from "lucide-react";
-import { Export } from "./export";
-import { QualityDetails } from "./quality-details";
 
 function ImageEdit() {
   return (
-    <div className="min-h-dvh p-10 px-[100px] dark:bg-slate-950">
-      <div className="border dark:border-slate-800 rounded-lg p-5 pb-0">
+    <div className="min-h-dvh p-4 lg:p-10 xl:px-[100px] dark:bg-slate-950">
+      <div className="md:hidden">
+        <Image
+          width={1280}
+          height={866}
+          alt="Playground"
+          src="/images/www/image-edit.png"
+          className="block dark:hidden"
+        />
+        <Image
+          width={1280}
+          height={866}
+          alt="Playground"
+          src="/images/www/image-edit-dark.png"
+          className="hidden dark:block"
+        />
+      </div>
+      <div className="border dark:border-slate-800 rounded-lg p-5 pb-0 hidden md:block">
         <Header />
 
         <Separator />
@@ -58,7 +75,7 @@ function ImageEdit() {
             </div>
           </div>
 
-          <div className="border-r dark:border-slate-800 mr-5 p-5 px-20">
+          <div className="border-r dark:border-slate-800 mr-5 p-4 lg:p-5 lg:px-20">
             <div className="flex gap-3 justify-between mb-2">
               <Export />
 

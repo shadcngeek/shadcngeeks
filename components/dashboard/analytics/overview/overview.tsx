@@ -6,7 +6,7 @@ import { overViewData } from "../table/data/data";
 
 export function Overview() {
   return (
-    <div className="w-full h-[350px]">
+    <div className="w-full h-[150px] md:h-[350px]">
       <ResponsiveContainer width="100%" height={"100%"}>
         <AreaChart
           className="w-full h-full"

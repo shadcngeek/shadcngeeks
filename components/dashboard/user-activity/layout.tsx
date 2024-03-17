@@ -13,9 +13,9 @@ interface SettingsLayoutProps {
 
 export default function UserActivityLayout({ children }: SettingsLayoutProps) {
   return (
-    <div className="px-[150px] bg-white dark:bg-slate-950 text-slate-950 dark:text-slate-50 p-10 pb-16">
+    <div className=" bg-white dark:bg-slate-950 text-slate-950 dark:text-slate-50 p-4 md:p-10 md:pb-16 xl:px-[150px]">
       <ScrollArea className="h-full w-full rounded-md border border-slate-200 dark:border-slate-800">
-        <div className="hidden space-y-6 p-10 pb-16 md:block">
+        <div className="space-y-6 p-4 lg:p-10 lg:pb-16">
           <div className="lg:flex-row lg:space-x-12 lg:space-y-0">
             <div className="flex-1">{children}</div>
           </div>

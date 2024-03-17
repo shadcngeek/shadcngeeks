@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 
 function Header() {
   return (
-    <div className="dark:text-slate-400 flex justify-between">
+    <div className="dark:text-slate-400 flex justify-between mt-2">
       <form onSubmit={(e) => e.preventDefault()}>
         <div className="flex gap-3 items-center">
           <div className="shrink-0">

@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function TextBrief() {
   return (
-    <Card className="w-[40%]">
+    <Card className="w-full">
       <CardHeader>
         <CardTitle>Embrace the Journey</CardTitle>
       </CardHeader>

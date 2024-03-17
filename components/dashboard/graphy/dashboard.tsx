@@ -1,22 +1,16 @@
 import { Metadata } from "next";
 import Image from "next/image";
 
-import { CalendarDateRangePicker } from "./date-range-picker/date-range-picker";
-
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardTitle,
-  CardHeader,
-  CardContent,
-  CardDescription,
-} from "@/components/ui/card";
+import { Card, CardTitle, CardHeader, CardContent } from "@/components/ui/card";
 import { Search } from "./search/search";
 import { UserNav } from "./user-nav/user-nav";
 import { MainNav } from "./main-nav/main-nav";
 import { Overview } from "./overview/overview";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
 import ProductSelling from "./table/product-selling";
+import { Tabs, TabsContent } from "@/components/ui/tabs";
+import { CalendarDateRangePicker } from "./date-range-picker/date-range-picker";
+import SmallDeviceDisplay from "./small-device/small-device-display";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -26,34 +20,21 @@ export const metadata: Metadata = {
 export default function GraphyDashboard() {
   return (
     <>
-      <div className="md:hidden">
-        <Image
-          src="/examples/dashboard-light.png"
-          width={1280}
-          height={866}
-          alt="Dashboard"
-          className="block dark:hidden"
-        />
-        <Image
-          src="/examples/dashboard-dark.png"
-          width={1280}
-          height={866}
-          alt="Dashboard"
-          className="hidden dark:block"
-        />
-      </div>
-      <div className="hidden flex-col md:flex">
-        <div className="border-b border-slate-200 dark:border-slate-800">
-          <div className="flex h-16 items-center px-4">
+      <div className="space-y-4">
+        <div className="lg:border-b border-slate-200 dark:border-slate-800">
+          <div className="hidden lg:flex h-16 items-center px-4">
             <MainNav className="mx-6" />
             <div className="ml-auto flex items-center space-x-4">
               <Search />
               <UserNav />
             </div>
           </div>
+          <div className="w-fit block lg:hidden ml-auto ">
+            <SmallDeviceDisplay />
+          </div>
         </div>
-        <div className="flex-1 space-y-4 p-8 pt-6">
-          <div className="flex items-center justify-between space-y-2">
+        <div className="flex-1 lg:space-y-4 lg:p-8 lg:pt-6">
+          <div className="hidden lg:flex items-center justify-between space-y-2">
             <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
             <div className="flex items-center space-x-2">
               <CalendarDateRangePicker />
@@ -62,7 +43,7 @@ export default function GraphyDashboard() {
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
             <TabsContent value="overview" className="space-y-4">
-              <div className="flex justify-between gap-4">
+              <div className="flex flex-col lg:flex-row justify-between gap-4">
                 <div className="grid gap-4 md:grid-cols-2 flex-1">
                   <Card>
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
