@@ -7,6 +7,7 @@ export type PathTypes =
   | "cards"
   | "forms"
   | "music"
+  | "footer"
   | "table"
   | "headers"
   | "sidebar"
@@ -25,8 +26,9 @@ export type PathTypes =
 
 type PagesTypes = {
   [key in PathTypes]: {
-    subPath: SubPagesTypes[];
     imageSrc: string;
+    newCount?: number;
+    subPath: SubPagesTypes[];
   };
 };
 
@@ -85,6 +87,11 @@ export const pages: PagesTypes = {
       { path: "classic-desert", imageSrc: "/images/www/classic-desert.png" },
     ],
   },
+  footer: {
+    imageSrc: "/images/www/svg/footer.svg",
+    subPath: [{ path: "", imageSrc: "" }],
+    newCount: 5,
+  },
   forms: {
     imageSrc: "/images/www/svg/form.svg",
     subPath: [
@@ -134,7 +141,7 @@ export const pages: PagesTypes = {
     ],
   },
   sidebar: {
-    imageSrc: "/images/www/svg/404.svg",
+    imageSrc: "/images/www/svg/sidebar.svg",
     subPath: [
       { path: "classic", imageSrc: "/images/www/sidebar-classic.png" },
       { path: "classic-icons", imageSrc: "/images/www/sidebar-icons.png" },
@@ -142,6 +149,7 @@ export const pages: PagesTypes = {
       { path: "collapse", imageSrc: "/images/www/sidebar-collapse.png" },
       { path: "expand", imageSrc: "/images/www/sidebar-expand.png" },
     ],
+    newCount: 5,
   },
   messaging: {
     imageSrc: "/images/www/svg/mails.svg",

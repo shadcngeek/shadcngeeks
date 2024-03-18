@@ -6,6 +6,7 @@ import { Github } from "lucide-react";
 
 import { PathTypes, pages } from "./data/pages";
 import { Card, CardContent } from "@/components/ui/card";
+import { AppBadge } from "../batch";
 
 function Homepage() {
   return (
@@ -50,7 +51,12 @@ function Homepage() {
         {Object.keys(pages).map((page) => {
           return (
             <Link key={page} href={`/${page}`}>
-              <Card className="w-fit hover:dark:border-rose-600 hover:border-rose-600 transition">
+              <Card className="w-fit hover:dark:border-rose-600 hover:border-rose-600 transition relative">
+                {pages[page as PathTypes].newCount && (
+                  <div className="absolute top-7 right-8">
+                    <AppBadge count={pages[page as PathTypes].newCount} />
+                  </div>
+                )}
                 <CardContent className="p-6 text-slate-500 hover:text-rose-600 transition">
                   <Image
                     alt="image"
