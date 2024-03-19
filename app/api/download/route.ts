@@ -2,9 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { Octokit } from "octokit";
 
-const octokit = new Octokit({
-  auth: process.env.GITHUB_AUTH_TOKEN as any,
-});
+const octokit = new Octokit({});
 
 export async function POST(request: NextRequest) {
   const { path } = await request.json();
