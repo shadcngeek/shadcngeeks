@@ -12,7 +12,7 @@ function FootersPage() {
           <div key={path}>
             <Download
               className="pr-4"
-              folderPath={handleGetFolderPath(`footers/${path}`)}
+              folderPath={handleGetFolderPath(`footer/${path}`)}
             >
               <div className="m-4 mt-0 rounded-lg dark:border-t-slate-800">
                 {component}
