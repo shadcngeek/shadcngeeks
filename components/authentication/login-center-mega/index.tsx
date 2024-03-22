@@ -45,7 +45,7 @@ function LoginCenterMegaMain() {
                 Forgot password?
               </Link>
             </div>
-            <Button className="w-full">Login</Button>
+            <Button className="w-full">Log in</Button>
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
                 <span className="border-t w-full dark:border-slate-800"></span>
