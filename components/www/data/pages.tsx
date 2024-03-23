@@ -7,8 +7,9 @@ export type PathTypes =
   | "cards"
   | "forms"
   | "music"
-  | "footer"
   | "table"
+  | "clocks"
+  | "footer"
   | "headers"
   | "sidebar"
   | "pricing"
@@ -116,6 +117,12 @@ export const pages: PagesTypes = {
       { path: "simple", imageSrc: "" },
     ],
   },
+
+  clocks: {
+    imageSrc: "/images/www/svg/clock.svg",
+    subPath: [{ path: "", imageSrc: "" }],
+    newCount: 5,
+  },
   statistics: {
     imageSrc: "/images/www/svg/statistics.svg",
     subPath: [{ path: "", imageSrc: "" }],
@@ -167,13 +174,16 @@ export const pages: PagesTypes = {
       { path: "login-side", imageSrc: "/images/www/login-side.png" },
       { path: "login-center", imageSrc: "/images/www/login-center.png" },
       { path: "create-account", imageSrc: "/images/www/shadcn-1-account.png" },
-      { path: "login-center-prime", imageSrc: "/images/www/login-center-prime.png" },
+      {
+        path: "login-center-prime",
+        imageSrc: "/images/www/login-center-prime.png",
+      },
       {
         path: "login-center-mega",
         imageSrc: "/images/www/login-center-mega.png",
       },
     ],
-    newCount: 1
+    newCount: 1,
   },
 
   "coming-soon": {
