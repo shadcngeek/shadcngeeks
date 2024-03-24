@@ -19,23 +19,23 @@ function User({ fullName, imgSrc, role }: UserTypes) {
       <CardFooter className="flex flex-col gap-5 justify-center">
         <div className="space-y-2 text-left">
           <p className="text-center dark:text-white">{fullName}</p>
-          <p className="text-center text-sm text-slate-400 dark:text-slate-700">
+          <p className="text-center text-sm text-slate-700 dark:text-slate-400">
             {role}
           </p>
         </div>
         <div className="flex gap-3 justify-end">
           <div className="flex gap-3 justify-end">
             <Link href={"#"}>
-              <Twitter className="hover:text-rose-600 transition dark:text-slate-700 text-slate-400 w-4 h-4" />
+              <Twitter className="hover:text-rose-600 transition dark:text-slate-400 text-slate-400 w-4 h-4" />
             </Link>
             <Link href={"#"}>
-              <Instagram className="hover:text-rose-600 transition dark:text-slate-700 text-slate-400 w-4 h-4" />
+              <Instagram className="hover:text-rose-600 transition dark:text-slate-400 text-slate-400 w-4 h-4" />
             </Link>
             <Link href={"#"}>
-              <Youtube className="hover:text-rose-600 transition dark:text-slate-700 text-slate-400 w-4 h-4" />
+              <Youtube className="hover:text-rose-600 transition dark:text-slate-400 text-slate-400 w-4 h-4" />
             </Link>
             <Link href={"#"}>
-              <Twitch className="hover:text-rose-600 transition dark:text-slate-700 text-slate-400 w-4 h-4" />
+              <Twitch className="hover:text-rose-600 transition dark:text-slate-400 text-slate-400 w-4 h-4" />
             </Link>
           </div>
         </div>

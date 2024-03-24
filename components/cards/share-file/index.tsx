@@ -34,7 +34,10 @@ export function ShareFile() {
               <p className="text-slate-700 dark:text-slate-400 text-sm mt-2">
                 Anyone with the link can view this filter.
               </p>
-              <Link href={"#"} className="text-blue-500 underline text-sm mt-2">
+              <Link
+                href={"#"}
+                className="text-blue-500 hover:underline underline text-sm mt-2"
+              >
                 Generate link
               </Link>
             </div>

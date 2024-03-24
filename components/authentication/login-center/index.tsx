@@ -32,7 +32,10 @@ function LoginCenterMain() {
             <div className="space-y-2">
               <div className="w-full flex justify-between items-center">
                 <Label htmlFor="password">Password</Label>
-                <Link href={"#"} className="text-blue-500 text-sm">
+                <Link
+                  href={"#"}
+                  className="text-blue-500 hover:underline text-sm"
+                >
                   Forgot password?
                 </Link>
               </div>
@@ -43,7 +46,7 @@ function LoginCenterMain() {
           <CardFooter>
             <p className="text-sm  text-slate-700 dark:text-slate-500">
               Not a member yet?{" "}
-              <Link href={"#"} className="text-blue-500">
+              <Link href={"#"} className="text-blue-500 hover:underline">
                 Signup
               </Link>
             </p>

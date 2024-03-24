@@ -10,7 +10,7 @@ function User({ fullName, imgSrc, role }: UserTypes) {
       <UserImage imgSrc={imgSrc} />
       <div className="space-y-2 text-center mt-3">
         <p className="dark:text-white">{fullName}</p>
-        <p className="text-sm text-slate-400 dark:text-slate-700">{role}</p>
+        <p className="text-sm text-slate-700 dark:text-slate-400">{role}</p>
       </div>
     </div>
   );

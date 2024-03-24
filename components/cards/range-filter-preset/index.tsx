@@ -32,7 +32,7 @@ export function RangeFilterPreset() {
         </CardHeader>
         <CardContent>
           <div className="mb-5 flex gap-3 items-center">
-            <p className="text-slate-500 dark:text-slate-700">Price</p>
+            <p className="text-slate-500 dark:text-slate-400">Price</p>
             <PriceInput
               value={startPrice * 100}
               onChange={(e: any) => {
@@ -52,7 +52,7 @@ export function RangeFilterPreset() {
             onValueChange={(value) => setPrice(value)}
             className="mb-10 w-full"
           />
-          <p className="mb-3 text-slate-500 dark:text-slate-700">Gender</p>
+          <p className="mb-3 text-slate-500 dark:text-slate-400">Gender</p>
           <div className="flex gap-4 text-slate-700 dark:text-slate-400">
             <Button>Male</Button>
             <Button>Female</Button>
@@ -60,7 +60,7 @@ export function RangeFilterPreset() {
           <Presets setPrice={setPrice} />
 
           <div className="mt-10">
-            <p className="text-slate-500 dark:text-slate-700">Size</p>
+            <p className="text-slate-500 dark:text-slate-400">Size</p>
             <div className="flex gap-3 mt-3">
               {Object.keys(sizes).map((i: any, index: any) => (
                 <Size

@@ -37,7 +37,7 @@ function LoginForm() {
               </label>
             </div>
 
-            <Link href={"#"} className="text-blue-500 text-sm">
+            <Link href={"#"} className="text-blue-500 hover:underline text-sm">
               Forgot password?
             </Link>
           </div>

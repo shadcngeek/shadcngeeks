@@ -23,7 +23,7 @@ function LoginCenterPrime() {
           <CardHeader>
             <CardTitle className="text-center">
               Sign in to your account
-              <p className="text-sm mt-2 font-normal text-slate-400 dark:text-slate-700">
+              <p className="text-sm mt-2 font-normal text-slate-700 dark:text-slate-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing.
               </p>
             </CardTitle>
@@ -52,12 +52,12 @@ function LoginCenterPrime() {
           <CardFooter className="flex-col gap-2">
             <p className="text-sm  text-slate-700 dark:text-slate-500">
               Not a member yet?{" "}
-              <Link href={"#"} className="text-blue-500">
+              <Link href={"#"} className="text-blue-500 hover:underline">
                 Signup
               </Link>
             </p>
 
-            <Link href={"#"} className="text-blue-500 text-sm">
+            <Link href={"#"} className="text-blue-500 hover:underline text-sm">
               Forgot password?
             </Link>
           </CardFooter>

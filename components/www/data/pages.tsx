@@ -23,7 +23,8 @@ export type PathTypes =
   | "coming-soon"
   | "team-section"
   | "landing-page"
-  | "authentication";
+  | "authentication"
+  | "product-overview";
 
 type PagesTypes = {
   [key in PathTypes]: {
@@ -78,6 +79,11 @@ export const pages: PagesTypes = {
         imageSrc: "/images/www/testi-grid-multi.png",
       },
     ],
+  },
+  "product-overview": {
+    imageSrc: "/images/www/svg/product-overview.svg",
+    subPath: [{ path: "", imageSrc: "" }],
+    newCount: 5,
   },
 
   "not-found": {

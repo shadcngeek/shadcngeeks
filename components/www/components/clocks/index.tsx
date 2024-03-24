@@ -5,7 +5,7 @@ import { nonDynamicClockData } from "../../data/non-dynamic-clock-data";
 
 function ClocksPage() {
   return (
-    <div className="px-4 md:px-[50px] ld:px-[100px] xl:px-[200px] py-4 dark:bg-slate-950 min-h-dvh">
+    <div className="px-4 md:px-[50px] lg:px-[100px] xl:px-[200px] py-4 dark:bg-slate-950 min-h-dvh">
       <div className="border rounded-lg space-y-8 pt-3 dark:border-slate-800">
         {nonDynamicClockData.map(({ component, path }) => (
           <div key={path}>

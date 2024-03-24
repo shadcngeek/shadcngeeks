@@ -26,7 +26,7 @@ function ClockInner() {
           style={{
             transform: `rotateZ(${time.getHours() * 30}deg)`,
           }}
-          className="w-1 h-[70px] bg-rose-600 absolute origin-bottom top-[26%] left-[50%] translate-x-[-50%] rotate-4"
+          className="w-1 h-[70px] bg-rose-600 absolute origin-bottom top-[27%] left-[50%] translate-x-[-50%] rotate-4"
         ></div>
         <div
           style={{

@@ -31,7 +31,7 @@ function Player() {
         <div className="flex justify-between">
           <div className="space-y-2 mt-3">
             <p className="dark:text-white">{"Phillip Doglas"}</p>
-            <p className="text-sm text-slate-400 dark:text-slate-700">
+            <p className="text-sm text-slate-700 dark:text-slate-400">
               {"Frontend Developer"}
             </p>
           </div>

@@ -149,7 +149,7 @@ export const columns: ColumnDef<Production>[] = [
     id: "actions_",
     cell: ({ row }) => (
       <div>
-        <Link href={"#"} className="text-blue-500">
+        <Link href={"#"} className="text-blue-500 hover:underline">
           View build
         </Link>
       </div>

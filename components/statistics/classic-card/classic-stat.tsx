@@ -10,7 +10,7 @@ function ClassicCard() {
           <p className="text-center text-3xl lg:text-5xl font-bold">
             Trusted by designers worldwide
           </p>
-          <p className="text-center text-slate-500 dark:text-slate-700">
+          <p className="text-center text-slate-500 dark:text-slate-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Perspiciatis, dignissimos?
           </p>

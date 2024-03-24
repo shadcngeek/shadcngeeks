@@ -53,7 +53,7 @@ function Repository() {
           <p className="text-slate-700 dark:text-slate-400 text-sm">
             A repository contains all project files, including the revision
             history. Already have a project repository elsewhere?{" "}
-            <Link href={"#"} className="text-blue-500 underline">
+            <Link href={"#"} className="text-blue-500 hover:underline">
               Import a repository.
             </Link>
           </p>
@@ -96,7 +96,7 @@ function Repository() {
                 <p className="text-slate-700 dark:text-slate-400 text-sm">
                   This is where you can write a long description for your
                   project.
-                  <Link href={"#"} className="text-blue-500 underline">
+                  <Link href={"#"} className="text-blue-500 hover:underline">
                     Learn more about READMEs. Add .gitignore
                   </Link>
                 </p>
@@ -109,7 +109,7 @@ function Repository() {
                 />
                 <p className="text-slate-700 dark:text-slate-400 text-sm">
                   Choose which files not to track from a list of templates.{" "}
-                  <Link href={"#"} className="text-blue-500 underline">
+                  <Link href={"#"} className="text-blue-500 hover:underline">
                     Learn more about ignoring files.{" "}
                   </Link>
                 </p>
@@ -121,7 +121,7 @@ function Repository() {
                 <p className="text-slate-700 dark:text-slate-400 text-sm">
                   A license tells others what they can and can&apos;t do with
                   your code.{" "}
-                  <Link href={"#"} className="text-blue-500 underline">
+                  <Link href={"#"} className="text-blue-500 hover:underline">
                     {" "}
                     Learn more about licenses.
                   </Link>

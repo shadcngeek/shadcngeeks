@@ -11,7 +11,7 @@ function Presets({ setPrice }: PresetTypes) {
 
   return (
     <div className="mt-10">
-      <p className="text-slate-500 dark:text-slate-700">Preset</p>
+      <p className="text-slate-500 dark:text-slate-400">Preset</p>
       <div className="flex gap-3 mt-3 flex-wrap">
         <Button
           onClick={() => handleSetPreset(0, 2000)}

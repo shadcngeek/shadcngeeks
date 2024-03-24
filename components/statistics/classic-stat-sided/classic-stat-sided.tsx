@@ -10,7 +10,7 @@ function ClassicStatSided() {
           <p className="text-3xl lg:text-5xl font-bold">
             Trusted by designers worldwide
           </p>
-          <p className=" text-slate-500 dark:text-slate-700">
+          <p className=" text-slate-500 dark:text-slate-400">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
             voluptate mollitia inventore quis minus debitis nesciunt nobis et
             reiciendis non.

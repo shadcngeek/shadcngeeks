@@ -33,7 +33,7 @@ export function Copy() {
             className={cn(
               open
                 ? "text-blue-500 dark:text-blue-500"
-                : "text-slate-400 dark:text-slate-700"
+                : "text-slate-700 dark:text-slate-400"
             )}
           />
         </Button>

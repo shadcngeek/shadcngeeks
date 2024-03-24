@@ -19,7 +19,7 @@ function User({ fullName, imgSrc, role }: UserTypes) {
           <div className="space-y-4">
             <div className="space-y-2 text-left">
               <p className="dark:text-white">{fullName}</p>
-              <p className="text-sm text-slate-400 dark:text-slate-700">
+              <p className="text-sm text-slate-700 dark:text-slate-400">
                 {role}
               </p>
             </div>
@@ -33,16 +33,16 @@ function User({ fullName, imgSrc, role }: UserTypes) {
           <div className="mb-auto md:absolute bottom-0 w-full left-0 p-6 flex items-center justify-end">
             <div className="flex gap-3 md:justify-end">
               <Link href={"#"}>
-                <Twitter className="hover:text-rose-600 transition dark:text-slate-700 text-slate-400 w-4 h-4" />
+                <Twitter className="hover:text-rose-600 transition dark:text-slate-400 text-slate-400 w-4 h-4" />
               </Link>
               <Link href={"#"}>
-                <Instagram className="hover:text-rose-600 transition dark:text-slate-700 text-slate-400 w-4 h-4" />
+                <Instagram className="hover:text-rose-600 transition dark:text-slate-400 text-slate-400 w-4 h-4" />
               </Link>
               <Link href={"#"}>
-                <Youtube className="hover:text-rose-600 transition dark:text-slate-700 text-slate-400 w-4 h-4" />
+                <Youtube className="hover:text-rose-600 transition dark:text-slate-400 text-slate-400 w-4 h-4" />
               </Link>
               <Link href={"#"}>
-                <Twitch className="hover:text-rose-600 transition dark:text-slate-700 text-slate-400 w-4 h-4" />
+                <Twitch className="hover:text-rose-600 transition dark:text-slate-400 text-slate-400 w-4 h-4" />
               </Link>
             </div>
           </div>

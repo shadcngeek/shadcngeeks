@@ -22,7 +22,7 @@ function UserSimple({
         </div>
         <div className="space-y-2 mt-3">
           <p className="dark:text-white">{fullName}</p>
-          <p className="text-sm text-slate-400 dark:text-slate-700">
+          <p className="text-sm text-slate-700 dark:text-slate-400">
             {jobTitle}
           </p>
         </div>

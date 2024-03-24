@@ -19,7 +19,7 @@ function MessageList({
         </Avatar>
         <div className="flex w-full justify-between items-start dark:text-white">
           <p>{fullName}</p>
-          <p className="text-sm text-slate-400 dark:text-slate-700">{date}</p>
+          <p className="text-sm text-slate-700 dark:text-slate-400">{date}</p>
         </div>
       </div>
       <div className="w-full pl-12 flex items-center justify-between">

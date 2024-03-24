@@ -11,7 +11,7 @@ function TestimonialClassicStar() {
           <p className="text-2xl sm:text-4xl md:text-5xl xl:text-7xl dark:text-white text-center font-semibold">
             What Clients Say About Us
           </p>
-          <div className="md:w-[600px] mx-auto text-slate-400 dark:text-slate-700">
+          <div className="md:w-[600px] mx-auto text-slate-700 dark:text-slate-400">
             <p className="text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               voluptas, nulla delectus explicabo eos autem officia dolore
