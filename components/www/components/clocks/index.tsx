@@ -11,7 +11,7 @@ function ClocksPage() {
           <div key={path}>
             <Download
               className="pr-4"
-              folderPath={handleGetFolderPath(`headers/${path}`)}
+              folderPath={handleGetFolderPath(`clocks/${path}`)}
             >
               <div className="m-4 mt-0 rounded-lg border dark:border-slate-800 dark:border-t-slate-800">
                 {component}
