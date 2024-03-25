@@ -1,19 +1,21 @@
-import { Button } from "@/components/ui/button";
+import React from "react";
+
+import { Heart, MapPin } from "lucide-react";
+
 import {
   Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
   CardTitle,
+  CardHeader,
+  CardFooter,
+  CardContent,
 } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { Heart, MapPin } from "lucide-react";
-import React from "react";
 import Quantity from "./quantity";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 function PlaceOrder() {
   return (
-    <>
+    <div>
       <Card className="w-full">
         <CardHeader>
           <CardTitle className="flex flex-row justify-between items-center">
@@ -64,7 +66,7 @@ function PlaceOrder() {
           </div>
         </CardFooter>
       </Card>
-    </>
+    </div>
   );
 }
 

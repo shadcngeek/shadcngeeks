@@ -67,8 +67,17 @@ import { RangeFilterPreset } from "@/components/cards/range-filter-preset";
 import TextBriefIcon from "@/components/cards/text-brief-icon";
 import PricePackTop from "@/components/cards/price-pack-top";
 import PriceSmall from "@/components/cards/price-small";
+import PlaceOrder from "@/components/cards/place-order";
+import PriceDiscount from "@/components/cards/price-discount";
+import PlaceOrderSurge from "@/components/cards/place-order-surge";
+import PlaceOrderSurgeQuality from "@/components/cards/place-order-surge-quality";
+import ProductList from "@/components/cards/product-list";
 
 export const cardsData: CardsDataTypes[] = [
+  { component: <PlaceOrderSurgeQuality />, path: "place-order-surge-quality" },
+  { component: <PlaceOrderSurge />, path: "place-order-surge" },
+  { component: <PriceDiscount />, path: "price-discount" },
+  { component: <PlaceOrder />, path: "place-order" },
   { component: <PriceSmall />, path: "price-small" },
   { component: <PricePackTop />, path: "price-pack-top" },
   { component: <TextBriefIcon />, path: "text-brief-icon" },
@@ -111,6 +120,7 @@ export const cardsData: CardsDataTypes[] = [
   { component: <DatePicker />, path: "date-picker" },
   { component: <RangeFilter />, path: "range-filter" },
   { component: <TeamMembers />, path: "team-members" },
+  { component: <ProductList />, path: "product-list" },
   { component: <ErrorMessage />, path: "error-message" },
   { component: <UserProgress />, path: "user-progress" },
   { component: <FeedbackRate />, path: "feedback-rate" },
@@ -130,9 +140,9 @@ export const cardsData: CardsDataTypes[] = [
   { component: <CookieSettings />, path: "cookie-settings" },
   { component: <PriceMostPopular />, path: "price-most-popular" },
   { component: <AvatarsHorizontal />, path: "avatars-horizontal" },
-  // { component: <UserFollowMessage />, path: "user-follow-message" },
-  // { component: <InformationMessage />, path: "information-message" },
-  // { component: <HorizontalSalesCard />, path: "horizontal-sales-card" },
-  // { component: <CharacterSwipeDotted />, path: "character-swipe-dotted" },
-  // { component: <SubscribeToNewsletter />, path: "subscribe-to-newsletter" },
+  { component: <UserFollowMessage />, path: "user-follow-message" },
+  { component: <InformationMessage />, path: "information-message" },
+  { component: <HorizontalSalesCard />, path: "horizontal-sales-card" },
+  { component: <CharacterSwipeDotted />, path: "character-swipe-dotted" },
+  { component: <SubscribeToNewsletter />, path: "subscribe-to-newsletter" },
 ];
