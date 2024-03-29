@@ -5,25 +5,24 @@ import { Minus, Plus } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
-function Quality() {
-  const [quality, setQuality] = useState<number>(1);
+function Quantity() {
+  const [quantity, setQuantity] = useState<number>(1);
 
   return (
     <div className="space-y-2">
-      <p>Quality</p>
       <div className="flex items-center gap-2">
         <Button
           size={"icon"}
           variant={"outline"}
-          onClick={() => quality > 1 && setQuality(quality - 1)}
+          onClick={() => quantity > 1 && setQuantity(quantity - 1)}
         >
           <Minus className="w-4 h-4 text-slate-700 dark:text-slate-400" />
         </Button>
-        <Button variant={"outline"}>{quality}</Button>
+        <Button variant={"outline"}>{quantity}</Button>
         <Button
           size={"icon"}
           variant={"outline"}
-          onClick={() => setQuality(quality + 1)}
+          onClick={() => setQuantity(quantity + 1)}
         >
           <Plus className="w-4 h-4 text-slate-700 dark:text-slate-400" />
         </Button>
@@ -32,4 +31,4 @@ function Quality() {
   );
 }
 
-export default Quality;
+export default Quantity;
