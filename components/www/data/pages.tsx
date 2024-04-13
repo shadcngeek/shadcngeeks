@@ -23,6 +23,7 @@ export type PathTypes =
   | "coming-soon"
   | "team-section"
   | "landing-page"
+  | "shopping-cart"
   | "authentication"
   | "product-overview";
 
@@ -38,6 +39,12 @@ export const pages: PagesTypes = {
   "team-section": {
     imageSrc: "/images/www/svg/our-team.svg",
     subPath: [{ path: "", imageSrc: "" }],
+  },
+
+  "shopping-cart": {
+    imageSrc: "/images/www/svg/shopping-cart.svg",
+    subPath: [{ path: "", imageSrc: "" }],
+    newCount: 2,
   },
 
   pricing: {

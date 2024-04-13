@@ -1,10 +1,10 @@
 export interface ItemTypes {
-  imgUrl: string;
-  itemName: string;
+  imgUrl?: string;
+  itemName?: string;
 }
 
-export interface TableTypes {
-  item: ItemTypes;
+export interface TableTypes extends ItemTypes {
+  item?: ItemTypes;
   quantity: number;
   itemPrice: number;
   totalPrice: number;

@@ -7,6 +7,7 @@ import Item from "./components/Item";
 import Quantity from "./components/quality";
 
 import { TableTypes } from "./type";
+import { Button } from "@/components/ui/button";
 
 const columnHelper = createColumnHelper<TableTypes>();
 
@@ -17,7 +18,7 @@ export const columns = [
         <span>Header</span>
       </div>
     ),
-    cell: ({ getValue, row }) => {
+    cell: ({ getValue }) => {
       const { imgUrl, itemName } = getValue();
       return <Item {...{ imgUrl, itemName }} />;
     },
@@ -37,8 +38,11 @@ export const columns = [
     header: () => <span>Total</span>,
     cell: ({ getValue }) => {
       return (
-        <div className="flex justify-between items-center">
-          <p>{getValue()}</p> <Trash2 />
+        <div className="flex justify-between items-center gap-3">
+          <p>{getValue()}</p>
+          <Button size={"icon"} variant={"ghost"}>
+            <Trash2 className="w-5 h-5" />
+          </Button>
         </div>
       );
     },

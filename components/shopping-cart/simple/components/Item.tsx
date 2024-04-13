@@ -5,12 +5,12 @@ import { ItemTypes } from "../type";
 
 function Item({ imgUrl, itemName }: ItemTypes) {
   return (
-    <div className="w-[500px]">
+    <div className="w-[300px] md:w-[400px] lg:w-[500px]">
       <div className="flex gap-5">
         <div className="w-[100px] h-[75px] rounded-lg overflow-hidden">
           <Image
             className="w-full h-full object-cover"
-            src={imgUrl}
+            src={imgUrl!}
             alt="Product image"
             width={200}
             height={100}

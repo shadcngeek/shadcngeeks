@@ -5,8 +5,8 @@ import { nonDynamicShoppingCartData } from "../../data/non-dynamic-shopping-cart
 
 function ShoppingCartPage() {
   return (
-    <div className="px-4 xl:px-[100px] py-4 dark:bg-slate-950 min-h-dvh">
-      <div className="border rounded-lg space-y-8 pt-3 dark:border-slate-800">
+    <div className="pb-4 sm:p-4 xl:px-[100px] dark:bg-slate-950 min-h-dvh">
+      <div className="sm:border mx-auto max-w-[1536px] rounded-lg space-y-8 pt-3 dark:border-slate-800">
         {nonDynamicShoppingCartData.map(({ component, path }) => (
           <div key={path}>
             <Download
