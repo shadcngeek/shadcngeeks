@@ -14,12 +14,12 @@ function Homepage() {
       <div className="space-y-4 md:space-y-10 dark:text-white px-4">
         <div className="lg:w-[700px] text-center mx-auto">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">
-            Free predesigned components for all{" "}
+            Beautifully crafted UI components for all{" "}
             <span className="text-rose-600">ShadcnGeeks </span>
           </h1>
           <h2 className="font-normal mt-3 md:mt-8 text-slate-400">
             ShadcnGeeks is an open-source project that provides you with free
-            predesigned components you can use in your react projects with no
+            beautifully crafted UI components you can use in your react projects with no
             limitation.
           </h2>
         </div>
@@ -41,9 +41,9 @@ function Homepage() {
               className="text-blue-500"
               href={"https://ui.shadcn.com/"}
             >
-              shadcn
+              shadcn/ui
             </Link>
-            . You will also find some predesigned components from shadcn here.
+            . You will also find some of their components here.
           </p>
         </div>
       </div>

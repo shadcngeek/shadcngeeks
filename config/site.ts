@@ -4,7 +4,7 @@ export const siteConfig = {
   ogImage:
     "https://shadcngeeks.vercel.app/_next/image?url=%2Fimages%2Fog.png&w=1080&q=75",
   description:
-    "An open-source project that provides you with free beautifully predesigned components you can use in your react projects with no limitation.",
+    "An open-source project that provides you with beautifully crafted UI's you can use in your react projects for free.",
   links: {
     github: "https://github.com/shadcngeek/shadcngeeks",
   },
