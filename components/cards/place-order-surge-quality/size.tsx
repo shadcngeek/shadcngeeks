@@ -22,10 +22,10 @@ function Size() {
   return (
     <div className="space-y-2">
       <p>Size</p>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 w-fit">
+      <div className="flex flex-wrap gap-2 w-fit">
         <Button
           className={cn(
-            "w-24",
+            "w-20",
             isSelected.a ? "border-violet-500 dark:border-violet-500" : ""
           )}
           variant={"outline"}
@@ -35,7 +35,7 @@ function Size() {
         </Button>
         <Button
           className={cn(
-            "w-24",
+            "w-20",
             isSelected.b ? "border-violet-500 dark:border-violet-500" : ""
           )}
           variant={"outline"}
@@ -45,7 +45,7 @@ function Size() {
         </Button>
         <Button
           className={cn(
-            "w-24",
+            "w-20",
             isSelected.c ? "border-violet-500 dark:border-violet-500" : ""
           )}
           variant={"outline"}
@@ -55,7 +55,7 @@ function Size() {
         </Button>
         <Button
           className={cn(
-            "w-24",
+            "w-20",
             isSelected.d ? "border-violet-500 dark:border-violet-500" : ""
           )}
           variant={"outline"}
@@ -65,7 +65,7 @@ function Size() {
         </Button>
         <Button
           className={cn(
-            "w-24",
+            "w-20",
             isSelected.e ? "border-violet-500 dark:border-violet-500" : ""
           )}
           variant={"outline"}
@@ -76,7 +76,7 @@ function Size() {
 
         <Button
           className={cn(
-            "w-24",
+            "w-20",
             isSelected.f ? "border-violet-500 dark:border-violet-500" : ""
           )}
           variant={"outline"}
@@ -86,7 +86,7 @@ function Size() {
         </Button>
         <Button
           className={cn(
-            "w-24",
+            "w-20",
             isSelected.g ? "border-violet-500 dark:border-violet-500" : ""
           )}
           variant={"outline"}
@@ -96,7 +96,7 @@ function Size() {
         </Button>
         <Button
           className={cn(
-            "w-24",
+            "w-20",
             isSelected.h ? "border-violet-500 dark:border-violet-500" : ""
           )}
           variant={"outline"}

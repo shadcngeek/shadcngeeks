@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 function UserSimple() {
   return (
     <div>
-      <Card className="w-fit ml-auto">
+      <Card className="w-fit mx-auto sm:mx-0 sm:mx-auto sm:mx-0 sm:ml-auto">
         <CardContent className="p-6">
           <div className="w-fit mx-auto">
             <UserImage

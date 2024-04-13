@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export function Previous() {
   return (
     <Link href={"#"}>
-      <Card className="w-[350px]">
+      <Card className="max-w-[350px]">
         <CardContent className="p-6">
           <div className="flex justify-start gap-5 items-center">
             <ChevronLeft size={24} />

@@ -9,7 +9,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 function UserPad() {
   return (
     <div>
-      <Card className="w-[350px] ml-auto">
+      <Card className="max-w-[350px] mx-auto sm:mx-0 sm:ml-auto">
         <CardContent className="p-20">
           <div className="w-fit mx-auto">
             <UserImage

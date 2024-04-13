@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -5,18 +6,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { mapData } from "./data";
 import { MapStatisticListTypes } from "./types";
+import { Progress } from "@/components/ui/progress";
+
+function ProgressBar({ progressValue }: { progressValue: number }) {
+  const [progress, setProgress] = React.useState(progressValue);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => setProgress(progress + 20), 500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return <Progress value={progress} className="w-full h-2" />;
+}
 
 const MapStatisticList = ({ count, title }: MapStatisticListTypes) => (
-  <div className="space-y-2 py-4 border-b border-slate-200 dark:border-slate-800">
+  <div className="space-y-2 py-4 border-b border-slate-200 dark:border-slate-800 first:pt-0 last:border-none">
     <p className="">{title}</p>
-    <div className="relative w-full h-2 border border-slate-200 dark:border-slate-800 rounded-full">
-      <div
-        style={{
-          width: `${(count / 100) * 10}%`,
-        }}
-        className={`absolute h-full bg-slate-950 dark:bg-white rounded-full left-0 `}
-      ></div>
-    </div>
+    <ProgressBar progressValue={count} />
   </div>
 );
 
@@ -29,8 +35,8 @@ function Ranks() {
           Top users of the product
         </p>
       </CardHeader>
-      <CardContent>
-        <ScrollArea className="h-[400px]">
+      <ScrollArea className="h-[400px]">
+        <CardContent>
           {mapData.slice(1).map((data) => (
             <MapStatisticList
               key={data[0]}
@@ -38,8 +44,8 @@ function Ranks() {
               count={data[1] as number}
             />
           ))}
-        </ScrollArea>
-      </CardContent>
+        </CardContent>
+      </ScrollArea>
     </Card>
   );
 }

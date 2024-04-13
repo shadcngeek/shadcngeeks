@@ -244,7 +244,7 @@ export function MailDisplay({ mail }: MailDisplayProps) {
                     <Switch id="mute" aria-label="Mute thread" /> Mute this
                     thread
                   </Label>
-                  <Button size="sm" className="ml-auto">
+                  <Button size="sm" className="mx-auto sm:mx-0 sm:ml-auto">
                     Send
                   </Button>
                 </div>

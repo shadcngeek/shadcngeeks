@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 function Quote() {
   return (
-    <Card className="max-w-[350px] xl:max-w-[400px]">
+    <Card className="max-w-[350px] xl:max-w-[400px] mx-auto">
       <CardHeader className="mx-auto w-fit flex flex-col items-center">
         <UserAvatar
           imgSrc={

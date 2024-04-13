@@ -8,8 +8,6 @@ import handleGetFolderPath from "@/actions/handleGetFolderPath";
 
 import { cardsData } from "./data";
 
-const firstNum = Math.floor(cardsData.length / 3);
-
 function InnerResponsiveContainer({
   className,
   ...props
@@ -17,7 +15,7 @@ function InnerResponsiveContainer({
   return (
     <div
       className={cn(
-        "flex items-center justify-center [&>div>div]:w-full",
+        "flex items-center justify-center [&>div>div]:w-full break-inside-avoid-column",
         className
       )}
       {...props}
@@ -27,39 +25,15 @@ function InnerResponsiveContainer({
 
 function Cards() {
   return (
-    <div className="dark:bg-slate-950 md:px-[50px] lg:px-[20px] xl:px-[8vw]">
-      <div className="items-start justify-center gap-6 rounded-lg p-8 grid lg:grid-cols-2 xl:grid-cols-3">
-        <div className="col-span-2 grid items-start gap-6 lg:col-span-1">
-          {cardsData.slice(0, firstNum).map(({ component, path }) => (
-            <InnerResponsiveContainer key={path}>
-              <Download folderPath={handleGetFolderPath(`cards/${path}`)}>
-                {component}
-              </Download>
-            </InnerResponsiveContainer>
-          ))}
-        </div>
-
-        <div className="col-span-2 grid items-start gap-6 lg:col-span-1">
-          {cardsData
-            .slice(firstNum, firstNum * 2)
-            .map(({ component, path }) => (
-              <InnerResponsiveContainer key={path}>
-                <Download folderPath={handleGetFolderPath(`cards/${path}`)}>
-                  {component}
-                </Download>
-              </InnerResponsiveContainer>
-            ))}
-        </div>
-
-        <div className="col-span-2 grid items-start gap-6 lg:col-span-1">
-          {cardsData.slice(firstNum * 2).map(({ component, path }) => (
-            <InnerResponsiveContainer key={path}>
-              <Download folderPath={handleGetFolderPath(`cards/${path}`)}>
-                {component}
-              </Download>
-            </InnerResponsiveContainer>
-          ))}
-        </div>
+    <div className="dark:bg-slate-950 md:px-[50px] lg:px-[20px]">
+      <div className="sm:columns-2 lg:columns-3 xl:columns-4 gap-5 max-w-[1536px] mx-auto py-5">
+        {cardsData.map(({ component, path }) => (
+          <InnerResponsiveContainer className="mt-5 first:mt-0" key={path}>
+            <Download folderPath={handleGetFolderPath(`cards/${path}`)}>
+              {component}
+            </Download>
+          </InnerResponsiveContainer>
+        ))}
       </div>
     </div>
   );

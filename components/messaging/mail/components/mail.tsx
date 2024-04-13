@@ -175,7 +175,7 @@ export function Mail({
           <Tabs defaultValue="all">
             <div className="flex items-center px-4 py-2">
               <h1 className="text-xl font-bold">Inbox</h1>
-              <TabsList className="ml-auto">
+              <TabsList className="mx-auto sm:mx-0 sm:ml-auto">
                 <TabsTrigger
                   value="all"
                   className="text-zinc-600 dark:text-zinc-200"

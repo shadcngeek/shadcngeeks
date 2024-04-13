@@ -26,7 +26,7 @@ export function RangeFilterPreset() {
 
   return (
     <div>
-      <Card className=" md:w-[420px] ml-auto">
+      <Card className="max-w-[420px] mx-auto sm:mx-0 sm:ml-auto">
         <CardHeader>
           <CardTitle>Filter</CardTitle>
         </CardHeader>

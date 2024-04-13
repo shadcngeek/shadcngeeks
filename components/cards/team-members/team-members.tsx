@@ -46,7 +46,7 @@ export function TeamMembers() {
           </div>
           <Popover>
             <PopoverTrigger asChild>
-              <Button variant="outline" className="ml-auto">
+              <Button variant="outline" className="mx-auto sm:mx-0 sm:ml-auto">
                 Owner{" "}
                 <ChevronDownIcon className="ml-2 h-4 w-4 text-muted-foreground" />
               </Button>
@@ -100,7 +100,7 @@ export function TeamMembers() {
           </div>
           <Popover>
             <PopoverTrigger asChild>
-              <Button variant="outline" className="ml-auto">
+              <Button variant="outline" className="mx-auto sm:mx-0 sm:ml-auto">
                 Member{" "}
                 <ChevronDownIcon className="ml-2 h-4 w-4 text-muted-foreground" />
               </Button>

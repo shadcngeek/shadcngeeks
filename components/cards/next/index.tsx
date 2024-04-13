@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export function Next() {
   return (
     <Link href={"#"}>
-      <Card className="w-[350px]">
+      <Card className="max-w-[350px]">
         <CardContent className="p-6">
           <div className="flex justify-end gap-5 items-center">
             <div className="flex items-center space-x-4 text-right ">
