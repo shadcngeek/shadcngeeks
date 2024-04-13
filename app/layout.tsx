@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 import "./globals.css";
 
@@ -20,17 +20,22 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   description: siteConfig.description,
   keywords: [
+    "UI",
     "Free",
     "React",
     "Shadcn",
     "Next.js",
+    "Crafted",
+    "Designed",
     "Radix UI",
+    "Shadcn/ui",
     "Components",
     "ShadcnGeeks",
     "Predesigned",
     "Open Source",
     "Tailwind CSS",
     "Server Components",
+    "Client Components",
   ],
   authors: [
     {
@@ -62,6 +67,13 @@ export const metadata: Metadata = {
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
 };
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "#020617" },
+  ],
+}
 
 const fontMono = FontMono({
   subsets: ["latin"],
