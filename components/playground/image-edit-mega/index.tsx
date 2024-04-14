@@ -8,8 +8,8 @@ import { PromptGuide } from "./prompt-guide";
 import { TopPSelector } from "./top-p-selector";
 import { Switch } from "@/components/ui/switch";
 import { ModelSelector } from "./model-selector";
-import DisplayImages from "./display-images/images";
 import { QualityDetails } from "./quality-details";
+import DisplayImages from "./display-images/images";
 import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 import ImageUpload from "./image-upload/image-upload";
@@ -20,7 +20,7 @@ import { models, types } from "./data/models";
 
 function ImageEditMega() {
   return (
-    <div className="min-h-dvh p-4 xl:px-[100px] dark:bg-slate-950">
+    <div className="min-h-[100vh] p-4 xl:px-[100px] dark:bg-slate-950">
       <div className="md:hidden">
         <Image
           width={1280}
@@ -36,15 +36,19 @@ function ImageEditMega() {
           className="hidden dark:block"
           src="/images/www/image-edit-mega-dark.png"
         />
+        <p className="text-slate-700 text-sm">
+          This UI is not available for small screen devices yet. Please, switch
+          to a large screen device.
+        </p>
       </div>
 
-      <div className="border dark:border-slate-800 rounded-lg p-5 pb-0 hidden md:block">
+      <div className="border dark:border-slate-800 rounded-lg p-5 pb-0 hidden md:block max-w-[1536px] mx-auto">
         <Header />
 
         <Separator />
 
         <div className="flex">
-          <div className="xl:shrink-0 pt-5 space-y-5 max-w-[400px] border-r dark:border-slate-800 pr-5 pb-20">
+          <div className="2xl:shrink-0 pt-5 space-y-5 max-w-[400px] border-r dark:border-slate-800 pr-5 pb-20">
             <div className="space-y-2">
               <p className="text-1xl font-bold dark:text-white">Prompt</p>
               <p className="text-sm text-slate-700 dark:text-slate-400">
@@ -85,7 +89,7 @@ function ImageEditMega() {
             <PromptForm />
           </div>
 
-          <div className="xl:shrink-0  mt-5 space-y-10 max-w-[400px] pb-20">
+          <div className="2xl:shrink-0  mt-5 space-y-10 max-w-[400px] pb-20">
             <div>
               <p className="text-1xl font-bold dark:text-white">Model</p>
               <p className="text-sm text-slate-700 dark:text-slate-400">

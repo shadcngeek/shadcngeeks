@@ -15,7 +15,7 @@ import { people } from "./data";
 
 function ClassicMega() {
   return (
-    <div className="dark:bg-slate-950 p-4 md:p-10 min-h-dvh">
+    <div className="dark:bg-slate-950 p-4 md:p-10 min-h-[100vh]">
       <div className="sm:hidden dark:text-white">
         <Image
           width={1280}
@@ -33,8 +33,8 @@ function ClassicMega() {
         />
 
         <p className="text-slate-700 text-sm">
-          This UI is not available for small screen devices yet. Switch to a
-          large screen device.
+          This UI is not available for small screen devices yet. Please, switch
+          to a large screen device.
         </p>
       </div>
 

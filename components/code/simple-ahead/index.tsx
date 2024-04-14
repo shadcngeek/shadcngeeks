@@ -24,9 +24,8 @@ function SimpleAheadPreview() {
             language="javascript"
             style={atomOneDarkReasonable}
             customStyle={{
-              backgroundColor: "transparent",
-
               overflowX: "unset",
+              backgroundColor: "transparent",
             }}
           >
             {codeString}

@@ -30,12 +30,16 @@ function ImageUpload() {
               quality={10}
               fileSizeLimit="3mb"
               content={
-                <div className="w-fit text-blue-500 transition pr-1 cursor-pointer text-sm">
-                  Upload
+                <div className="">
+                  <p className="text-sm text-gray-700 text-center">
+                    <span className="text-blue-500 transition pr-1 cursor-pointer text-sm">
+                      Upload
+                    </span>
+                    Drag and Drop image here.
+                  </p>
                 </div>
               }
             />
-            <p className="text-sm text-gray-700">Drag and Drop image here.</p>
           </div>
         }
       />

@@ -62,6 +62,7 @@ export const pages: PagesTypes = {
       { path: "ai-image-generator", imageSrc: "" },
       { path: "dashboard-landing", imageSrc: "" },
     ],
+    newCount: 3,
   },
 
   testimonial: {

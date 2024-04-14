@@ -30,9 +30,9 @@ function FooterRichLeftSubscribe() {
               </div>
               <form onSubmit={(e) => e.preventDefault()}>
                 <div className="flex gap-2 flex-wrap sm:flex-nowrap">
-                  <div className="relative w-full">
+                  <div className="relative w-[250px] sm:w-[300px] border dark:border-slate-800 rounded-md">
                     <Input
-                      className="sm:w-[300px]"
+                      className="w-[150px] border-none focus-visible:ring-0 focus-visible:ring-offset-0"
                       placeholder="YourEmail@gmail.com"
                     />
                     <div className="absolute top-[50%] translate-y-[-50%] right-[2px]">

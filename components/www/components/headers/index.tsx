@@ -5,7 +5,7 @@ import { nonDynamicDataHeaders } from "../../data/non-dynamic-pages";
 
 function HeadersPage() {
   return (
-    <div className="px-4 md:px-[50px] ld:px-[100px] xl:px-[200px] py-4 dark:bg-slate-950">
+    <div className="px-4 md:px-[50px] lg:px-[100px] xl:px-[200px] py-4 dark:bg-slate-950">
       <div className="border rounded-lg space-y-8 pt-3 dark:border-slate-800">
         {nonDynamicDataHeaders.map(({ component, path }) => (
           <div key={path}>

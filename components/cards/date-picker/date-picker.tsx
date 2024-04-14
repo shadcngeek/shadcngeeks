@@ -1,6 +1,6 @@
+import { Label } from "@/components/ui/label";
 import DatePickerWithRange from "./date-picker-with-range";
 import { Card, CardContent } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
 
 export function DatePicker() {
   return (

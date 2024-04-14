@@ -33,10 +33,10 @@ export function Chats() {
                 <div
                   key={index}
                   className={cn(
-                    "flex max-w-[50%] flex-col gap-2 rounded-lg px-3 py-2 text-sm",
+                    "flex max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm",
                     role === "user"
-                      ? "ml-auto rounded-br-none bg-blue-500 dark:bg-blue-500 text-white dark:text-slate-950"
-                      : "bg-slate-100 rounded-bl-none dark:text-slate-100 dark:bg-slate-900"
+                      ? "max-w-[75%] w-fit ml-auto rounded-br-none bg-blue-500 dark:bg-blue-500 text-white dark:text-slate-950"
+                      : "max-w-[75%] w-fit bg-slate-100 rounded-bl-none dark:text-slate-100 dark:bg-slate-900"
                   )}
                 >
                   <PhotosDisplay content={content} />

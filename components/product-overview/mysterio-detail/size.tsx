@@ -18,7 +18,7 @@ function Size() {
   return (
     <div className="space-y-2">
       <p>Size</p>
-      <div className="space-x-2">
+      <div className="flex gap-2 flex-wrap">
         <Button
           className={
             isSelected.XS ? "border-violet-500 dark:border-violet-500" : ""

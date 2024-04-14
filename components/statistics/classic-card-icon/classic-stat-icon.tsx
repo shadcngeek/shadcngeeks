@@ -24,7 +24,7 @@ function ClassicCardIcon() {
                 <BarChart3 className="text-white" />
               </div>
               <p className="text 2xl font-bold">$43K</p>
-              <p className="text-sm text-gray-400 dark:text-gray-800">
+              <p className="text-sm text-slate-700 dark:text-slate-400">
                 Marketing
               </p>
             </CardContent>
@@ -36,7 +36,9 @@ function ClassicCardIcon() {
                 <CalendarDays className="text-white" />
               </div>
               <p className="text 2xl font-bold">$35M</p>
-              <p className="text-sm text-gray-400 dark:text-gray-800">Income</p>
+              <p className="text-sm text-slate-700 dark:text-slate-400">
+                Income
+              </p>
             </CardContent>
           </Card>
 
@@ -46,7 +48,9 @@ function ClassicCardIcon() {
                 <Users className="text-white" />
               </div>
               <p className="text 2xl font-bold">435K</p>
-              <p className="text-sm text-gray-400 dark:text-gray-800">Users</p>
+              <p className="text-sm text-slate-700 dark:text-slate-400">
+                Users
+              </p>
             </CardContent>
           </Card>
 
@@ -56,7 +60,7 @@ function ClassicCardIcon() {
                 <ArrowUpDown className="text-white" />
               </div>
               <p className="text 2xl font-bold">6M</p>
-              <p className="text-sm text-gray-400 dark:text-gray-800">
+              <p className="text-sm text-slate-700 dark:text-slate-400">
                 Requests
               </p>
             </CardContent>

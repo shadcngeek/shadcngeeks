@@ -6,7 +6,7 @@ interface PresetTypes {
 
 function Presets({ setPrice }: PresetTypes) {
   const handleSetPreset = (value1: number, value2: number) => {
-    setPrice([value1 / 100, value2 / 100]);
+    setPrice([value1, value2]);
   };
 
   return (

@@ -72,6 +72,9 @@ import PriceDiscount from "@/components/cards/price-discount";
 import PlaceOrderSurge from "@/components/cards/place-order-surge";
 import PlaceOrderSurgeQuality from "@/components/cards/place-order-surge-quality";
 import ProductList from "@/components/cards/product-list";
+import ProductsListStylish from "@/components/cards/product-list-stylish";
+import ProductsListStylishTwin from "@/components/cards/product-list-stylish-twin";
+import OrderSummary from "@/components/cards/order-summary";
 
 export const cardsData: CardsDataTypes[] = [
   { component: <PlaceOrderSurgeQuality />, path: "place-order-surge-quality" },
@@ -84,8 +87,11 @@ export const cardsData: CardsDataTypes[] = [
   { component: <RangeFilterPreset />, path: "range-filter-preset" },
   { component: <UserSquare />, path: "user-square" },
   { component: <UserPad />, path: "user-pad" },
+  { component: <ProductsListStylishTwin />, path: "product-list-stylish-twin" },
+  { component: <ProductsListStylish />, path: "product-list-stylish" },
   { component: <UserHigh />, path: "user-high" },
   { component: <UserSimple />, path: "user-simple" },
+  { component: <OrderSummary />, path: "order-summary" },
   { component: <StatNumber />, path: "stat-number" },
   { component: <StatIcon />, path: "stat-icon" },
   { component: <PageHint />, path: "page-hint" },

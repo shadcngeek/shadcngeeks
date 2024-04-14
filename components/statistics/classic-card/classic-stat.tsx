@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 function ClassicCard() {
   return (
     <Card>
-      <CardContent className="flex flex-col gap-10 justify-between items-center p-4 md:p-20 lg:p-32 xl:p-40 rounded-lg">
+      <CardContent className="flex flex-col gap-10 justify-between items-center p-4 md:p-20 lg:p-32 2xl:p-40 rounded-lg">
         <div className="space-y-2">
           <p className="text-center text-3xl lg:text-5xl font-bold">
             Trusted by designers worldwide
@@ -15,7 +15,7 @@ function ClassicCard() {
             Perspiciatis, dignissimos?
           </p>
         </div>
-        <div className="flex flex-wrap justify-center xl:justify-between items-center gap-5">
+        <div className="flex flex-wrap justify-center items-center gap-5">
           <Card className="w-[300px]">
             <CardContent className="p-6 text-center">
               <p className="text-2xl font-bold">$43 Million</p>

@@ -47,7 +47,7 @@ function SmallDeviceItem({
           </div>
         </div>
       </CardContent>
-      <CardFooter className="p-4 sm:p-6 pt-0 flex justify-between items-center">
+      <CardFooter className="p-4 sm:p-6 !pt-0 flex justify-between items-center">
         <div className="flex justify-between items-center gap-2">
           <div>
             <Button

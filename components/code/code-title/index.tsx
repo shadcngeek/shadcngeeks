@@ -38,9 +38,9 @@ function CodeTitle() {
     <Card>
       <CardHeader className="pr-0 pb-0 pt-0 flex gap-5 flex-row justify-between items-center border-b dark:border-b-slate-800">
         <div className="flex gap-3 shrink-0">
-          <p className="text-sm text-rose-500">Tailwind config</p>
+          <p className="text-sm text-rose-500">index.tsx</p>
         </div>
-        <div className="bg-slate-100 dark:bg-slate-900 p-2 w-full border border-b-0 border-r-0 dark:border-slate-800 rounded-tl-lg">
+        <div className="bg-slate-100 dark:bg-slate-900 p-2 md:w-full border border-b-0 border-r-0 dark:border-slate-800 rounded-tl-lg">
           <CopyToClipboard text={codeString}>
             <div className="w-fit mx-auto sm:mx-0 sm:ml-auto">
               <Copy />

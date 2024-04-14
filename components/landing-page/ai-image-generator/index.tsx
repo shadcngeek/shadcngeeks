@@ -15,8 +15,8 @@ const images = [
 
 function AI() {
   return (
-    <div className="p-4 md:p-10 bg-gradient-to-br from-white to-pink-300 dark:bg-gradient-to-br dark:from-40% via-pink-200 dark:from-slate-950 dark:to-pink-300 bg-no-repeat bg-cover">
-      <div className=" border dark:border-slate-800 rounded-lg">
+    <div className="h-[100vh] p-4 md:p-10 bg-gradient-to-br from-white to-pink-300 dark:bg-gradient-to-br dark:from-40% via-pink-200 dark:from-slate-950 dark:to-pink-300 bg-no-repeat bg-cover">
+      <div className="border dark:border-slate-800 rounded-lg">
         <MegaNav />
         <div className="px-4 flex justify-center pt-20 md:pt-0 md:items-center h-dvh lg:h-dvh lg:px-[200px]">
           <div className="">

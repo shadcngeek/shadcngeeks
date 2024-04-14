@@ -21,7 +21,7 @@ import { models, types } from "./data/models";
 
 function ImageEdit() {
   return (
-    <div className="min-h-dvh p-4 lg:p-10 xl:px-[100px] dark:bg-slate-950">
+    <div className="min-h-[100vh] p-4 lg:p-10 xl:px-[100px] dark:bg-slate-950">
       <div className="md:hidden">
         <Image
           width={1280}
@@ -37,8 +37,12 @@ function ImageEdit() {
           src="/images/www/image-edit-dark.png"
           className="hidden dark:block"
         />
+        <p className="text-slate-700 text-sm">
+          This UI is not available for small screen devices yet. Please, switch
+          to a large screen device.
+        </p>
       </div>
-      <div className="border dark:border-slate-800 rounded-lg p-5 pb-0 hidden md:block">
+      <div className="border dark:border-slate-800 rounded-lg p-5 pb-0 hidden md:block w-fit mx-auto">
         <Header />
 
         <Separator />

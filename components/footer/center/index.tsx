@@ -6,7 +6,7 @@ function FooterCenter() {
   return (
     <Card>
       <CardHeader className="flex-row justify-center w-full">
-        <div>
+        <div className="space-y-2">
           <div className="w-fit mx-auto ">
             <Logo />
           </div>

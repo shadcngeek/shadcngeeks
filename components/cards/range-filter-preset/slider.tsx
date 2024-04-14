@@ -1,9 +1,8 @@
-"use client"
+"use client";
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
 import * as SliderPrimitive from "@radix-ui/react-slider";
-
 
 type SliderProps = React.ComponentProps<typeof Slider>;
 
@@ -29,11 +28,10 @@ const Slider = React.forwardRef<
 ));
 Slider.displayName = SliderPrimitive.Root.displayName;
 
-
 export function Range({ className, ...props }: SliderProps) {
   return (
     <Slider
-      max={100}
+      max={10000}
       step={1}
       className={cn("w-[60%]", className)}
       {...props}

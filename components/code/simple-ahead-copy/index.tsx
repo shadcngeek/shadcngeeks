@@ -9,7 +9,7 @@ import { Copy } from "./clipboard/copy";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 import { codeString } from "./data/code";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 function SimpleAheadCopy() {
   return (
@@ -33,12 +33,13 @@ function SimpleAheadCopy() {
             language="javascript"
             style={atomOneDarkReasonable}
             customStyle={{
-              backgroundColor: "transparent",
               overflowX: "unset",
+              backgroundColor: "transparent",
             }}
           >
             {codeString}
           </SyntaxHighlighter>
+          <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </CardContent>
     </Card>

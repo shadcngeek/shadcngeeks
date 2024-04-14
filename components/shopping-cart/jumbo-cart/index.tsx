@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardContent,
 } from "@/components/ui/card";
-import Products from "./components/Products";
+import Products from "./components/products";
 import { Button } from "@/components/ui/button";
 
 function ShoppingCartJumbo() {

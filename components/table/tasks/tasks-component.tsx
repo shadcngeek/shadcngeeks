@@ -30,7 +30,7 @@ export default async function TaskComponent() {
   const tasks = await getTasks();
 
   return (
-    <div className="dark:bg-slate-950 dark:text-white h-dvh">
+    <div className="dark:bg-slate-950 dark:text-white h-[100vh]">
       <div className="md:hidden">
         <Image
           width={1280}
@@ -46,6 +46,10 @@ export default async function TaskComponent() {
           className="hidden dark:block"
           src="/examples/tasks-dark.png"
         />
+        <p className="text-slate-700 text-sm">
+          This UI is not available for small screen devices yet. Please, switch
+          to a large screen device.
+        </p>
       </div>
       <div className="hidden h-full flex-1 flex-col space-y-8 p-8 md:flex">
         <div className="flex items-center justify-between space-y-2">

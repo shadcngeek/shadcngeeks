@@ -5,8 +5,8 @@ import { nonDynamicProductOverviewData } from "../../data/non-dynamic-product-ov
 
 function ProductOverview() {
   return (
-    <div className="px-4 xl:px-[100px] py-4 dark:bg-slate-950 min-h-dvh">
-      <div className="border rounded-lg space-y-8 pt-3 dark:border-slate-800">
+    <div className="pb-4 sm:p-4 xl:px-[100px] dark:bg-slate-950 min-h-dvh">
+      <div className="sm:border rounded-lg space-y-8 pt-3 dark:border-slate-800">
         {nonDynamicProductOverviewData.map(({ component, path }) => (
           <div key={path}>
             <Download

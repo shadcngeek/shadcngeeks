@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 function CodeRight() {
   return (
-    <div className="bg-[url('/images/codeBgSM.png')] md:bg-[url('/images/codeBg.png')] overflow-x-hidden dark:bg-slate-950 dark:text-white h-dvh bg-cover bg-no-repeat">
+    <div className="bg-[url('/images/codeBgSM.png')] md:bg-[url('/images/codeBg.png')] overflow-x-hidden dark:bg-slate-950 dark:text-white h-[100vh] bg-cover bg-no-repeat">
       <div className="h-full flex pt-10 md:pt-0 md:items-center">
         <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-10 items-center">
           <div className="md:flex-[50%] md:pl-10 lg:pl-20 p-4 md:p-0">

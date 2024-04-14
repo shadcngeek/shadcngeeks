@@ -8,7 +8,7 @@ import WrapperContent from "./content";
 
 function Wrapper({ parentFolder }: WrapperTypes) {
   return (
-    <div className="px-4 md:px-[50px] lg:px-[100px] xl:px-[200px] dark:bg-slate-950 pt-10 min-h-dvh">
+    <div className="px-4 md:px-[50px] lg:px-[100px] xl:px-[200px] dark:bg-slate-950 pt-10 min-h-[100vh]">
       <div className="grid md:grid-cols-2 gap-3 flex-wrap">
         {pages[parentFolder].subPath.map(({ path, imageSrc }) => (
           <WrapperContent

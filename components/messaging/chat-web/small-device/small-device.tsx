@@ -23,7 +23,7 @@ export function ChatWebSlug({ slug }: ChatWebSlugTypes) {
   }, [slug]);
 
   return (
-    <div className="min-h-dvh dark:bg-slate-950 dark:text-white">
+    <div className="min-h-[100vh] dark:bg-slate-950 dark:text-white">
       <MessageDisplay />
     </div>
   );

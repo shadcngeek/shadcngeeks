@@ -7,7 +7,7 @@ import { CarouselDemo } from "./components/carousel";
 
 function BodyBuilder() {
   return (
-    <div className="bg-black h-dvh overflow-hidden px-4">
+    <div className="bg-black h-[100vh] overflow-hidden px-4">
       <div className="text-white text-center space-y-2 py-10 lg:w-[700px] mx-auto">
         <p className="text-3xl md:text-5xl lg:text-6xl font-bold">
           I am a <span className="text-orange-600">Super Body</span> Builder

@@ -1,5 +1,4 @@
 import React from "react";
-
 import Image from "next/image";
 
 import MegaNav from "./components/mega-nav";
@@ -7,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 function DashboardLanding() {
   return (
-    <div className="px-4 md:px-[100px] dark:bg-slate-950 p-4 md:p-10">
+    <div className="min-h-[100vh] px-4 md:px-[100px] dark:bg-slate-950 p-4 md:p-10">
       <div className="border dark:border-slate-800 rounded-lg overflow-hidden p-4 md:p-10">
         <MegaNav />
         <div className="flex justify-center md:items-center py-10 min-h-dvh">
@@ -17,7 +16,7 @@ function DashboardLanding() {
                 The content-centric website{" "}
                 <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
                   framework
-                </span>
+                </span>{" "}
                 for dynamic online experiences.
               </p>
               <p className="text-slate-700 dark:text-slate-400">

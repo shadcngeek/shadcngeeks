@@ -15,7 +15,7 @@ function Landing() {
               The content-centric website{" "}
               <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
                 framework
-              </span>
+              </span>{" "}
               for dynamic online experiences.
             </p>
             <p className="text-slate-700 dark:text-slate-400">

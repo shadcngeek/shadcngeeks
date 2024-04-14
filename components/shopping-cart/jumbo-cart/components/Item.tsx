@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-import { ItemTypes } from "../type";
-import { Card, CardContent } from "@/components/ui/card";
+import { Heart } from "lucide-react";
+
 import { Quantity } from "./select";
 import { Button } from "@/components/ui/button";
-import { Heart } from "lucide-react";
 import SmallDeviceItem from "./small-device-Item";
+import { Card, CardContent } from "@/components/ui/card";
+
+import { ItemTypes } from "../type";
 
 function Item({ imgUrl, itemName, color, itemPrice, size }: ItemTypes) {
   return (
@@ -19,10 +21,10 @@ function Item({ imgUrl, itemName, color, itemPrice, size }: ItemTypes) {
           <div className="w-[200px] h-[150px] rounded-lg overflow-hidden">
             <Image
               className="w-full h-full object-cover"
-              src={imgUrl}
-              alt="Product image"
               width={200}
+              src={imgUrl}
               height={100}
+              alt="Product image"
             />
           </div>
 

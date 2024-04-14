@@ -16,7 +16,7 @@ const MailComponent = () => {
     : undefined;
 
   return (
-    <div className="dark:bg-slate-950 dark:text-white h-dvh p-4 md:p-10 lg:px-[50px] xl:px-[100px]">
+    <div className="dark:bg-slate-950 dark:text-white min-h-[100vh] p-4 md:p-10 lg:px-[50px] xl:px-[100px]">
       <div className="md:hidden">
         <Image
           src="/examples/mail-dark.png"

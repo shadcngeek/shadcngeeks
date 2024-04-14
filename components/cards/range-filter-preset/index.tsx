@@ -18,7 +18,7 @@ export function PriceInput({ ...props }: PriceInput) {
 }
 
 export function RangeFilterPreset() {
-  const [price, setPrice] = React.useState<number[]>([25, 75]);
+  const [price, setPrice] = React.useState<number[]>([2500, 7500]);
   const [size, setSize] = React.useState<typeof sizes>(initialSizes);
 
   const endPrice = price[1];
@@ -34,15 +34,19 @@ export function RangeFilterPreset() {
           <div className="mb-5 flex gap-3 items-center">
             <p className="text-slate-500 dark:text-slate-400">Price</p>
             <PriceInput
-              value={startPrice * 100}
+              min={0}
+              max={10000}
+              value={startPrice < 9999 ? +startPrice : 9999}
               onChange={(e: any) => {
-                setPrice((value) => [e.target.value / 100, value[1]]);
+                setPrice((value: number[]) => [+e.target.value, +value[1]]);
               }}
             />
             <PriceInput
-              value={endPrice * 100}
+              min={0}
+              max={10000}
+              value={endPrice < 10000 ? +endPrice : 10000}
               onChange={(e: any) => {
-                setPrice((value) => [value[0], e.target.value / 100]);
+                setPrice((value: number[]) => [+value[0], +e.target.value]);
               }}
             />
           </div>

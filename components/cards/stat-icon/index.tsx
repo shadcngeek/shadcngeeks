@@ -12,7 +12,7 @@ function StatIcon() {
           <BarChart3 className="text-white" />
         </div>
         <p className="text 2xl font-bold">$43K</p>
-        <p className="text-sm text-gray-400 dark:text-gray-800">Marketing</p>
+        <p className="text-sm text-slate-700 dark:text-slate-400">Marketing</p>
       </CardContent>
     </Card>
   );

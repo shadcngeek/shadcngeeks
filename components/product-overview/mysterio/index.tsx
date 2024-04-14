@@ -14,7 +14,7 @@ import { StarFilledIcon } from "@radix-ui/react-icons";
 function Mysterio() {
   return (
     <Card className="border-none">
-      <CardContent className="p-0 flex gap-3">
+      <CardContent className="p-0 flex flex-col lg:flex-row gap-3">
         <div className="flex-[50%] rounded-lg overflow-hidden h-[520px]">
           <Image
             width={2070}
@@ -24,13 +24,13 @@ function Mysterio() {
             src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
         </div>
-        <div className="flex-[50%] p-6 space-y-4">
+        <div className="flex-[50%] p-3 md:p-6 space-y-4">
           <div className="space-y-2">
             <div className=" flex justify-between">
               <h3 className="text-2xl font-semibold">Indoor Sofa</h3>
               <p className="text-2xl">$500.99</p>
             </div>
-            <div className="flex gap-1">
+            <div className="flex">
               <StarFilledIcon className="text-orange-500" />
               <StarFilledIcon className="text-orange-500" />
               <StarFilledIcon className="text-orange-500" />
