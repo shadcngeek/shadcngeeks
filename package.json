@@ -48,6 +48,7 @@
     "embla-carousel-autoplay": "^8.0.0-rc19",
     "embla-carousel-react": "^8.0.0-rc19",
     "geist": "^1.2.1",
+    "input-otp": "^1.2.4",
     "jotai": "^2.6.1",
     "jszip": "^3.10.1",
     "lucide-react": "^0.306.0",
