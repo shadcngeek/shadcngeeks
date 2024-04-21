@@ -75,8 +75,19 @@ import ProductList from "@/components/cards/product-list";
 import ProductsListStylish from "@/components/cards/product-list-stylish";
 import ProductsListStylishTwin from "@/components/cards/product-list-stylish-twin";
 import OrderSummary from "@/components/cards/order-summary";
+import PaymentMethodVariant from "@/components/cards/payment-method-variant";
+import PaymentMethodVariantCard from "@/components/cards/payment-method-card";
+import { InputOTPCard } from "@/components/cards/otp";
+import { InputOTPCardQRCode } from "@/components/cards/otp-qrcode";
 
 export const cardsData: CardsDataTypes[] = [
+  { component: <InputOTPCardQRCode />, path: "otp-qrcode" },
+  { component: <InputOTPCard />, path: "otp" },
+  {
+    component: <PaymentMethodVariantCard />,
+    path: "payment-method-variant-card",
+  },
+  { component: <PaymentMethodVariant />, path: "payment-method-variant" },
   { component: <PlaceOrderSurgeQuality />, path: "place-order-surge-quality" },
   { component: <PlaceOrderSurge />, path: "place-order-surge" },
   { component: <PriceDiscount />, path: "price-discount" },

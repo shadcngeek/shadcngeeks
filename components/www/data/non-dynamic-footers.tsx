@@ -8,7 +8,7 @@ import FooterRichDarkModeLeft from "@/components/footer/rich-dark-mode-left";
 export const nonDynamicFootersData: NonDynamicDataTypes[] = [
   {
     component: <FooterRichDarkModeLeft />,
-    path: "rich-dark-mode",
+    path: "rich-dark-mode-left",
   },
   {
     component: <FooterRichDarkMode />,

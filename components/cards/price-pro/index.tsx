@@ -25,7 +25,7 @@ export function PricePro() {
           </p>
         </div>
         <Button className="w-full my-7">Get Started</Button>
-        <p className="border-b mb-7"></p>
+        <p className="border-b mb-7 dark:border-slate-800"></p>
         <ul className="flex flex-col gap-4 text-slate-700 dark:text-slate-400">
           <li className="flex items-center gap-3">
             <CheckCircle size={15} /> <p> 100 SMS</p>

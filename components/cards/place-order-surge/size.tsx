@@ -22,7 +22,7 @@ function Size() {
   return (
     <div className="space-y-2">
       <p>Size</p>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 w-fit">
+      <div className="flex flex-wrap gap-2 w-fit">
         <Button
           className={cn(
             "w-24",

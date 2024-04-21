@@ -18,9 +18,9 @@ function Homepage() {
             <span className="text-rose-600">ShadcnGeeks </span>
           </h1>
           <h2 className="font-normal mt-3 md:mt-8 text-slate-400">
-            ShadcnGeeks is an open-source project that provides you with free
-            beautifully crafted UI components you can use in your react projects with no
-            limitation.
+            ShadcnGeeks is an open-source project that provides you with
+            beautifully crafted UI components for free, which you can use in
+            your React projects without any limitations.
           </h2>
         </div>
         <div className="w-fit mx-auto flex justify-center items-center gap-3 flex-wrap">
@@ -31,6 +31,15 @@ function Homepage() {
             className="text-white h-10 px-4 py-2 flex gap-2 items-center rounded-md bg-rose-600 dark:bg-rose-600 hover:dark:bg-rose-500 hover:bg-rose-500 dark:text-white"
           >
             <Github className="w-4 h-4" /> GitHub
+          </Link>
+
+          <Link
+            rel="noopener"
+            target="_blank"
+            href={"https://ui.shadcn.com/docs/installation"}
+            className="text-rose-500 hover:text-rose-600 dark:hover:text-rose-600 h-10 px-4 py-2 flex gap-2 items-center rounded-md border border-rose-600 dark:border-rose-600 hover:dark:border-rose-500 hover:border-rose-500"
+          >
+            Installation
           </Link>
         </div>
         <div className="text-sm text mx-auto w-fit">
