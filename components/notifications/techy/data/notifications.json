@@ -1,0 +1,380 @@
+[
+  {
+    "title": "News Update",
+    "id": "1",
+    "date": "today",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1563351672-62b74891a28a?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "Latest news from around the world",
+    "notificationCount": "3"
+  },
+  {
+    "title": "Weekly Report",
+    "id": "2",
+    "date": "yesterday",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1563351672-62b74891a28a?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "Summary of the week's progress",
+    "notificationCount": "0"
+  },
+  {
+    "title": "Product Launch",
+    "id": "3",
+    "date": "2 days ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Introducing our latest product",
+    "notificationCount": "5"
+  },
+  {
+    "title": "Event Reminder",
+    "id": "4",
+    "date": "4 days ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "Don't forget about the upcoming event",
+    "notificationCount": "1"
+  },
+  {
+    "title": "Monthly Newsletter",
+    "id": "5",
+    "date": "last week",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1563351672-62b74891a28a?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Recap of the month's highlights",
+    "notificationCount": "2"
+  },
+  {
+    "title": "Special Announcement",
+    "id": "6",
+    "date": "2 weeks ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG1hbnxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Important message for our customers",
+    "notificationCount": "0"
+  },
+  {
+    "title": "Promotional Offer",
+    "id": "7",
+    "date": "last month",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Limited time discount",
+    "notificationCount": "4"
+  },
+  {
+    "title": "Customer Feedback",
+    "id": "8",
+    "date": "3 months ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1563351672-62b74891a28a?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "We value your opinion",
+    "notificationCount": "0"
+  },
+  {
+    "title": "Webinar Invitation",
+    "id": "9",
+    "date": "6 months ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Join us for an informative session",
+    "notificationCount": "1"
+  },
+  {
+    "title": "Company Update",
+    "id": "10",
+    "date": "last year",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "A look back at our achievements",
+    "notificationCount": "0"
+  },
+  {
+    "title": "New Feature Announcement",
+    "id": "11",
+    "date": "today",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1563351672-62b74891a28a?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Exciting updates for our users",
+    "notificationCount": "2"
+  },
+  {
+    "title": "Quarterly Performance Review",
+    "id": "12",
+    "date": "yesterday",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Analyzing our progress",
+    "notificationCount": "0"
+  },
+  {
+    "title": "Customer Appreciation Day",
+    "id": "13",
+    "date": "2 days ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1563351672-62b74891a28a?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "Celebrating our loyal customers",
+    "notificationCount": "3"
+  },
+  {
+    "title": "Upcoming Webinar Series",
+    "id": "14",
+    "date": "4 days ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Learn from industry experts",
+    "notificationCount": "1"
+  },
+  {
+    "title": "Monthly Sales Report",
+    "id": "15",
+    "date": "last week",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Insights into our sales performance",
+    "notificationCount": "4"
+  },
+  {
+    "title": "Product Demo Session",
+    "id": "16",
+    "date": "2 weeks ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1563351672-62b74891a28a?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Get a firsthand look at our products",
+    "notificationCount": "0"
+  },
+  {
+    "title": "Flash Sale Announcement",
+    "id": "17",
+    "date": "last month",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "Huge discounts for a limited time",
+    "notificationCount": "6"
+  },
+  {
+    "title": "Feedback Survey",
+    "id": "18",
+    "date": "3 months ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "Help us improve with your feedback",
+    "notificationCount": "0"
+  },
+  {
+    "title": "Employee Recognition Program",
+    "id": "19",
+    "date": "6 months ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1563351672-62b74891a28a?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Acknowledging outstanding contributions",
+    "notificationCount": "2"
+  },
+  {
+    "title": "Yearly Performance Review",
+    "id": "20",
+    "date": "last year",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "Reflecting on our achievements",
+    "notificationCount": "0"
+  },
+  {
+    "title": "Product Update Announcement",
+    "id": "21",
+    "date": "today",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "Exciting new features added!",
+    "notificationCount": "3"
+  },
+  {
+    "title": "Weekly Newsletter",
+    "id": "22",
+    "date": "yesterday",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Stay updated with our latest news",
+    "notificationCount": "0"
+  },
+  {
+    "title": "Customer Support Alert",
+    "id": "23",
+    "date": "2 days ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "Urgent issue reported by a customer",
+    "notificationCount": "5"
+  },
+  {
+    "title": "Webinar Invitation",
+    "id": "24",
+    "date": "4 days ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Join our upcoming webinar session",
+    "notificationCount": "1"
+  },
+  {
+    "title": "Monthly Report",
+    "id": "25",
+    "date": "last week",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "Insights into our monthly performance",
+    "notificationCount": "2"
+  },
+  {
+    "title": "Special Promotion",
+    "id": "26",
+    "date": "2 weeks ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Limited-time offer for our customers",
+    "notificationCount": "0"
+  },
+  {
+    "title": "Feedback Request",
+    "id": "27",
+    "date": "last month",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1563351672-62b74891a28a?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "We'd love to hear from you!",
+    "notificationCount": "4"
+  },
+  {
+    "title": "Important Announcement",
+    "id": "28",
+    "date": "3 months ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "Please read: Changes to our service",
+    "notificationCount": "0"
+  },
+  {
+    "title": "Upcoming Event Reminder",
+    "id": "29",
+    "date": "6 months ago",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1563351672-62b74891a28a?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=300&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": true,
+    "subtitle": "Don't forget about our event!",
+    "notificationCount": "1"
+  },
+  {
+    "title": "Yearly Summary",
+    "id": "30",
+    "date": "last year",
+    "imgSrc": [
+      "https://images.unsplash.com/photo-1563351672-62b74891a28a?w=800&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "unread": false,
+    "subtitle": "A recap of our year's achievements",
+    "notificationCount": "0"
+  }
+]

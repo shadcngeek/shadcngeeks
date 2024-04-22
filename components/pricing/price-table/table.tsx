@@ -66,7 +66,7 @@ function Table() {
                 className={cn(
                   "p-4 border dark:border-slate-800 text-center text-slate-700 dark:text-slate-400",
                   row.getCanExpand() &&
-                    "bg-slate-100 dark:bg-slate-900 text-blue-500 dark:text-blue-500 font-semibold text-sm"
+                    "bg-slate-100 dark:bg-slate-900 font-semibold text-sm"
                 )}
                 key={cell.id}
               >

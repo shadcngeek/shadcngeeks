@@ -23,6 +23,7 @@ export type PathTypes =
   | "coming-soon"
   | "team-section"
   | "landing-page"
+  | "notifications"
   | "shopping-cart"
   | "authentication"
   | "product-overview";
@@ -179,6 +180,13 @@ export const pages: PagesTypes = {
       { path: "chat-alpha", imageSrc: "/images/www/chat-alpha.png" },
       { path: "chat-web", imageSrc: "/images/www/chat-web.png" },
     ],
+  },
+  notifications: {
+    imageSrc: "/images/www/svg/notifications.svg",
+    subPath: [
+      { path: "techy", imageSrc: "/images/www/notifications-techy.png" },
+    ],
+    newCount: 1,
   },
 
   authentication: {
