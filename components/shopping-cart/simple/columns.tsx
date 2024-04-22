@@ -19,7 +19,7 @@ export const columns = [
       </div>
     ),
     cell: ({ getValue }) => {
-      const { imgUrl, itemName } = getValue();
+      const { imgUrl, itemName } = getValue()!;
       return <Item {...{ imgUrl, itemName }} />;
     },
     size: 200,
