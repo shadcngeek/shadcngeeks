@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import Balancer from "react-wrap-balancer";
 import { Github } from "lucide-react";
 
 import { PathTypes, pages } from "./data/pages";
@@ -14,13 +15,17 @@ function Homepage() {
       <div className="space-y-4 md:space-y-10 dark:text-white px-4">
         <div className="lg:w-[700px] text-center mx-auto">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">
-            Beautifully crafted UI components for all{" "}
-            <span className="text-rose-600">ShadcnGeeks </span>
+            <Balancer>
+              Beautifully crafted UI components for all{" "}
+              <span className="text-rose-600">ShadcnGeeks </span>
+            </Balancer>
           </h1>
           <h2 className="font-normal mt-3 md:mt-8 text-slate-400">
-            ShadcnGeeks is an open-source project that provides you with
-            beautifully crafted UI components for free, which you can use in
-            your React projects without any limitations.
+            <Balancer>
+              ShadcnGeeks is an open-source project that provides you with
+              beautifully crafted UI components for free, which you can use in
+              your React projects without any limitations.
+            </Balancer>
           </h2>
         </div>
         <div className="w-fit mx-auto flex justify-center items-center gap-3 flex-wrap">
@@ -43,7 +48,7 @@ function Homepage() {
           </Link>
         </div>
         <div className="text-sm text mx-auto w-fit">
-          <p className="text-slate-400 text-sm text-center">
+          <Balancer className="text-slate-400 text-sm text-center">
             This project is inspired by{" "}
             <Link
               target="_blank"
@@ -53,7 +58,7 @@ function Homepage() {
               shadcn/ui
             </Link>
             . You will also find some of their components here.
-          </p>
+          </Balancer>
         </div>
       </div>
       <div className="flex max-w-[1100px] gap-3 mx-auto flex-wrap justify-center mt-10">

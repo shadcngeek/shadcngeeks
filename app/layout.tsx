@@ -9,6 +9,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 import MegaNav from "@/components/headers/mega-nav";
 import { siteConfig } from "@/config/site";
+import { ThemeProvider } from "@/components/www/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -73,7 +74,7 @@ export const viewport: Viewport = {
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "#020617" },
   ],
-}
+};
 
 const fontMono = FontMono({
   subsets: ["latin"],
@@ -88,7 +89,14 @@ export default function RootLayout({
   return (
     <html lang="en" id="mode" className="light">
       <body className={GeistSans.className}>
-        <MegaNav>{children}</MegaNav>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <MegaNav>{children}</MegaNav>
+        </ThemeProvider>
         <GoogleAnalytics gaId={"G-T5Y0Z1HMWD"} />
       </body>
     </html>
