@@ -22,6 +22,7 @@ export type PathTypes =
   | "testimonial"
   | "coming-soon"
   | "team-section"
+  | "documentation"
   | "landing-page"
   | "notifications"
   | "shopping-cart"
@@ -94,7 +95,11 @@ export const pages: PagesTypes = {
     subPath: [{ path: "", imageSrc: "" }],
     newCount: 5,
   },
-
+  documentation: {
+    imageSrc: "/images/www/svg/product-overview.svg",
+    subPath: [{ path: "", imageSrc: "" }],
+    newCount: 5,
+  },
   "not-found": {
     imageSrc: "/images/www/svg/404.svg",
     subPath: [
