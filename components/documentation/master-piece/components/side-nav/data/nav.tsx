@@ -3,8 +3,9 @@ export const docs = [
     title: "Overview",
     content: [
       {
-        title: "Introduction",
+        isActive: true,
         url: "introduction",
+        title: "Introduction",
       },
       {
         title: "Tutorial",
@@ -23,7 +24,6 @@ export const docs = [
       {
         title: "Installation",
         url: "installation",
-        isActive: true,
       },
       {
         title: "Tailwind",
@@ -61,15 +61,11 @@ export const docs = [
 
 export const sideRef = [
   {
-    label: "Frameworks",
-    url: "frameworks",
+    label: "Introduction",
+    url: "introduction",
   },
   {
-    label: "Installation",
-    url: "installation",
-  },
-  {
-    label: "Quick demo",
-    url: "quick-demo",
+    label: "Why DidoDocz",
+    url: "why-didodocz",
   },
 ];

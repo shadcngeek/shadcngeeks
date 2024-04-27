@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function TextBriefIcon() {
   return (
-    <Card className="w-[350px]">
+    <Card className="max-w-[350px]">
       <CardHeader>
         <div className="w-14 h-1w-14 border dark:border-slate-800 p-4 rounded-lg">
           <Image src={"logo.svg"} width={150} height={150} alt="logo" />
