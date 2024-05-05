@@ -6,12 +6,11 @@ import Icons from "./side-nav/data/icons";
 import { sideRef } from "./side-nav/data/nav";
 import CodePreview from "./components/code-preview";
 import { Card, CardContent } from "@/components/ui/card";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 
-import { codeString } from "./side-nav/data/code";
 import { SideReference } from "./components/side-ref";
 import { SheetDrawer } from "./components/sheet-drawer";
+import { allSimpleDocs } from "@/.contentlayer/generated";
+import CodeStringPreview from "./components/code-string-preview";
 
 function SimpleDocs() {
   return (
@@ -47,10 +46,7 @@ function SimpleDocs() {
                 quibusdam hic alias nisi consectetur itaque.
               </p>
             </div>
-            <ScrollArea className="p-0">
-              <CodePreview>npx shadcn-ui@latest init</CodePreview>
-              <ScrollBar orientation="horizontal" />
-            </ScrollArea>
+            <CodeStringPreview codeString="npx shadcn-ui@latest init" />
           </div>
 
           <div id="quick-demo" className="mt-5 lg:mt-10 space-y-5">
@@ -66,25 +62,7 @@ function SimpleDocs() {
               </p>
             </div>
 
-            <ScrollArea className="p-0">
-              <CodePreview>
-                <SyntaxHighlighter
-                  CodeTag={() => (
-                    <code className="dark:text-white text-sm text-black">
-                      {codeString}
-                    </code>
-                  )}
-                  customStyle={{
-                    backgroundColor: "transparent",
-                    overflowX: "unset",
-                  }}
-                >
-                  {""}
-                </SyntaxHighlighter>
-              </CodePreview>
-
-              <ScrollBar orientation="horizontal" />
-            </ScrollArea>
+            <CodePreview snippet={allSimpleDocs[0]} />
           </div>
         </div>
 

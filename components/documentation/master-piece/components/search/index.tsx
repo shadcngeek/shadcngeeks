@@ -45,7 +45,7 @@ export function SearchDoc() {
       <CommandDialog open={open} onOpenChange={setOpen}>
         <CommandInput
           className="dark:border-b-slate-800"
-          placeholder="Type a command or search..."
+          placeholder="Search documentation..."
         />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>

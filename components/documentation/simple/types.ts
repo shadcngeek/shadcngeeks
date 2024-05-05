@@ -4,5 +4,6 @@ export interface DocsType {
 }
 
 export type CodePreviewTypes = {
+  codeString: string;
   children: React.ReactNode;
 };

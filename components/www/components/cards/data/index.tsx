@@ -85,7 +85,7 @@ export const cardsData: CardsDataTypes[] = [
   { component: <InputOTPCard />, path: "otp" },
   {
     component: <PaymentMethodVariantCard />,
-    path: "payment-method-variant-card",
+    path: "payment-method-card",
   },
   { component: <PaymentMethodVariant />, path: "payment-method-variant" },
   { component: <PlaceOrderSurgeQuality />, path: "place-order-surge-quality" },

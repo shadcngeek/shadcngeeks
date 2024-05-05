@@ -1,3 +1,5 @@
+import React from "react";
+
 import {
   Card,
   CardFooter,
@@ -5,10 +7,9 @@ import {
   CardContent,
   CardDescription,
 } from "@/components/ui/card";
-import React from "react";
-
-import { Button } from "@/components/ui/button";
 import Logo from "./components/logo";
+import { Button } from "@/components/ui/button";
+
 function PaymentMethodVariantCard() {
   return (
     <Card className="max-w-[400px] mx-auto">

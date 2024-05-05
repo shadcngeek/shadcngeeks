@@ -3,26 +3,12 @@ import React from "react";
 
 import { Terminal } from "lucide-react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { useMDXComponent } from "next-contentlayer/hooks";
 
 import { Copy } from "./clipboard/copy";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
-import { SimpleDocs } from "@/.contentlayer/generated";
-
-function CodePreview({
-  snippet,
-  stringSnippet,
-}: {
-  snippet?: SimpleDocs;
-  stringSnippet?: string;
-}) {
-  const MDXContent: any = useMDXComponent(stringSnippet || snippet!.body.code);
-  const stringified = JSON.stringify(stringSnippet || snippet!.body.raw);
-  const regex = /^\n```\n|```\n$/g;
-  const codeString = JSON.parse(stringified).replace(regex, "");
-
+function CodeStringPreview({ codeString }: { codeString: string }) {
   return (
     <Card className="max-w-[1000px] relative">
       <CardHeader className="pr-0 pb-0 pt-0 flex gap-5 flex-row justify-between items-center border-b dark:border-b-slate-800">
@@ -38,12 +24,9 @@ function CodePreview({
           </CopyToClipboard>
         </div>
       </CardHeader>
-
       <ScrollArea className="w-full h-full">
-        <CardContent className="p-6 relative pr-[30px] h-[500px]">
-          <div className="absolute w-{100%} h-{100%}">
-            <MDXContent />
-          </div>
+        <CardContent className="p-6 relative pr-[30px] whitespace-nowrap">
+          {codeString}
         </CardContent>
         <ScrollBar orientation="horizontal" />
       </ScrollArea>
@@ -51,4 +34,4 @@ function CodePreview({
   );
 }
 
-export default CodePreview;
+export default CodeStringPreview;

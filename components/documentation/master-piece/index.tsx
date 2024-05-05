@@ -25,7 +25,7 @@ function MasterPieceDocs() {
 
         <div className="h-fit m-4 md:m-5 2xl:m-10 w-full">
           <div id="introduction">
-            <div className="space-y-2 md:space-y-3 lg:space-y-2 md:space-y-3 lg:space-y-5">
+            <div className="space-y-2 md:space-y-3 lg:space-y-5">
               <p className="text-2xl md:text-3xl lg:text-4xl font-bold">
                 Introduction
               </p>
