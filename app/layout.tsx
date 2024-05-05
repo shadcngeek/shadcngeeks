@@ -97,7 +97,9 @@ export default function RootLayout({
         >
           <MegaNav>{children}</MegaNav>
         </ThemeProvider>
-        <GoogleAnalytics gaId={"G-T5Y0Z1HMWD"} />
+        {process.env.NODE_ENV === "production" && (
+          <GoogleAnalytics gaId={"G-T5Y0Z1HMWD"} />
+        )}
       </body>
     </html>
   );

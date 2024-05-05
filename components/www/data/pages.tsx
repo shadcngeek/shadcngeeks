@@ -22,6 +22,7 @@ export type PathTypes =
   | "testimonial"
   | "coming-soon"
   | "team-section"
+  | "documentation"
   | "landing-page"
   | "notifications"
   | "shopping-cart"
@@ -94,7 +95,15 @@ export const pages: PagesTypes = {
     subPath: [{ path: "", imageSrc: "" }],
     newCount: 5,
   },
-
+  documentation: {
+    imageSrc: "/images/www/svg/docs.svg",
+    subPath: [
+      { path: "master-piece", imageSrc: "/images/www/docs-master-piece.png" },
+      { path: "simple", imageSrc: "/images/www/docs-simple.png" },
+      { path: "ui-display", imageSrc: "/images/www/docs-ui-display.png" },
+    ],
+    newCount: 3,
+  },
   "not-found": {
     imageSrc: "/images/www/svg/404.svg",
     subPath: [
@@ -235,7 +244,7 @@ export const pages: PagesTypes = {
   table: {
     imageSrc: "/images/www/svg/tables.svg",
     subPath: [
-      { path: "todo", imageSrc: "/images/www/shad-todo.png" },
+      { path: "task", imageSrc: "/images/www/shad-todo.png" },
       { path: "deployment", imageSrc: "/images/www/deployment.png" },
     ],
   },

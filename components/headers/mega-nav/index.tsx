@@ -9,8 +9,8 @@ interface HeaderTypes {
 
 function MegaNav({ children }: HeaderTypes) {
   return (
-    <div className="dark:bg-slate-950">
-      <div className="border-b border-slate-200 dark:border-slate-800 dark:bg-slate-950">
+    <div className="dark:bg-slate-950 relative flex min-h-screen flex-col">
+      <div className="sticky top-0 z-50 w-full border-b dark:border-slate-800 backdrop-blur">
         <div className="py-3 px-4 flex justify-between items-center gap-5 max-w-[1536px] mx-auto">
           <div className="flex items-center gap-20">
             <Link href={"/"} className="">
@@ -20,7 +20,7 @@ function MegaNav({ children }: HeaderTypes) {
           <SocialLinks />
         </div>
       </div>
-      <div className="mx-auto">{children}</div>
+      <div className="max-w-full">{children}</div>
     </div>
   );
 }

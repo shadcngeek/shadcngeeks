@@ -17,15 +17,15 @@ export function SubscribeToNewsletter() {
       <CardHeader>
         <CardTitle>Subscribe to our newsletter</CardTitle>
       </CardHeader>
-      <CardContent>
-        <div className="flex gap-5 items-start">
+      <CardContent className="h-fit">
+        <div className="h-fit space-y-3">
+          <p className="text-slate-700 dark:text-slate-400 text-sm">
+            In the garden of life, habits are the seeds that bloom into your
+            daily reality. Cultivate positive...
+          </p>
           <div>
-            <p className="text-slate-700 dark:text-slate-400 text-sm">
-              In the garden of life, habits are the seeds that bloom into your
-              daily reality. Cultivate positive...
-            </p>
             <form onSubmit={(e) => handleSubmit(e)}>
-              <div className="flex items-center  gap-3 my-5">
+              <div className="flex items-center  gap-3">
                 <Input placeholder="Enter your email address" />
                 <Button>Subscribe</Button>
               </div>
