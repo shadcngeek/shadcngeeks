@@ -17,7 +17,7 @@ export function CodePreviewTabs({
     <Tabs defaultValue="preview" className="">
       <TabsList className="grid max-w-[300px] grid-cols-2 bg-transparent dark:bg-transparent">
         <TabsTrigger
-          className="data-[state=active]:border-b data-[state=active]:shadow-none data-[state=active]:bg-transparent dark:data-[state=active]:bg-transparent"
+          className="rounded-none data-[state=active]:border-b data-[state=active]:shadow-none data-[state=active]:bg-transparent dark:data-[state=active]:bg-transparent"
           value="preview"
         >
           Preview
