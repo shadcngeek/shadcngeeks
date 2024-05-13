@@ -19,7 +19,7 @@ async function getTasks() {
   const data = await fs.readFile(
     path.join(
       process.cwd(),
-      "components/table/deployments/data/deployments.json"
+      "components/table/deployment/data/deployments.json"
     )
   );
 
