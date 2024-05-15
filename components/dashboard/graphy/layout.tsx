@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 
 import {
   ResizablePanel,
@@ -6,8 +7,8 @@ import {
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
 import { Separator } from "@/components/ui/separator";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { SidebarNav } from "@/components/forms/settings/components/sidebar-nav";
+import { ScrollArea } from "./custom-radix/scroll-area";
 
 export const metadata: Metadata = {
   title: "Forms",
@@ -44,6 +45,20 @@ interface SettingsLayoutProps {
 export default function GraphyLayout({ children }: SettingsLayoutProps) {
   return (
     <div className="bg-white dark:bg-slate-950 text-slate-950 dark:text-slate-50 p-4 xl:p-10 xl:pb-16 xl:px-[150px]">
+      <div className="sm:hidden dark:text-white">
+        <Image
+          width={1280}
+          height={866}
+          alt="Playground"
+          src="/images/www/graphy.png"
+        />
+
+        <p className="text-slate-700 text-sm">
+          This UI is not available for small screen devices yet. Please, switch
+          to a large screen device.
+        </p>
+      </div>
+
       <div className="hidden lg:block ">
         <ResizablePanelGroup
           direction="horizontal"
@@ -62,9 +77,9 @@ export default function GraphyLayout({ children }: SettingsLayoutProps) {
             </aside>
           </ResizablePanel>
           <ResizableHandle withHandle />
-          <ResizablePanel defaultSize={75} className="h-[90vh]">
+          <ResizablePanel className="h-[90vh]">
             <ScrollArea className="h-full w-full rounded-md border border-slate-200 dark:border-slate-800">
-              <div className="space-y-6 p-10 pb-16">
+              <div className="space-y-6 p-10 pb-16 !w-[100%]">
                 <div className="lg:flex-row lg:space-x-12 lg:space-y-0">
                   <div className="flex-1">{children}</div>
                 </div>
@@ -72,14 +87,6 @@ export default function GraphyLayout({ children }: SettingsLayoutProps) {
             </ScrollArea>
           </ResizablePanel>
         </ResizablePanelGroup>
-      </div>
-
-      <div className="block lg:hidden min-h-[200px] rounded-lg border border-slate-200 dark:border-slate-800">
-        <div className="max-w-full space-y-4 p-4 lg:space-y-6 lg:p-10 lg:pb-16">
-          <div className="lg:flex-row lg:space-x-12 lg:space-y-0">
-            <div className="lg:flex-1">{children}</div>
-          </div>
-        </div>
       </div>
     </div>
   );
